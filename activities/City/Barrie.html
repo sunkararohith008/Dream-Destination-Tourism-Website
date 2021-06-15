@@ -1,1 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
 
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../../CSS/navbar.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <link rel=" stylesheet" href="../../CSS/gallery.css" type="text/css" />
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/footer.css" type="text/css" />
+  <!-- Link to city css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/city.css" type="text/css" />
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for View More -->
+  <script>
+  $(document).ready(function () {
+      $('.nav-toggle').click(function () {
+          var collapse_content_selector = $(this).attr('href');
+          var toggle_switch = $(this);
+          $(collapse_content_selector).toggle(function () {
+              if ($(this).css('display') == 'none') {
+                  toggle_switch.html('Explore more cities');
+              } else {
+                  toggle_switch.html('View Less');
+              }
+          });
+      });
+
+  });
+  </script>
+
+  <!-- Style -->
+  <style>
+    /*Make the image fully responsive*/
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../../logo.png" class="img-fluid" alt="Logo Of Dream Destination">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../../about.html">About Us</a> | <a href="../../sitemap.html">Site Map</a> | <a href="../../privacy.html">Privacy Policy</a>
+    </p> 
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item active dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../festival.html">Festivals</a>
+    <a class="dropdown-item" href="../shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Nav Bar ends here -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                <!-- slides -->
+                <!-- copyright="&copy; https://live.staticflickr.com/65535/49451733012_417c7ba9b8_m.jpg" -->
+                <!-- copyright="&copy; https://c2.staticflickr.com/8/7503/26372701814_e143dc179f_b.jpg" -->
+                <!-- copyright="&copy; https://bloximages.newyork1.vip.townnews.com/gillettenewsrecord.com/content/tncms/assets/v3/editorial/6/41/64167688-79a2-5de7-92bb-35f0bbf7fad2/5e29eeedb0891.image.jpg?resize=1200%2C799" -->
+                <!-- copyright="&copy; https://ogmtavern.com/files/2016/04/IMG_5833.jpg" -->
+                <!-- copyright="&copy; https://live.staticflickr.com/8183/8101810367_57e767ce67_n.jpg" -->
+                <!-- copyright="&copy; http://nashvilleguru.com/officialwebsite/wp-content/uploads/2014/04/Cafe-Roze-1-1-1024x683.jpg" -->
+                <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-s/0f/60/36/12/penticton-wibit-water.jpg" -->
+                <div class="carousel-inner pics-main">
+                    <div class="carousel-item active"> <img src="../../pics/Barrie/spirit-catcher.jpg" alt="Barrie"> </div>
+                    <div class="carousel-item"> <img src="../../pics/Barrie/centennial-park.jpg" alt="Barrie"> </div>
+                    <div class="carousel-item"> <img src="../../pics/Barrie/downtown.jpg" alt="Barrie"> </div>
+                    <div class="carousel-item"> <img src="../../pics/Barrie/heritage-park.jpg" alt="Barrie"> </div>
+                    <div class="carousel-item"> <img src="../../pics/Barrie/masonic-temple.jpg" alt="Barrie"> </div>
+                    <div class="carousel-item"> <img src="../../pics/Barrie/brewery.jpg" alt="Barrie"> </div>
+                    <div class="carousel-item"> <img src="../../pics/Barrie/splash.jpg" alt="Barrie"> </div>
+                </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                <ol class="carousel-indicators list-inline">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="../../pics/Barrie/spirit-catcher.jpg" class="img-fluid" alt="Barrie"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="../../pics/Barrie/centennial-park.jpg" class="img-fluid" alt="Barrie"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="../../pics/Barrie/downtown.jpg" class="img-fluid" alt="Barrie"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="../../pics/Barrie/heritage-park.jpg" class="img-fluid" alt="Barrie"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="4" data-target="#custCarousel"> <img src="../../pics/Barrie/masonic-temple.jpg" class="img-fluid" alt="Barrie"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="5" data-target="#custCarousel"> <img src="../../pics/Barrie/brewery.jpg" class="img-fluid" alt="Barrie"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="6" data-target="#custCarousel"> <img src="../../pics/Barrie/splash.jpg" class="img-fluid" alt="Barrie"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+  <h1 style="text-align: center;">  Adventure Activities in Barrie</h1>
+  <p id="city-content">  Barrie is now a summer and winter resort, with an economy based on services and diversified manufacturing. Its attractions include Centennial Park and, immediately to the north, the Simcoe County Museum and Archives and Springwater Provincial Park. </p>
+</div>
+
+
+<!-- 1.  For Cycling -->
+
+  <div id="barrie-cycling" class="container container-fluid">
+    <div class="jumbotron">
+      <div class = "heading">
+            <h2 id="barrie-cycling">Cycling</h2>
+          </div> <br>
+  <div class="row">
+    <!-- Bikeland-->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="Barrie-images/bikeland.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>75 Dyment Rd, <br>Barrie, Ontario L4N 3H6 <br> Tel: (705) 726-7372</p>
+          <a href="https://www.bikeland.ca/" target="_self"><h5 class="card-text mb-0 text-black">Bikeland</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Born To Ride Bicycle -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://www.northernontario.travel/sites/default/files/styles/medium3/public/1%20Lead_Georgian.Bay_.jpg?itok=uczMDX6I-->
+        <img src="Barrie-images/born.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>Barrie, Ontario <br>Toll Free: 1-855-795-4482</p>
+          <a href="http://www.borntoridebicycle.com/" target="_self"><h5 class="card-text mb-0 text-black">Born To Ride Bicycle</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Hardwood Ski and Bike -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://i.pinimg.com/150x150/74/37/d1/7437d1161ce776acb3c23520200050e6.jpg -->
+        <img src="Barrie-images/hardwood.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>402 West Old Barrie., R.R. #1 Oro-Medonte, Ontario <br>Tel: (705) 487-3775</p>
+          <a href="https://www.hardwoodskiandbike.ca/" target="_self"><h5 class="card-text mb-0 text-black">Hardwood Ski and Bike</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+<!-- Second row -->
+<div class="row">  
+    <!-- Wye Marsh Wildlife Centre -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Birds_in_the_Jamaer_canal_%2831125270891%29.jpg/1280px-Birds_in_the_Jamaer_canal_%2831125270891%29.jpg -->
+        <img src="Barrie-images/wildlife.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>16160 Highway 12, Midland, Ontario L4R 4K6 <br>Tel: Tel: (705) 526-7809</p>
+          <a href="https://www.wyemarsh.com/" target="_self"><h5 class="card-text mb-0 text-black">Wye Marsh Wildlife Centre</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+<!-- Cycling ends here -->
+
+<!-- 2 Adventurous Sports -->
+
+  <div id="barrie-sports" class="container container-fluid">
+    <div class="jumbotron">
+      <div class = "heading">
+            <h2 id="barrie-sports">Adventurous Sports</h2>
+          </div> <br>
+  <div class="row">
+    <!-- Treetop Trekking Horseshoe Inc.-->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://attractionsontario.ca/wp-content/uploads/2019/04/Treetop-Trekking-Barrie2.jpg-->
+        <img src="Barrie-images/treetop.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>1101 Horseshoe Valley Rd. R.R. #1 <br>Barrie, Ontario L4M 4Y8 <br> Tel: (705) 835-7600</p>
+          <a href="https://treetoptrekking.com/park/barrie/" target="_self"><h5 class="card-text mb-0 text-black">Treetop Trekking Horseshoe Inc.</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Thunderbird Twin Zip Adventure at Scenic Caves -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://pulptastic.com/wp-content/uploads/2016/07/579b21622bd5a.jpg-->
+        <img src="Barrie-images/thunderbird.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>260 Scenic Caves Rd., <br>Blue Mountains, Ontario L9Y 0P2 <br>Tel: (705) 446-0256</p>
+          <a href="https://sceniccaves.com/" target="_self"><h5 class="card-text mb-0 text-black">Thunderbird Twin Zip Adventure at Scenic Caves</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Scenic Caves Nature Adventure -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://southgeorgianbay.ca/wp-content/uploads/2018/10/SCNA-summerfeature.jpg-->
+        <img src="Barrie-images/scenic.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>260 Scenic Caves Rd.<br> Blue Mountains. Ontario L9Y 0P2 <br>Tel: (705) 446-0256</p>
+          <a href="https://sceniccaves.com/" target="_self"><h5 class="card-text mb-0 text-black">Scenic Caves Nature Adventure</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+<!-- Second row -->
+<div class="row">  
+    <!--Horseshoe Resort -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://horseshoeresort.com/uploads/2019/02/resort1.jpg-->
+        <img src="Barrie-images/horseshoe.jpg" class="card-img-top" alt="Horseshoe Resort">
+        <div class="card-body text-center">
+          <p>1101 Horseshoe Valley Rd. Comp 10
+          <br>Barrie, Ontario L4M 4Y8
+            <br>Tel: (705) 835-2790
+              <br>Toll Free: 1-800-461-5627</p>
+          <a href="https://www.hardwoodskiandbike.ca/" target="_self"><h5 class="card-text mb-0 text-black">Horseshoe Resort</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!--Friday Harbour -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://www.vmcdn.ca/f/files/bradfordtoday/images/events/viva-litalia/2019-08-03fhvivalitaliamk-11.jpg;w=960-->
+        <img src="Barrie-images/friday.jpg" class="card-img-top" alt="Friday Harbour">
+        <div class="card-body text-center">
+          <p>2101 Innisfil Beach Road
+          <br>Innisfil, Ontario L9S 1A1
+            <br>Tel: (705) 812-8880</p>
+          <a href="https://www.fridayharbour.com/" target="_self"><h5 class="card-text mb-0 text-black">Friday Harbour</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!--Flawless Wakes - Wake Lab -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; -->
+        <img src="Barrie-images/flawless.jpg" class="card-img-top" alt="Flawless Wakes - Wake Lab">
+        <div class="card-body text-center">
+          <p>342 Tollendal Mill Road
+          <br>Barrie, Ontario L4N 7S6
+            <br>Tel: (705) 817-9253</p>
+          <a href="https://www.flawlesswakes.com/" target="_self"><h5 class="card-text mb-0 text-black">Flawless Wakes - Wake Lab</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+<!-- Sports ends here -->
+
+<!-- 3. For Boating -->
+
+  <div id="barrie-boating" class="container container-fluid">
+    <div class="jumbotron">
+      <div class = "heading">
+            <h2 id="barrie-boating">Boating</h2>
+          </div> <br>
+  <div class="row">
+    <!--Flawless Wakes - Wake Lab -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="Barrie-images/flawless.jpg" class="card-img-top" alt="Flawless Wakes - Wake Lab">
+        <div class="card-body text-center">
+          <p>342 Tollendal Mill Road
+          <br>Barrie, Ontario L4N 7S6
+            <br>Tel: (705) 817-9253</p>
+          <a href="https://www.flawlesswakes.com/" target="_self"><h5 class="card-text mb-0 text-black">Flawless Wakes - Wake Lab</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!--Friday Harbour -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://www.vmcdn.ca/f/files/bradfordtoday/images/events/viva-litalia/2019-08-03fhvivalitaliamk-11.jpg;w=960-->
+        <img src="Barrie-images/friday.jpg" class="card-img-top" alt="Friday Harbour">
+        <div class="card-body text-center">
+          <p>2101 Innisfil Beach Road
+          <br>Innisfil, Ontario L9S 1A1
+            <br>Tel: (705) 812-8880</p>
+          <a href="https://www.fridayharbour.com/" target="_self"><h5 class="card-text mb-0 text-black">Friday Harbour</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!--Happy Paddling -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-s/08/aa/09/65/happy-paddling.jpg-->
+        <img src="Barrie-images/paddling.jpg" class="card-img-top" alt="Happy Paddling">
+        <div class="card-body text-center">
+          <p>Barrie Waterfront
+          <br>Barrie, Ontario L4N 2M6
+            <br>Tel: (705) 881-5533</p>
+          <a href="https://www.happypaddling.com/" target="_self"><h5 class="card-text mb-0 text-black">Happy Paddling</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+<!-- Second row -->
+<div class="row">  
+    <!-- Splash On Water Park -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://www.arcgis.com/sharing/rest/content/items/1d96a93393ae448a9275819f0ef54b3b/resources/splash-on%20Centennial__1557159677237__w700.jpg-->
+        <img src="Barrie-images/splash.jpg" class="card-img-top" alt="Splash On Water Park">
+        <div class="card-body text-center">
+          <p>55 Lakeshore Drive 
+          <br>Barrie, Ontario L4N 6E9
+          <br>Tel: (705) 279-1322</p>
+          <a href="https://okanaganwibit.com/ontario/" target="_self"><h5 class="card-text mb-0 text-black">Splash On Water Park</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+<!-- boating ends here -->
+
+<!-- 4. Camping/ Hiking -->
+
+  <div id="barrie-hiking" class="container container-fluid">
+    <div class="jumbotron">
+      <div class = "heading">
+            <h2 id="barrie-hiking">Hiking</h2>
+          </div> <br>
+  <div class="row">
+    <!-- Scenic Caves Nature Adventure -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://southgeorgianbay.ca/wp-content/uploads/2018/10/SCNA-summerfeature.jpg-->
+        <img src="Barrie-images/scenic.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>260 Scenic Caves Rd.<br> Blue Mountains. Ontario L9Y 0P2 <br>Tel: (705) 446-0256</p>
+          <a href="https://sceniccaves.com/" target="_self"><h5 class="card-text mb-0 text-black">Scenic Caves Nature Adventure</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Wye Marsh Wildlife Centre -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Birds_in_the_Jamaer_canal_%2831125270891%29.jpg/1280px-Birds_in_the_Jamaer_canal_%2831125270891%29.jpg -->
+        <img src="Barrie-images/wildlife.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>16160 Highway 12, Midland, Ontario L4R 4K6 <br>Tel: Tel: (705) 526-7809</p>
+          <a href="https://www.wyemarsh.com/" target="_self"><h5 class="card-text mb-0 text-black">Wye Marsh Wildlife Centre</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+<!-- hiking ends here - -->
+
+<!-- 5. zipline -->
+
+  <div id="barrie-zipline" class="container container-fluid">
+    <div class="jumbotron">
+      <div class = "heading">
+            <h2 id="barrie-zipline">Zipline</h2>
+          </div> <br>
+  <div class="row">
+    <!-- Treetop Trekking Horseshoe Inc.-->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://attractionsontario.ca/wp-content/uploads/2019/04/Treetop-Trekking-Barrie2.jpg-->
+        <img src="Barrie-images/treetop.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>1101 Horseshoe Valley Rd. R.R. #1 <br>Barrie, Ontario L4M 4Y8 <br> Tel: (705) 835-7600</p>
+          <a href="https://treetoptrekking.com/park/barrie/" target="_self"><h5 class="card-text mb-0 text-black">Treetop Trekking Horseshoe Inc.</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Thunderbird Twin Zip Adventure at Scenic Caves -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://pulptastic.com/wp-content/uploads/2016/07/579b21622bd5a.jpg-->
+        <img src="Barrie-images/thunderbird.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>260 Scenic Caves Rd., <br>Blue Mountains, Ontario L9Y 0P2 <br>Tel: (705) 446-0256</p>
+          <a href="https://sceniccaves.com/" target="_self"><h5 class="card-text mb-0 text-black">Thunderbird Twin Zip Adventure at Scenic Caves</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Scenic Caves Nature Adventure -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://pulptastic.com/wp-content/uploads/2016/07/579b21622bd5a.jpg-->
+        <img src="Barrie-images/scenic.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>260 Scenic Caves Rd.<br> Blue Mountains. Ontario L9Y 0P2 <br>Tel: (705) 446-0256</p>
+          <a href="https://sceniccaves.com/" target="_self"><h5 class="card-text mb-0 text-black">Scenic Caves Nature Adventure</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+<!-- zipline ends here - -->
+
+<!-- 6. Canoeing -->
+
+  <div id="barrie-canoeing" class="container container-fluid">
+    <div class="jumbotron">
+      <div class = "heading">
+            <h2 id="barrie-canoeing">Kayaking/ Canoeing</h2>
+          </div> <br>
+  <div class="row">
+    <!--Happy Paddling -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-s/08/aa/09/65/happy-paddling.jpg-->
+        <img src="Barrie-images/paddling.jpg" class="card-img-top" alt="Happy Paddling">
+        <div class="card-body text-center">
+          <p>Barrie Waterfront
+          <br>Barrie, Ontario L4N 2M6
+            <br>Tel: (705) 881-5533</p>
+          <a href="https://www.happypaddling.com/" target="_self"><h5 class="card-text mb-0 text-black">Happy Paddling</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+   <!-- Wye Marsh Wildlife Centre -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Birds_in_the_Jamaer_canal_%2831125270891%29.jpg/1280px-Birds_in_the_Jamaer_canal_%2831125270891%29.jpg -->
+        <img src="Barrie-images/wildlife.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>16160 Highway 12, Midland, Ontario L4R 4K6 <br>Tel: Tel: (705) 526-7809</p>
+          <a href="https://www.wyemarsh.com/" target="_self"><h5 class="card-text mb-0 text-black">Wye Marsh Wildlife Centre</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+<!-- canoeing ends here - -->
+
+<!-- 6. Skiing & Snowshoeing -->
+
+  <div id="barrie-snowshoe" class="container container-fluid">
+    <div class="jumbotron">
+      <div class = "heading">
+            <h2 id="barrie-snowshoe">Skiing & Snowshoe </h2>
+          </div> <br>
+  <div class="row">
+    <!--Flawless Wakes - Wake Lab -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="Barrie-images/flawless.jpg" class="card-img-top" alt="Flawless Wakes - Wake Lab">
+        <div class="card-body text-center">
+          <p>342 Tollendal Mill Road
+          <br>Barrie, Ontario L4N 7S6
+            <br>Tel: (705) 817-9253</p>
+          <a href="https://www.flawlesswakes.com/" target="_self"><h5 class="card-text mb-0 text-black">Flawless Wakes - Wake Lab</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+   <!--Horseshoe Resort -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="Barrie-images/horseshoe.jpg" class="card-img-top" alt="Horseshoe Resort">
+        <div class="card-body text-center">
+          <p>1101 Horseshoe Valley Rd. Comp 10
+          <br>Barrie, Ontario L4M 4Y8
+            <br>Tel: (705) 835-2790
+              <br>Toll Free: 1-800-461-5627</p>
+          <a href="https://www.hardwoodskiandbike.ca/" target="_self"><h5 class="card-text mb-0 text-black">Horseshoe Resort</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Wye Marsh Wildlife Centre -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Birds_in_the_Jamaer_canal_%2831125270891%29.jpg/1280px-Birds_in_the_Jamaer_canal_%2831125270891%29.jpg -->
+        <img src="Barrie-images/wildlife.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <p>16160 Highway 12, Midland, Ontario L4R 4K6 <br>Tel: Tel: (705) 526-7809</p>
+          <a href="https://www.wyemarsh.com/" target="_self"><h5 class="card-text mb-0 text-black">Wye Marsh Wildlife Centre</h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+<!-- skiing ends here - -->
+
+<!-- 7. Air Tour-->
+
+  <div id="barrie-air" class="container container-fluid">
+    <div class="jumbotron">
+      <div class = "heading">
+            <h2 id="barrie-air">Air Display Hot Air Balloon Team  </h2>
+          </div> <br>
+  <div class="row">
+    <!--Flawless Wakes - Wake Lab -->
+    <div class="col-xl-4 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="Barrie-images/flawless.jpg" class="card-img-top" alt="Flawless Wakes - Wake Lab">
+        <div class="card-body text-center">
+          <p>Barrie, Ontario
+          <br>info@airdisplay.ca
+            <br>Tel: (905) 767-8512</p>
+          <a href="https://www.airdisplay.ca/" target="_self"><h5 class="card-text mb-0 text-black">Air Display Hot Air Balloon Team </h5></a>
+          <!-- <div class="card-text text-black-50">Web Developer</div> -->
+        </div>
+      </div>
+    </div>
+       
+  </div>
+
+</div>
+</div>
+<!-- air tour ends here - -->
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../../places/places.html">Places</a></li>
+                <li><a href="../../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../../activities/adventure.html">Activities</a></li>
+                <li><a href="../../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../../sitemap.html">Site Map</a></li>
+                <li><a href="../../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides-A");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+</body>
+</html>

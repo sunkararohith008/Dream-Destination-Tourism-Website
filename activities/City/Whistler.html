@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../../CSS/navbar.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <link rel=" stylesheet" href="../../CSS/gallery.css" type="text/css" />
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/footer.css" type="text/css" />
+  <!-- Link to city css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/city.css" type="text/css" />
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for View More -->
+  <script>
+  $(document).ready(function () {
+      $('.nav-toggle').click(function () {
+          var collapse_content_selector = $(this).attr('href');
+          var toggle_switch = $(this);
+          $(collapse_content_selector).toggle(function () {
+              if ($(this).css('display') == 'none') {
+                  toggle_switch.html('Explore more cities');
+              } else {
+                  toggle_switch.html('View Less');
+              }
+          });
+      });
+
+  });
+  </script>
+
+  <!-- Style -->
+  <style>
+    /*Make the image fully responsive*/
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+   <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../../about.html">About Us</a> | <a href="../../sitemap.html">Site Map</a> | <a href="../../privacy.html">Privacy Policy</a>
+    </p> 
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item active dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../festival.html">Festivals</a>
+    <a class="dropdown-item" href="../shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Nav Bar ends here -->
+
+
+<!-- Try -2 for slideshow -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                <!-- slides -->
+                <div class="carousel-inner">
+                  <!-- copyright="&copy; https://kucukdunya.com/wp-content/uploads/2020/06/Whistler_Blackcomb.jpg -->
+                  <div class="carousel-item active"> <img src="../../places/attraction-pic/whistler-blackcomb.jpg" alt="Whistler"> </div>
+                  <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/a/a0/Brandywine_Falls%2C_BC.jpg -->
+                  <div class="carousel-item"> <img src="../../places/attraction-pic/whistler-brandywine.jpg" alt="Whistler"> </div>
+                  <!-- copyright="&copy; anonymous -->
+                  <div class="carousel-item"> <img src="../../places/attraction-pic/whistler-cheakamus.jpg" alt="Whistler"> </div>
+                  <!-- copyright="&copy; https://www.pesachonthemountain.com/wp-content/uploads/2013/10/slcc.png -->
+                  <div class="carousel-item"> <img src="../../places/attraction-pic/whistler-squamish.jpg" alt="Whistler"> </div>
+                  <!-- copyright="&copy; https://images.wallpapersden.com/image/wxl-lake-rocks-mountains_16164.jpg -->
+                  <div class="carousel-item"> <img src="../../places/attraction-pic/whistler-callaghan.jpg" alt="Whistler"> </div>
+                  <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ski_jumping_hills%2C_Whistler_2.jpg/200px-Ski_jumping_hills%2C_Whistler_2.jpg -->
+                  <div class="carousel-item"> <img src="../../places/attraction-pic/whistler-olympic.jpg" alt="Whistler"> </div>
+                  <!-- copyright="&copy; https://vancity-tours.com/wp-content/uploads/2018/02/Britannia_Mines_Museum-1024x683.jpg -->
+                  <div class="carousel-item"> <img src="../../places/attraction-pic/whistler-mine.jpg" alt="Whistler"> </div>
+              </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+              <ol class="carousel-indicators list-inline">
+                  <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="../../places/attraction-pic/whistler-blackcomb.jpg" class="img-fluid"> </a> </li>
+                  <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="../../places/attraction-pic/whistler-brandywine.jpg" class="img-fluid"> </a> </li>
+                  <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="../../places/attraction-pic/whistler-cheakamus.jpg" class="img-fluid"> </a> </li>
+                  <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="../../places/attraction-pic/whistler-squamish.jpg" class="img-fluid"> </a> </li>
+                  <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="4" data-target="#custCarousel"> <img src="../../places/attraction-pic/whistler-callaghan.jpg" class="img-fluid"> </a> </li>
+                  <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="5" data-target="#custCarousel"> <img src="../../places/attraction-pic/whistler-olympic.jpg" class="img-fluid"> </a> </li>
+                  <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="6" data-target="#custCarousel"> <img src="../../places/attraction-pic/whistler-mine.jpg" class="img-fluid"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Image gallery slideshow for 6 pics-->
+<!-- <div class="container-A"> -->
+  <!-- "People and rainbow at Niagra Falls" by John Stracke is licensed under CC BY-SA 2.0 -->
+  <!-- <div class="mySlides-A">
+    <div class="numbertext">1 / 6</div>
+    <img src="../pics/Toronto/niagra.jpg" style="width:75%" >
+  </div> -->
+
+  <!-- https://static.thousandwonders.net/CN.Tower.original.5926.jpg -->
+  <!-- <div class="mySlides-A">
+    <div class="numbertext">2 / 6</div>
+    <img src="../pics/Toronto/cntower.jpg" style="width:75%">
+  </div> -->
+
+  <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Toronto_Zoo_%284660116193%29.jpg/800px-Toronto_Zoo_%284660116193%29.jpg -->
+  <!-- <div class="mySlides-A">
+    <div class="numbertext">3 / 6</div>
+    <img src="../pics/Toronto/zoo.jpg" style="width:75%" >
+  </div> -->
+
+  <!-- "Toronto: Royal Ontario Museum" by The City of Toronto is licensed under CC BY 2.0 -->
+  <!-- <div class="mySlides-A">
+    <div class="numbertext">4 / 6</div>
+    <img src="../pics/Toronto/museum.jpg" style="width:75%">
+  </div> -->
+
+  <!-- https://upload.wikimedia.org/wikipedia/commons/4/43/Exterior_of_Casa_Loma%2C_June_2012.jpg-->
+  <!-- <div class="mySlides-A">
+    <div class="numbertext"> 5 / 6</div>
+    <img src="../pics/Toronto/casa-loma.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides-A">
+    <div class="numbertext">6 / 6</div>
+    <img src="../pics/Toronto/aquarium.jpg" style="width:75%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="../pics/Toronto/niagra.jpg" style="width:90%; margin:0px;" onclick="currentSlide(1)" alt="Niagra Falls">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../pics/Toronto/cntower.jpg" style="width:90%; margin:0px;" onclick="currentSlide(2)" alt="CN Tower">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../pics/Toronto/zoo.jpg" style="width:90%; margin:0px;" onclick="currentSlide(3)" alt="Toronto Zoo">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../pics/Toronto/museum.jpg" style="width:90%; margin:0px;" onclick="currentSlide(4)" alt="Royal Ontario Museum">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../pics/Toronto/casa-loma.jpg" style="width:90%; margin:0px;" onclick="currentSlide(5)" alt="Casa-Loma">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../pics/Toronto/aquarium.jpg" style="width:90%; margin:0px;" onclick="currentSlide(6)" alt="Ripley's Aquarium Toronto">
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- Activities to do in Toronto -->
+<!-- <div class="jumbotron-fluid jumbotron"> -->
+  <div class="container">
+  <h1 style="text-align: center;">  Adventure Activities in Whistler</h1>
+  <p id="city-content"> Whistler is a town north of Vancouver, British Columbia, that's home to Whistler Blackcomb, one of the largest ski resorts in North America. With soaring peaks, icy plains, dense forests, and British Columbia's finest ski slopes, Whistler is an outdoor adventurer's heaven. Besides skiing and snowboarding, the area offers snowshoeing, tobogganing, snowmobile safaris, mountain bike tracks, ATV experiences and ski jumping at the Olympic Park. </p>
+</div>
+<!-- </div> -->
+
+<!-- <div class = "jumbotron-fluid">
+  <h1 style="text-align: center; margin-top: 20px;"> Adventure Activities</h1>
+</div> -->
+
+<!-- 1.  For Cycling -->
+
+    <div id="whistler-cycling" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-cycling">Cycling & Biking</h2>
+          </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="15895P1,9035P1,9035P2,174848P1,174848P2,174848P3,174848P4" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+<!-- 2.  For Escape The Room -->
+
+    <div id="whistler-atv" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-atv">ATV</h2>
+          </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="16147P1,2014P22,2014SUMME" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+    <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-skiing" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-skiing">Skiing & Snowboarding</h2>
+          </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="23954P3,23954P1,18806P17,243786P1,207183P4" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+    <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-zipline" class="container container-fluid">
+      <div class="jumbotron" >
+      <<div class = "heading">
+          <h2 id="whistler-zipline">Zipline</h2>
+        </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="6759ZIPLINE" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+    <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-fishing" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-fishing">Fishing</h2>
+          </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="71146P3,71146P1,22507P4,22507P3,22507P9,22507P10,22507P2" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+    <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-snowshoe" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-snowshoe">Snowshoe & Snowboarding</h2>
+          </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="2014P23,6759SNOWSHOE,23954P4,23954P2,18806P13" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+    <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-snowmobiling" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-snowmobiling">Snowmobiling</h2>
+          </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="6759P9,20466P1,6759P11,2014WR,2014P24,2014P30" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+        <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-air" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-air">Seaplane Tour</h2>
+          </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="3020P21,3020WSCENIC,3020WLAKE,3020P22,20303P13" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+        <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-boating" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-boating">Canoeing & Boating</h2>
+          </div> </br>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="2014P17" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+        <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-jeep" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-jeep">Safari Tour / Jeep</h2>
+          </div> </br>
+       <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="2014SUMBGS,2014P20,2014SUMBST" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+            <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-sports" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-sports">Adventorous Sports</h2>
+          </div> </br>
+       <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="6759P7,113897P7" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+            <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-rafting" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-rafting">River Rafting</h2>
+          </div> </br>
+       <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="9648P14,9648P13" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+                <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-rock" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-rock">Rock Climbing</h2>
+          </div> </br>
+       <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="18806P26" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+                <!-- 2.  For Escape The Room -->
+
+    <div id="whistler-hiking" class="container container-fluid">
+      <div class="jumbotron" >
+        <div class = "heading">
+            <h2 id="whistler-hiking">Hiking</h2>
+          </div></br>
+       <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="18806P22" data-vi-total-products=""></div>
+        <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+      </div>
+    </div>
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../../places/places.html">Places</a></li>
+                <li><a href="../../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../../activities/adventure.html">Activities</a></li>
+                <li><a href="../../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../../sitemap.html">Site Map</a></li>
+                <li><a href="../../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides-A");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+</body>
+</html>
