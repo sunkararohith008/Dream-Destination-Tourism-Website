@@ -1,1 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
 
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="try.css" type="text/css" />
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/footer.css" type="text/css" />
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+
+  <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../../about.html">About Us</a> | <a href="../../sitemap.html">Site Map</a> | <a href="../../privacy.html">Privacy Policy</a>
+    </p> 
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../festival.html">Festivals</a>
+    <a class="dropdown-item" href="../shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item active">
+<a class="nav-link px-3" href="../../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="main-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../home.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../transport/main.html">Transport</a></li>
+            <li class="breadcrumb-item"><a href="../transport-try/road.html">Road</a></li>
+            <li class="breadcrumb-item active" aria-current="taxi.html">Taxi</li>
+          </ol>
+        </nav>
+        <!-- /Breadcrumb -->
+
+        <div class="row gutters-sm">
+          <div class="col-md-4 d-none d-md-block">
+            <div class="card">
+              <div class="card-body">
+                <nav class="nav flex-column nav-pills nav-gap-y-1">
+                  <a href="#barrie" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
+                    Barrie
+                  </a>
+                  <a href="#toronto" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Toronto
+                  </a>
+                  <a href="#vancouver" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Vancouver
+                  </a>
+                  <a href="#whistler" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Whistler
+                  </a>
+                  <a href="#victoria" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Victoria
+                  </a>
+                  <a href="#yellow" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Yellowknife
+                  </a>
+                  <a href="#montreal" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Montreal
+                  </a>
+                  <a href="#halifax" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Halifax
+                  </a>
+                  <a href="#calgary" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Calgary
+                  </a>
+                  <a href="#foundland" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    New Foundland
+                  </a>
+                  <a href="#ottawa" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Ottawa
+                  </a>
+                  <a href="#kingston" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Kingston
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header border-bottom mb-3 d-flex d-md-none">
+                <ul class="nav nav-tabs card-header-tabs nav-gap-x-1" role="tablist">
+                  <li class="nav-item">
+                   <a href="#barrie" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
+                    Barrie
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#toronto" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Toronto
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#vancouver" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Vancouver
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#whistler" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Whistler
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#victoria" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Victoria
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                    <a href="#yellow" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Yellowknife
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#montreal" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Montreal
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#halifax" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Halifax
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                    <a href="#calgary" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Calgary
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                   <a href="#foundland" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    New Foundland
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#ottawa" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Ottawa
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#kingston" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Kingston
+                  </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+
+               <!-- Barrie -->
+                <div class="tab-pane active" id="barrie">
+                  <!-- Page Heading -->
+      <h1 class="my-4">Local Taxi in Barrie
+      </h1>
+
+      <!-- Barrie Taxi service -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="https://www.google.com/maps/dir/44.3983118,-79.7089724/Barrie+Taxi,+37+Saunders+Rd,+Barrie,+ON+L4N+9A7/@44.3609579,-79.7208138,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882abc389940f19d:0x537bd2ace8dafc6f!2m2!1d-79.6788946!2d44.3269279" target="_blank">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/barrie-1.png" alt="Barrie Taxi service">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Barrie Taxi service</h3>
+          <!-- <p>Enterprise Rent-A-Car’s primary focus is the local rental car market, specializing in car rentals to consumers who need a replacement car as the result of an accident, mechanical repair, theft, or who require a vehicle for a special occasion such as a short business or leisure trip.</p> -->
+          <p>
+            <strong>Address:</strong>17 Gowan St Unit 6, Barrie, ON L4N 2N9<br>
+            <strong>Phone:</strong> (705) 888-8888<br>
+            <strong>Province:</strong> Ontario<br>
+          </p>
+          <a class="btn btn-primary" href="https://www.barrietaxi.com/" target="_blank">View Website</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- PAlliance Taxi Barrie -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="http://www.alliancetaxi.ca/" target="_blank">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/barrie-2.png" alt="Alliance Taxi Barrie">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Alliance Taxi Barrie</h3>
+          <p><strong>Address:</strong> 425 Dunlop St W, Barrie, ON L4N 1C3<br>
+          <strong>Phone:</strong> (705) 794-1111<br>
+          <strong>Province:</strong> Ontario<br></p>
+          <a class="btn btn-primary" href="http://www.alliancetaxi.ca/" target="_blank">View Website</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Barrie Yellow Taxi -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="https://www.google.com/maps/dir/44.3983118,-79.7089724/Barrie+Taxi/@44.4009206,-79.7183321,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882aa49fe2bc3749:0x99a83c55fd118af3!2m2!1d-79.650149!2d44.3999863" target="_blank">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/barrie-3.png" alt="Barrie Yellow Taxi">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Barrie Yellow Taxi</h3>
+          <p><strong>Address:</strong> 444 Blake St, Barrie, ON L4M 1L3<br>
+
+          <strong>Phone:</strong> (705) 733-8888<br>
+          <strong>Province:</strong> Ontario<br></p>
+          <a class="btn btn-primary" href="https://www.barrieyellowtaxi.com/" target="_blank">View Website</a>
+        </div>
+      </div>
+
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Deluxe Taxi -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <a href="https://www.google.com/maps/place/Deluxe+Taxi/@44.3914299,-79.6921742,15z/data=!4m5!3m4!1s0x0:0x19abb075a384dedf!8m2!3d44.3914299!4d-79.6921742" target="_blank">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/barrie-4.png" alt="Deluxe Taxi">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Deluxe Taxi</h3>
+          <p><strong>Address:</strong> 98 Bayfield St, Barrie, ON L4M 3A8<br>
+          <strong>Phone:</strong> (705) 728-4444<br>
+          <strong>Province:</strong> Ontario<br></p>
+          <a class="btn btn-primary" href="https://www.deluxtaxi.ca/" target="_blank">View Website</a>
+        </div>
+      </div>
+      <!-- /.row -->
+                </div>
+
+                <!-- Toronto -->
+
+                <div class="tab-pane" id="toronto">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In Toronto
+
+            </h1>
+
+            <!-- Beck Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Beck+Taxi/@43.7251604,-79.3173126,15z/data=!4m5!3m4!1s0x0:0x134b284ded8e60fa!8m2!3d43.7251604!4d-79.3173126" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/toronto-1.png" alt="Beck Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Beck Taxi</h3>
+                <p><strong>Address:</strong> 1 Credit Union Dr, North York, ON M4A 2S6<br>
+                <strong>Phone:</strong> (416) 751-5555<br>
+                <strong>Province:</strong> Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.becktaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- City Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/City+Taxi/@43.7362754,-79.6040126,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3aff64f1affd:0xf7a5a848813f52b2!8m2!3d43.7362754!4d-79.6018239" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/toronto-2.png" alt="City Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>City Taxi</h3>
+                <p><strong>Address:</strong> 130 Westmore Dr, Ste. 219, Toronto, ON M9V 5E2<br>
+                <strong>Phone:</strong>(416) 740-2222<br>
+                <strong>Province:</strong> Ontario<br></p>
+                <a class="btn btn-primary" href="https://citytaxitoronto.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Crown Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Crown+Taxi/@43.7437892,-79.5387877,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4cc18a4ace599:0xe37b0805212dbe2e!8m2!3d43.7437892!4d-79.536599?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/toronto-3.png" alt="Crown Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Crown Taxi</h3>
+                <p><strong>Address:</strong> 130 Rivalda Rd, North York, ON M9M 2M8<br>
+                <strong>Phone:</strong> (416) 240-0000<br>
+                <strong>Province:</strong> Ontario</p>
+                <a class="btn btn-primary" href="https://crowntaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- GTA Airport Taxi -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/search/toronto+gta+airport+taxi/@43.6940246,-79.676289,12z?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/toronto-4.png" alt="GTA Airport Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>GTA Airport Taxi</h3>
+                <p><strong>Address:</strong> 44 Fasken Dr #1F, Etobicoke, ON M9W 5M8<br>
+                <strong>Phone:</strong>(416) 845-5005<br>
+                <strong>Province:</strong> Ontario</p>
+                <a class="btn btn-primary" href="https://www.gtaairporttaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+                </div>
+
+
+                <!-- Vancouver -->
+
+                <div class="tab-pane" id="vancouver">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In Vancouver
+
+            </h1>
+
+            <!-- Yellow Cab -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Yellow+Cab/@49.2720968,-123.0800682,17z/data=!3m1!4b1!4m5!3m4!1s0x5486714109c4f0e7:0xd53922631d96bea3!8m2!3d49.2720968!4d-123.0778795?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/van-1.png" alt="Yellow Cab">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Yellow Cab</h3>
+                <p><strong>Address:</strong>1441 Clark Dr, Vancouver, BC V5L 3K9<br>
+
+                <strong>Phone:</strong> (604) 681-1111<br>
+
+                <strong>Province:</strong> British Columbia</p>
+                <a class="btn btn-primary" href="http://www.yellowcabonline.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Vancouver Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/dir//Vancouver+Taxi,+790+Clark+Dr,+Vancouver,+BC+V5L+3J2/@49.2778554,-123.146913,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x548671673263e8f7:0x975e6f57e86e56b2!2m2!1d-123.0768727!2d49.2778766!3e0?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/van-2.png" alt="Vancouver Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Vancouver Taxi</h3>
+                <p><strong>Address:</strong>790 Clark Dr, Vancouver, BC V5L 3J2<br>
+
+                <strong>Phone:</strong>(604) 871-1111<br>
+                <strong>Province:</strong> British Columbia</p>
+                <a class="btn btn-primary" href="http://www.vancouvertaxi.cab/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Black Top & Checker Cabs-->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Black+Top+%26+Checker+Cabs/@49.2753576,-123.1316073,17z/data=!3m1!4b1!4m5!3m4!1s0x548673d3c9aa488b:0xf207d7f1e858b38f!8m2!3d49.2753576!4d-123.1294186?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/van-3.png" alt="Black Top & Checker Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Black Top & Checker Cabs</h3>
+                <p><strong>Address:</strong>777 Pacific St, Vancouver, BC V6Z 2R7<br>
+                <strong>Phone:</strong>(604) 731-1111<br>
+                <strong>Province:</strong> British Columbia</p>
+                <a class="btn btn-primary" href="https://btccabs.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- North Shore Taxi-->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/North+Shore+Taxi/@49.319906,-123.1097338,17z/data=!3m1!4b1!4m5!3m4!1s0x548671ce48b312f9:0x13a92f5e6db08659!8m2!3d49.319906!4d-123.1075451?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/van-4.png" alt="North Shore Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>North Shore Taxi</h3>
+                <p><strong>Address:</strong> 264 Pemberton Ave, North Vancouver, BC V7P 2R5<br>
+                <strong>Phone:</strong>(604) 922-2222<br>
+                <strong>Province:</strong> British Columbia</p>
+                <a class="btn btn-primary" href="https://www.northshoretaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Victoria, B.C. -->
+
+                <div class="tab-pane" id="victoria">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In Victoria
+
+            </h1>
+
+            <!-- Victoria Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/dir//Victoria+Taxi,+3045+Douglas+St+%23101,+Victoria,+BC+V8T+4N2/@48.4438056,-123.3750148,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x548f737883d00761:0xdf7bf83368eee644!2m2!1d-123.3698573!2d48.4442304!3e0?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/victoria-1.png" alt="Victoria Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Victoria Taxi</h3>
+                <p><strong>Address:</strong> 3045 Douglas St #101, Victoria, BC V8T 4N2<br>
+                <strong>Phone:</strong>(250) 383-7111<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="https://victoriataxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Yellow Cab of Victoria -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Yellow+Cab+of+Victoria/@48.4290075,-123.3631449,17z/data=!3m1!4b1!4m5!3m4!1s0x548f7484282d9871:0x3823cc366ff8cdfa!8m2!3d48.4290075!4d-123.3609562?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/victoria-2.png" alt="Yellow Cab of Victoria">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Yellow Cab of Victoria</h3>
+                <p><strong>Address:</strong>  817 Fisgard St, Victoria, BC V8W 1R9<br>
+
+                <strong>Phone:</strong> (250) 381-2222<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="http://www.yellowcabvictoria.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Bluebird Cabs Ltd. -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps?q=bluebird+cabs+ltd.+victoria+bc&source=lmns&bih=625&biw=1366&hl=en&sa=X&ved=2ahUKEwizzpL7hrntAhWI6KwKHTNcC6QQ_AUoAXoECAEQAQ" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/victoria-3.png" alt="Bluebird Cabs Ltd.">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Bluebird Cabs Ltd.</h3>
+                <p><strong>Address:</strong> 2612 Quadra St Suite 2Fl, Victoria, BC V8T 4E4<br>
+
+                <strong>Phone:</strong>(250) 382-2222<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="https://www.taxicab.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Esquimalt Saanich Taxi -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps?q=esquimalt+saanich+taxi&source=lmns&bih=568&biw=1366&hl=en&sa=X&ved=2ahUKEwj3mN-LiLntAhVE66wKHSamCiEQ_AUoAXoECAEQAQ" target="_blank"> 
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/victoria-4.png" alt="Esquimalt Saanich Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Esquimalt Saanich Taxi</h3>
+                <p><strong>Address:</strong>817 Fisgard St, Victoria, BC V8W 1R9<br>
+                <strong>Phone:</strong>(250) 386-7766<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="http://www.esquimalttaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- YellowKnife -->
+                <div class="tab-pane" id="yellow">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In YellowKnife
+
+            </h1>
+
+            <!-- Yellowknife Cab-->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/search/Yellowknife+Cab/@62.4340435,-114.4139723,15z" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/yellow-1.png" alt="Yellowknife Cab">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Yellowknife Cab</h3>
+                <p><strong>Address:</strong>  3 Coronation Dr #3A, Yellowknife, NT X1A 0G5<br>
+
+                <strong>Phone:</strong>(867) 873-6666<br>
+                </p>
+
+                <a class="btn btn-primary" href="https://yellowknifecabs.wixsite.com/website" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Aurora Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Aurora+Taxi/@62.4493998,-114.4083526,17z/data=!3m1!4b1!4m5!3m4!1s0x53d1f1331f8d0d51:0x6ab7313973646f71!8m2!3d62.4493998!4d-114.4061639?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/yellow-2.png" alt="Aurora Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Aurora Taxi</h3>
+                <p><strong>Address:</strong> 349 Old Airport Rd, Yellowknife, NT X1A 2X8<br>
+
+                <strong>Phone:</strong>(867) 873-5050<br>
+                </p>
+                <a class="btn btn-primary" href="https://www.hertz.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Ahmic Air-->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Ahmic+Air/@62.4665664,-114.3522226,17z/data=!3m1!4b1!4m5!3m4!1s0x53d1f6ec4cdd4897:0x4d93a75d738afe0!8m2!3d62.4665664!4d-114.3500339?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/yellow-3.png" alt="Ahmic Air">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Ahmic Air</h3>
+                <p><strong>Address:</strong> 3514 Wiley Rd, Yellowknife, NT X1A 2L6<br>
+
+                <strong>Phone:</strong>(867) 920-4400<br>
+                </p>
+                <a class="btn btn-primary" href="http://www.ahmicair.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- City Cab Ltd. -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/City+Cab+Ltd./@62.4457507,-114.4115949,17z/data=!3m1!4b1!4m5!3m4!1s0x53d1f6c4ff2cb7a5:0x7736586bb2fd62e!8m2!3d62.4457507!4d-114.4094062?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/yellow-4.png" alt="City Cab Ltd.">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>City Cab Ltd.</h3>
+                <p><strong>Address:</strong>  483 Range Lake Rd, Yellowknife, NT X1A 2N5<br>
+
+                <strong>Phone:</strong>(867) 873-4444<br>
+                </p>
+                <a class="btn btn-primary" href="https://ykcitycab.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Whistler, B.C. -->
+                <div class="tab-pane" id="whistler">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In Whistler
+
+            </h1>
+
+            <!-- Blackcomb Taxi Ltd-->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/search/blackcomb+taxi+ltd+whistler+bc/@50.0887816,-123.0402549,17z?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/whistler-1.png" alt="Blackcomb Taxi Ltd">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Blackcomb Taxi Ltd</h3>
+                <p><strong>Address:</strong> 27-1212 Alpha Lake Rd, Whistler, BC V0N 1B0<br>
+
+                <strong>Phone:</strong>(604) 262-3895<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="http://www.whistlertaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Whistler Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/search/whistler+taxi/@50.0882033,-123.0418857,17z/data=!3m1!4b1?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/whistler-2.png" alt="Whistler Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Whistler Taxi</h3>
+                <p><strong>Address:</strong>  1080 Millar Creek Rd, Whistler, BC V0N 1B1<br>
+
+                <strong>Phone:</strong>(604) 932-3333<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="http://www.whistlertaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Whistle Ride -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Whistle+Ride/@49.1516872,-125.9033469,17z/data=!3m1!4b1!4m5!3m4!1s0x54873d287ffcdba7:0xe1337d38e84fed34!8m2!3d49.1516872!4d-125.9011582?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/whistler-3.png" alt="Whistle Ride">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Whistle Ride</h3>
+                <p><strong>Address:</strong>  8056 Nesters Rd #3, Whistler, BC V8E 0G4<br>
+
+                <strong>Phone:</strong>+1 833-847-9447<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="http://www.vipwhistler.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Whistler Resort Cabs -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Whistler+Resort+Cabs/@50.0946644,-122.9932264,17z/data=!3m1!4b1!4m5!3m4!1s0x548722d1aaaaaaab:0xe4b0ef9de4075af1!8m2!3d50.0946644!4d-122.9910377?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/whistler-4.png" alt="Whistler Resort Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Whistler Resort Cabs</h3>
+                <p><strong>Address:</strong> 2029 London Ln, Whistler, BC V0N 1B2<br>
+
+                <strong>Phone:</strong> (604) 938-1515<br>
+                <strong>Province:</strong> Creekside Village, British Columbia<br></p>
+                <a class="btn btn-primary" href="https://www.whistle.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Montreal-->
+                <div class="tab-pane" id="montreal">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In Montreal
+
+            </h1>
+
+            <!-- Atlas Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Atlas+Taxi/@45.467902,-73.6172917,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc910b73e107d65:0x7f8ed41b4fca393a!8m2!3d45.467902!4d-73.615103?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/montreal-1.png" alt="Atlas Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Atlas Taxi</h3>
+                <p><strong>Address:</strong> 2194 Regent Ave, Montreal, Quebec H4A 2R1<br>
+
+                <strong>Phone:</strong>(514) 485-8585<br>
+                <strong>Province:</strong> Quebec<br></p>
+                <a class="btn btn-primary" href="http://atlastaxi.qc.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Taxi Champlain -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Taxi+Champlain/@45.533755,-73.5977497,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9196418dba7b9:0xe1c6c69d4ce05930!8m2!3d45.533755!4d-73.595561?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/montreal-2.png" alt="Taxi Champlain">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Taxi Champlain</h3>
+                <p><strong>Address:</strong> 5775 St Andre St, Montreal, Quebec H2S 2K2<br>
+
+                <strong>Phone:</strong>(514) 271-1111<br>
+                <strong>Province:</strong> Quebec<br></p>
+                <a class="btn btn-primary" href="https://taxichamplain.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Taxi Coop de l'Est -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Taxi+Coop+de+l'Est/@45.594741,-73.5580357,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc91e7ee85cb48f:0xf376abd8a781fc31!8m2!3d45.594741!4d-73.555847?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/montreal-3.png" alt="Taxi Coop de l'Est">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Taxi Coop de l'Est</h3>
+                <p><strong>Address:</strong>6610 Boulevard des Galeries d'Anjou #203, Anjou, Quebec H1M 2T4<br>
+
+                <strong>Phone:</strong>(514) 352-6000<br>
+                <strong>Province:</strong> Quebec<br></p>
+                <a class="btn btn-primary" href="https://www.taxicoopdelest.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Taxi Hochelaga Inc -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Taxi+Hochelaga+Inc/@45.5417913,-73.5642636,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc91e7e1993d043:0x530ac73ef9f5d903!8m2!3d45.5417913!4d-73.5620749?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/montreal-4.png" alt="Taxi Hochelaga Inc">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Taxi Hochelaga Inc</h3>
+                <p><strong>Address:</strong> 2901 Rue Rachel E bureau 20, Montreal, Quebec H1W 4A4<br>
+
+                <strong>Phone:</strong>(514) 322-2121<br>
+                <strong>Province:</strong> Quebec<br></p>
+                <a class="btn btn-primary" href="https://taxihochelaga.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Halifax-->
+                <div class="tab-pane" id="halifax">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In Halifax
+
+            </h1>
+
+            <!-- Yellow Cab -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/search/yellow+cab+halifax/@44.663907,-63.6385154,14z/data=!3m1!4b1?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/halifax-1.png" alt="Yellow Cab">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Yellow Cab</h3>
+                <p><strong>Address:</strong> 65 Main Ave, Halifax, NS B3M 1A4<br>
+
+                <strong>Phone:</strong>(902) 420-0000<br>
+                <strong>Province:</strong> Nova Scotia<br></p>
+                <a class="btn btn-primary" href="http://www.yellowcabltd.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Casino Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Casino+Taxi/@44.6680818,-63.6098597,17z/data=!3m1!4b1!4m5!3m4!1s0x4b5a216d9046ab57:0xef10106a8182c4fb!8m2!3d44.6680818!4d-63.607671?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/halifax-2.png" alt="Casino Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Casino Taxi</h3>
+                <p><strong>Address:</strong>  3558 Novalea Dr, Halifax, NS B3K 3E8<br>
+
+                <strong>Phone:</strong>(902) 429-6666<br>
+                <strong>Province:</strong> Nova Scotia<br></p>
+                <a class="btn btn-primary" href="https://www.casinotaxi.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Bob's Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Bob's+Taxi/@44.6760389,-63.5893646,17z/data=!3m1!4b1!4m5!3m4!1s0x4b5a21444856bb2d:0x14d99ace3743bc81!8m2!3d44.6760389!4d-63.5871759?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/halifax-3.png" alt="Bob's Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Bob's Taxi</h3>
+                <p><strong>Address:</strong>269 Wyse Rd, Dartmouth, NS B3A 1N5<br>
+
+                <strong>Phone:</strong>(902) 463-2222<br>
+                <strong>Province:</strong> Nova Scotia<br></p>
+                <a class="btn btn-primary" href="https://bobstaxi.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Halifax Airport Taxi -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/search/halifax+airport+taxi/@44.6649099,-63.5297129,15z?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/halifax-4.png" alt="Halifax Airport Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Halifax Airport Taxi</h3>
+                <p><strong>Address:</strong>2001 Brunswick St Unit# 1004, Halifax, NS B3J 3J7<br>
+
+                <strong>Phone:</strong>(902) 225-8882<br>
+                <strong>Province:</strong> Nova Scotia<br></p>
+                <a class="btn btn-primary" href="https://www.halifaxairporttaxi.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Calgary-->
+                <div class="tab-pane" id="calgary">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In Calgary
+
+            </h1>
+
+            <!-- Checker Cabs -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Checker+Cabs/@51.050741,-114.0030257,17z/data=!3m1!4b1!4m5!3m4!1s0x53717ad1982ef447:0xe76c75f058de571!8m2!3d51.050741!4d-114.000837?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/calgary-1.png" alt="Checker Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Checker Cabs</h3>
+                <p><strong>Address:</strong>316 Meridian Rd SE, Calgary, AB T2A 1X2<br>
+
+                <strong>Phone:</strong>(403) 299-9999<br>
+                <strong>Province:</strong> Alberta<br></p>
+                <a class="btn btn-primary" href="https://www.thecheckergroup.com/cabs/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Calgary United Cabs -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Calgary+United+Cabs+(Calgary+Cabs)/@51.104068,-114.0461157,15z/data=!4m5!3m4!1s0x537165ad6573e805:0xacade10848bc5769!8m2!3d51.104068!4d-114.037361?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/calgary-2.png" alt="Calgary United Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Calgary United Cabs (Calgary Cabs)</h3>
+                <p><strong>Address:</strong>5660 10 St NE Unit 8, Calgary, AB T2E 8W7<br>
+
+                <strong>Phone:</strong>(403) 777-1111<br>
+                <strong>Province:</strong> Alberta<br></p>
+                <a class="btn btn-primary" href="https://calgarycabs.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Associated Cabs -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Associated+Cabs/@51.0898322,-114.0592358,17z/data=!3m1!4b1!4m5!3m4!1s0x537165a000a0320d:0x1e297532e630b4!8m2!3d51.0898322!4d-114.0570471?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/calgary-3.png" alt="Associated Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Associated Cabs</h3>
+                <p><strong>Address:</strong>307 41 Ave NE, Calgary, AB T2E 2N4<br>
+
+                <strong>Phone:</strong>(403) 299-1111<br>
+                <strong>Province:</strong> Alberta<br></p>
+                <a class="btn btn-primary" href="https://www.associatedcab.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Calgary City Cabs -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Calgary+City+Cabs/@51.098762,-113.9663478,17z/data=!3m1!4b1!4m5!3m4!1s0x5371649cd25d4a21:0xae0838191f809502!8m2!3d51.098762!4d-113.9641591?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/calgary-4.png" alt="Calgary City Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Calgary City Cabs</h3>
+                <p><strong>Address:</strong> 4852 50 Ave NE, Calgary, AB T3J 4L8<br>
+                <strong>Phone:</strong>(403) 605-9999<br>
+                <strong>Province:</strong> Alberta<br></p>
+                <a class="btn btn-primary" href="https://thecalgarycitycabs.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- New Foundland-->
+                <div class="tab-pane" id="foundland">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In New Foundland
+
+            </h1>
+
+            <!-- Red & Yellow Cabs -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Red+%26+Yellow+Cabs/@47.5838432,-52.7084602,17z/data=!3m1!4b1!4m5!3m4!1s0x4b0ca3e5af71f491:0x7c1caa42257a61d7!8m2!3d47.5838432!4d-52.7062715?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/new-1.png" alt="Red & Yellow Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Red & Yellow Cabs</h3>
+                <p><strong>Address:</strong> 44 Torbay Rd Suite 130, St. John's, NL A1A 2G4<br>
+
+                <strong>Phone:</strong>(709) 726-6666<br>
+                <strong>Province:</strong>Newfoundland and Labrador<br></p>
+                <a class="btn btn-primary" href="http://redandyellowcabs.com/taxi-cab-booking/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Jiffy Cabs -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Jiffy+Cabs/@47.5578036,-52.7361464,17z/data=!3m1!4b1!4m5!3m4!1s0x4b0ca3755e70e325:0x4527855903d05b84!8m2!3d47.5578036!4d-52.7339577?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/new-2.png" alt="Jiffy Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Jiffy Cabs</h3>
+                <p><strong>Address:</strong> 322 Pennywell Rd, St. John's, NL A1C 6E6<br>
+
+                <strong>Phone:</strong>(709) 722-2222<br>
+                <strong>Province:</strong>Newfoundland and Labrador<br></p>
+                <a class="btn btn-primary" href="http://www.jiffycabs.net/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Goulds Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Goulds+Taxi/@47.4337252,-52.7965054,14z/data=!4m5!3m4!1s0x4b0c95fc9c49b1bd:0x8711c392bedfba41!8m2!3d47.4337252!4d-52.7789959?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/new-3.png" alt="Goulds Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Goulds Taxi</h3>
+                <p><strong>Address:</strong>109 Howletts Line, Goulds, NL A1S 1M6<br>
+
+                <strong>Phone:</strong> (709) 747-7800<br>
+                <strong>Province:</strong>Newfoundland and Labrador<br></p>
+                <a class="btn btn-primary" href="https://www.thrifty.com/loc/ll/ca/nf/st-johns-nf/100-world-parkway/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Newfound Cabs -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Newfound+Cabs/@47.564583,-52.7640676,17z/data=!3m1!4b1!4m5!3m4!1s0x4b0ca375608711a9:0xe3023b81de679f2!8m2!3d47.564583!4d-52.7618789?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/new-4.png" alt="Newfound Cabs">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Newfound Cabs</h3>
+                <p><strong>Address:</strong>88 Thorburn Rd, St. John's, NL A1B 3M3<br>
+
+                <strong>Phone:</strong>(709) 744-4444<br>
+                <strong>Province:</strong>Newfoundland and Labrador<br></p>
+                <a class="btn btn-primary" href="https://www.newfoundcabs.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+
+                <!-- Ottawa-->
+                <div class="tab-pane" id="ottawa">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi In Ottawa
+
+            </h1>
+
+            <!-- Capital Taxi Ottawa -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Capital+Taxi+Ottawa/@45.4548447,-75.6857568,11z/data=!4m5!3m4!1s0x4cce051536a9896b:0x11e88101e1f24ec4!8m2!3d45.460328!4d-75.5452235" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/ottawa-1.png" alt="Capital Taxi Ottawa">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Capital Taxi Ottawa</h3>
+                <p>
+                <strong>Phone:</strong>(613) 744-3333<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="http://capitaltaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Blue Line Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Blue+Line+Taxi/@45.4221215,-75.6479135,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce057debff0695:0x7a8898172102eeaa!8m2!3d45.4221215!4d-75.6457248?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/ottawa-2.png" alt="Blue Line Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Blue Line Taxi</h3>
+                <p><strong>Address:</strong>455 Coventry Rd, Ottawa, ON K1K 2C5<br>
+
+                <strong>Phone:</strong> (613) 238-1111<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="http://www.bluelinetaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- City Cab Ottawa -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/City+Cab+Ottawa/@45.2429385,-76.6662892,8z/data=!3m1!4b1!4m5!3m4!1s0x4cce07be8adc37ad:0x61e6311006fba628!8m2!3d45.2484224!4d-75.5452235?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/ottawa-3.png" alt="City Cab Ottawa">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>City Cab Ottawa</h3>
+                <p>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="https://citycabottawa.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- West-Way Taxi -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/West-Way+Taxi/@45.332242,-75.7232859,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce07be5f765879:0x4673e37cae469cef!8m2!3d45.332242!4d-75.7210972?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/ottawa-4.png" alt="West-Way Taxii">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>West-Way Taxi</h3>
+                <p><strong>Address:</strong>11 Bentley Ave, Nepean, ON K2E 6T7<br>
+
+                <strong>Phone:</strong>  (613) 727-0101<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="http://www.bluelinetaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Kingston-->
+                <div class="tab-pane" id="kingston">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Local Taxi in Kingston
+            </h1>
+
+            <!-- Modern City Taxi -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Modern+City+Taxi/@44.2437424,-76.4896971,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2acffed82eadb:0xe991dba8cf990f4d!8m2!3d44.2437424!4d-76.4875084?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/king-1.png" alt="Modern City Taxi">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Modern City Taxi</h3>
+                <p><strong>Address:</strong>439 Montreal St, Kingston, ON K7K 3H4<br>
+
+                <strong>Phone:</strong>(613) 546-2222<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="http://moderncitytaxi.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Amey's Greenwood Taxi Ltd -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Amey's+Greenwood+Taxi+Ltd/@44.2535027,-76.4981131,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2ab6bacad0607:0xc9bc06f11fe338c6!8m2!3d44.2535027!4d-76.4959244?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/king-2.png" alt="Amey's Greenwood Taxi Ltd">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Amey's Greenwood Taxi Ltd</h3>
+                <p><strong>Address:</strong>795 Division St, Kingston, ON K7K 4C2<br>
+
+                <strong>Phone:</strong> (613) 546-1111<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="http://www.ameystaxi.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Kingston Area Taxi Commission-->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/Kingston+Area+Taxi+Commission/@44.2652314,-76.4992873,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2abe70523df79:0x526da6f1353345a8!8m2!3d44.2652314!4d-76.4970986?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/king-3.png" alt="Kingston Area Taxi Commission">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Kingston Area Taxi Commission</h3>
+                <p><strong>Address:</strong> 1201 Division St Unit 12, Kingston, ON K7K 6X4<br>
+
+                <strong>Phone:</strong>(613) 547-3763<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="http://www.katc.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- McCoy Bus Service -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="https://www.google.com/maps/place/McCoy+Bus+Service/@44.2682136,-76.5670077,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2ac3310363c35:0x34cd422ca23d13f!8m2!3d44.2682136!4d-76.564819?hl=en" target="_blank">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="images/king-4.png" alt="McCoy Bus Service">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>McCoy Bus Service</h3>
+                <p><strong>Address:</strong>566 Cataraqui Woods Dr, Kingston, ON K7P 2Y5<br>
+
+                <strong>Phone:</strong>(613) 507-5566<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="http://gomccoy.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../../places/places.html">Places</a></li>
+                <li><a href="../../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../../activities/adventure.html">Activities</a></li>
+                <li><a href="../../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../../sitemap.html">Site Map</a></li>
+                <li><a href="../../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+  </body>
+  </html>
