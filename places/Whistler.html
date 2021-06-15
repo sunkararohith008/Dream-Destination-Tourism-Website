@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to Places Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/try.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <!-- <link rel=" stylesheet" href="CSS/gallery.css" type="text/css" /> -->
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../CSS/footer.css" type="text/css" />
+  <!-- Link to toggle navbar css stylesheet -->
+  <link rel="stylesheet" href="../CSS/toggle.css" type="text/css" />
+
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for autoplay -->
+  <style>
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%
+}
+
+#custCarousel .carousel-indicators {
+  position: static;
+  margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+  width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+  display: block;
+  opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+  opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+  opacity: 0.75
+}
+
+.carousel-item img {
+  width: 100%
+}
+  </style>
+<script>
+  $(document).ready(function(){
+
+  $('.items').slick({
+  dots: true,
+  infinite: true,
+  speed: 800,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+  {
+  breakpoint: 1024,
+  settings: {
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  infinite: true,
+  dots: true
+  }
+  },
+  {
+  breakpoint: 600,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 2
+  }
+  },
+  {
+  breakpoint: 480,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1
+  }
+  }
+
+  ]
+  });
+  });
+</script>
+</head>
+<body>
+   <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../about.html">About Us</a> | <a href="../sitemap.html">Site Map</a> | <a href="../privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item active">
+    <a class="nav-link px-3" href="../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+<!-- For weather from weatherwidget.ca -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/50d12n122d96/whistler/" data-label_1="WHISTLER" data-label_2="WEATHER" data-theme="original" >WHISTLER WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<!-- weather ends here -->
+
+
+<!-- For Toronto Content -->
+<!-- <div class = "toronto-content"> -->
+<div class="jumbotron-fluid">
+<div class="container">
+<h1 style="text-align: center; margin-bottom:5px"> Whistler - An Outdoor Adventurer's Heaven</h1>
+<p id="city-content"> Whistler is a town north of Vancouver, British Columbia, that's home to Whistler Blackcomb, one of the largest ski resorts in North America. With soaring peaks, icy plains, dense forests, and British Columbia's finest ski slopes, Whistler is an outdoor adventurer's heaven. Besides skiing and snowboarding, the area offers snowshoeing, tobogganing, snowmobile safaris, mountain bike tracks, ATV experiences and ski jumping at the Olympic Park. </p>
+</div>
+</div>
+
+<!-- <img src="try-1.gif" alt="gif">
+<img src="try-2.gif" alt="gif"> -->
+
+
+<!-- Gif for Travelling -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://thumbs.gfycat.com/WearyGargantuanCornsnake-size_restricted.gif" -->
+          <img class= "img-fluid" src="try-1.gif" id="gif">
+        </div>
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://theneverendingpursuitofawesome.files.wordpress.com/2016/03/hello-talent-logo.png" -->
+          <img class= "img-fluid" src="try-2.gif" id="gif">
+    </div>
+</div>
+</div>
+<!-- Gif ends here -->
+
+<!--  -->
+
+<!-- <div class="row">
+  <div class="column">
+      <img src="try-1.gif" alt="gif">
+  </div>
+  <div class="column">
+      <img src="try-2.gif" alt="gif">
+  </div>
+</div> -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+              <!-- slides -->
+              <div class="carousel-inner pics-main">
+                  <!-- copyright="&copy; https://kucukdunya.com/wp-content/uploads/2020/06/Whistler_Blackcomb.jpg -->
+                <div class="carousel-item active"> <img src="attraction-pic/whistler-blackcomb.jpg" alt="Whistler"> </div>
+                <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/a/a0/Brandywine_Falls%2C_BC.jpg -->
+                <div class="carousel-item"> <img src="attraction-pic/whistler-brandywine.jpg" alt="Whistler"> </div>
+                <!-- copyright="&copy; anonymous -->
+                <div class="carousel-item"> <img src="attraction-pic/whistler-cheakamus.jpg" alt="Whistler"> </div>
+                <!-- copyright="&copy; https://www.pesachonthemountain.com/wp-content/uploads/2013/10/slcc.png -->
+                <div class="carousel-item"> <img src="attraction-pic/whistler-squamish.jpg" alt="Whistler"> </div>
+                <!-- copyright="&copy; https://images.wallpapersden.com/image/wxl-lake-rocks-mountains_16164.jpg -->
+                <div class="carousel-item"> <img src="attraction-pic/whistler-callaghan.jpg" alt="Whistler"> </div>
+                <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ski_jumping_hills%2C_Whistler_2.jpg/200px-Ski_jumping_hills%2C_Whistler_2.jpg -->
+                <div class="carousel-item"> <img src="attraction-pic/whistler-olympic.jpg" alt="Whistler"> </div>
+                <!-- copyright="&copy; https://vancity-tours.com/wp-content/uploads/2018/02/Britannia_Mines_Museum-1024x683.jpg -->
+                <div class="carousel-item"> <img src="attraction-pic/whistler-mine.jpg" alt="Whistler"> </div>
+              </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                <ol class="carousel-indicators list-inline">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="attraction-pic/whistler-blackcomb.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="attraction-pic/whistler-bike.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="attraction-pic/whistler-peak.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="attraction-pic/whistler-brandywine.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="4" data-target="#custCarousel"> <img src="attraction-pic/whistler-cheakamus.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="5" data-target="#custCarousel"> <img src="attraction-pic/whistler-green.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="6" data-target="#custCarousel"> <img src="attraction-pic/whistler-olympic.jpg" class="img-fluid"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card -->
+  <h1 style="text-align: center; margin-top: 10px;">Top Most Attractions to visit in Whistler</h1>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<div class="items">
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-brandywine.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/a/a0/Brandywine_Falls%2C_BC.jpg -->
+          <h5 class="card-title">Brandywine Falls</h5>
+          <p class="card-text">Brandywine Falls is a perfect stop for those traveling through the Squamish, Whistler area looking for a short walk to a spectacular falls. Streaming a sheer 230 feet (70 meters) from a rock ledge, dramatic Brandywine Falls is a sight in any season. Lucky for visitors, a short trail and viewing platform make getting to the falls a breeze, and the they aren’t the only reason to visit this provincial park, which is home to jewel-like lakes, lush forests, and rare frogs.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-blackcomb.jpg"> </div>
+      <div class="card-body">
+          <!-- copyright="&copy; https://kucukdunya.com/wp-content/uploads/2020/06/Whistler_Blackcomb.jpg -->
+          <h5 class="card-title">Whistler-Blackcomb Mountains</h5>
+          <p class="card-text">It is the location of the Whistler-Blackcomb ski resort and the town of Whistler, British Columbia.The biggest ski resort in North America and mountain host of the 2010 Winter Olympics, Whistler-Blackcomb Mountains feature 8,171 acres (3,306 hectares) of terrain and over 200 trails. With lift-accessed mountain biking, hiking, and more in the spring, summer, and fall, Whistler-Blackcomb is a world-class resort year-round.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-cheakamus.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; anonymous -->
+          <h5 class="card-title">Cheakamus River</h5>
+          <p class="card-text">The Cheakamus River flows roughly parallel to the Sea-to-Sky Highway between Whistler and Vancouver. Much of the river flows through Cheakamus Canyon, where plenty of exciting whitewater rapids and one sizeable waterfall make the river a popular rafting and kayaking route. None of the rapids are too challenging, so the trip is considered suitable for kids and parents alike. The river is also a favorite spot for local fisherman</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-squamish.jpg"> </div>
+      <div class="card-body">
+          <!-- copyright="&copy; https://www.pesachonthemountain.com/wp-content/uploads/2013/10/slcc.png -->
+          <h5 class="card-title">Squamish Lil'wat Cultural Center (SLCC)</h5>
+          <p class="card-text">Toronto zoo has an outstanding and diverse collection, with approximately 5,000 animals. Some of the favorites include pygmy hippos, lions, tigers, giraffes, penguins, orangutans, and many more. The zoo is divided into several sections, each representing a major region of the globe.Zoo include the Gorilla Rainforest; the Tundra Trek, featuring polar bears.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-bike.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://images.wallpapersden.com/image/wxl-lake-rocks-mountains_16164.jpg -->
+          <h5 class="card-title">Whistler Mountain Bike Park</h5>
+          <p class="card-text">Considered by many to be the best mountain bike park in the world, Whistler Mountain Bike Park features over 60 trails covering 124 miles (200 kilometers) and nearly 5,000 feet (1,524 meters) of lift-serviced vertical. With four separate zones and five skills centers, there’s something for mountain bike riders of every ability level.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-green.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://vancity-tours.com/wp-content/uploads/2018/02/Britannia_Mines_Museum-1024x683.jpg -->
+          <h5 class="card-title">Green Lake</h5>
+          <p class="card-text">Just north of Whistler Village, Green Lake—named for its vibrant emerald hue—is a popular recreation area for activities such as canoeing, kayaking, and paddleboarding. The glacier-fed lake, surrounded by mountains, makes for a great picnic spot too. It’s also a landing zone for seaplanes, which connect Whistler to Vancouver and Victoria.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-callaghan.jpg"> </div>
+      <div class="card-body">
+          <!-- copyright="&copy; https://images.wallpapersden.com/image/wxl-lake-rocks-mountains_16164.jpg -->
+          <h5 class="card-title">Callaghan Lake Provincial Park</h5>
+          <p class="card-text">British Columbia’s Callaghan Valley is a noted backcountry recreation area, so much so that it was home to the 2010 Winter Olympics for biathlon, cross-country skiing, ski jumping, and Nordic skiing. The provincial park is famous mainly for winter sports. Other opportunities at this park include rustic drive-in camping, canoeing, boating, fishing and hiking.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-peak.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.pesachonthemountain.com/wp-content/uploads/2013/10/slcc.png -->
+          <h5 class="card-title">Peak 2 Peak Gondola</h5>
+          <p class="card-text">The Peak 2 Peak Gondola is a tricable gondola lift at Whistler Blackcomb Resort in Whistler, British Columbia. Gliding along the world’s longest unsupported span, it connects two side-by-side mountains—Whistler and Blackcomb—and is the longest and highest continuous lift of its kind. The gondola was built for skiers, snowboarders, hikers, and sightseers. </p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-alexander.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://vancity-tours.com/wp-content/uploads/2018/02/Britannia_Mines_Museum-1024x683.jpg -->
+          <h5 class="card-title">Alexander Falls</h5>
+          <p class="card-text">Located in the Callaghan Valley, the 141-foot Alexander Falls make for a beautiful day trip destination from Whistler Village. Just be sure to bring a picnic, as it’s a favorite lunch spot for locals and visitors alike. The best time of year to view the waterfall is late-spring or early-summer (May / June) when all the snow on the nearby mountains is rapidly melting, providing a powerful force of water falling over the rocks. </p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-olympic.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ski_jumping_hills%2C_Whistler_2.jpg/200px-Ski_jumping_hills%2C_Whistler_2.jpg -->
+          <h5 class="card-title">Whistler Olympic Park</h5>
+          <p class="card-text">It goes without saying that Whistler Olympic Park is a world-class athletic training facility. One third of the medals given at the 2010 Olympic and Paralympic Winter Games in Vancouver were awarded here. There are more than 130 kilometers of alpine wilderness trails, weaving through mountain scenery and perfect for skiing and snowboarding.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="attraction-pic/whistler-mine.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://vancity-tours.com/wp-content/uploads/2018/02/Britannia_Mines_Museum-1024x683.jpg -->
+          <h5 class="card-title">Britannia Mine Museum</h5>
+          <p class="card-text">Once the British Empire’s biggest copper mine, the Britannia Mine’s tunnels, shafts, and structures are now preserved in an award-winning museum. Come to the Britannia Mine Museum to ride a train into a mine, pan for gold flakes, and learn about the lives of generations of miners who worked copper deposits at the edge of Howe Sound.</p>
+      </div>
+  </div>
+</div>
+<!-- Nav bar -->
+
+
+
+<!--  -->
+<!--  -->
+<!-- toggle.css -   image content of .card-text is in toggle.css -->
+<!-- Toggle Nav Bar Stats here-->
+<div class="container">
+  <h2>Choose activities according to your choice.</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#attractions">Natural Attractions</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#city">City Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#museum">Museums & Art Gallery</a>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#art">Art Gallery</a>
+    </li> -->
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#atv">ATV Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#air">Air Tour</a>
+    </li>
+
+  </ul>
+  <!-- Toggle nav bar ends here -->
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+  <!-- First - Historical Sites  -->
+    <div id="attractions" class="container tab-pane active place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> Attractions Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="113897P4,113897P1,188927P11,254126P1,208872P30,113897P6,75210P2,105765P3,63820P5,5375P15,2014P17,3020WSCENIC,3020P27,113897P7,114580P1,5371P35" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+<div id="city" class="container tab-pane place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> City Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="208872P29,113897P6,130654P7,153383P8,17494P23,17494P24,5536FINE,130654P88,180217P43,100118P1,2014P20,54159P6,130654P55,130654P76,17494P1,237526P11,3914_4B,63820P18,100118P11,106245P2" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+    <!-- Museums-->
+    <div id="museum" class="container tab-pane fade place-list">
+      <!-- <h3>Museum</h3> -->
+      <div class="jumbotron" >
+      <h3>Museum & Art Gallery</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="75210P16,104204P458,63356P1" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+<!-- Zoos/Aquariums-->
+    <div id="atv" class="container tab-pane fade place-list"><br>
+      <!-- <h3>Zoos/Aquariums</h3> -->
+     <div class="jumbotron" >
+      <h3>ATV Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="2014SUMME,16147P1,2014P22" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+  <!-- Amusement park-->
+    <div id="air" class="container tab-pane fade place-list"><br>
+      <div class="jumbotron" >
+      <h3>Air Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="3020WSCENIC,3020WLAKE,3020P18,3020P22,20303P13,3020P21" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+</div>  <!-- div id="amusemnt" -->
+
+
+
+
+  </div>   <!-- div class="tab-content" -->
+</div>  <!-- Toggle Nav Bar Stats here-->
+
+<!--  -->
+<!-- Toggle navbar ends here -->
+
+<!-- For Adventure page Link -->
+<div class="py-5 text-center text-info background-info" style="">
+    <div class="container actpage">
+        <div class="row">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Activities To Do </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/adventure.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="../list/paint-final.jpeg"></a>
+                <a href="../activities/adventure.html"><h4> <b>Adventure Activities</b> </h4></a>
+            </div>
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/festival.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="festival.jpg" alt="Card image cap" width="200"></a>
+              <!-- copyright="&copy; https://www.jetpunk.com/img/user-photo-library/c5/c5f160c057-450.jpg" -->
+                <a href="../activities/festival.html"><h4> <b>Festivals</b> </h4></a>
+            </div>
+            <div class="col-lg-4 p-4"> <a href="../activities/shopping.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="../list/shopping-final.jpg" width="200"></a>
+              <!-- copyright="&copy; https://i.ebayimg.com/00/s/OTAwWDYwMA==/z/ucUAAOSwrklVBLBJ/$_1.JPG?set_id=2" -->
+               <a href="../activities/shopping.html"> <h4> <b>Shopping</b> </h4></a>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+<!-- For Transport page Link -->
+    <div class="container actpage">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Your Mode Of Transport </h1>
+            </div>
+        <div class="row ">
+          <!-- copyright="&copy; https://www.kettering.com.au/wp-content/uploads/shutterstock_305567459-1024x683.jpg" -->
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/transport-try/road.html"><img class="img-fluid d-block mb-3 mx-auto" alt="Card image cap" width="300" src="road.jpg"></a>
+                <a href="../Transport/transport-try/road.html"><h4> <b>By Road</b> </h4></a>
+            </div>
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/air/flight.html"><img class="img-fluid d-block mb-3 mx-auto" src="flight.jpg" alt="Card image cap" width="300"></a>
+              <!-- copyright="&copy; http://allpicts.in/download/7642/2016/03/Airplane_Images_with_Beautiful_Picture_of_Flight_in_Sunset-1152x864.jpg" -->
+                <a href="../Transport/air/flight.html"><h4> <b>By Air</b> </h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../places/places.html">Places</a></li>
+                <li><a href="../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../activities/adventure.html">Activities</a></li>
+                <li><a href="../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../sitemap.html">Site Map</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+
+</body>
+</html>
