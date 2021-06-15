@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
     //Start the session since there is no session
     session_start();
 }
-//require_once('validate.php');
+require_once('validate.php');
 
 require_once('database.php');
 
@@ -60,11 +60,10 @@ $statement3->closeCursor();
 <body>
 <main>
     <h1>Rideshare List</h1>
-    <h5>Welcome to Rideshare Page.</h5>
-    <h5> Make a little money. Save a little money</h5>
+    <h5>Welcome Rohith Sunkara</h5>
     <aside>
             <!-- display a list of categories -->
-            <h2 class="text-center"> Pick Up City</h2>
+            <h2> Pick Up City</h2>
             <nav>
             <ul>
                 <?php foreach ($categories as $category) : ?>
@@ -90,8 +89,8 @@ $statement3->closeCursor();
           <thead>
               <tr>
                   <th>Name</th>
-                  <th>Drop Off Location</th>
-                  <th class="right">Date & Time</th>
+                  <th>Pick Up</th>
+                  <th class="right">Drop Off</th>
                   <th class="right">Contact Number</th>
               </tr>
           </thead>
@@ -107,8 +106,8 @@ $statement3->closeCursor();
               <?php endforeach; ?>
           </tbody>
         </table>
-        <a class="btn btn-primary" href="add_product_form.php" role="button">Want To Give Ride? Register Here.</a>
-        <!-- <a class="btn btn-danger" href="logout.php" role="button">Log Out</a> -->
+        <a class="btn btn-primary" href="add_product_form.php" role="button">Add Info</a>
+        <a class="btn btn-danger" href="logout.php" role="button">Log Out</a>
 
     </section>
 </main>
