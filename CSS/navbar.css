@@ -1,0 +1,295 @@
+/* .carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+} */
+/* .carousel {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+.carousel .carousel-inner {
+    height:100%;
+}
+
+.carousel .carousel-inner img {
+    display:block;
+    object-fit: cover;
+} */
+
+.carousel-item{
+  height:500px;
+}
+
+.carousel-caption {
+  bottom: 5px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  padding: 5px; /* Some padding */
+}
+
+/* Content */
+.container h1{
+  color: red;
+  font-size: 33px;
+  font-weight: 650;
+  text-align: center;
+}
+
+.container h2{
+  /* color: black; */
+  font-size: 25px;
+}
+
+.container p{
+  /* color: black; */
+  font-size: 15px;
+  font-weight: 480;
+}
+
+/* Line  */
+h1{
+    font-size: 23px;
+    color: #000;
+    font-weight: normal;
+    border-bottom: 1px solid #b4dc0f;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+h6{
+  font-size: 23px;
+  color: #000;
+  font-weight: normal;
+  border-bottom: 1px solid #b4dc0f;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  text-align: center;
+}
+.container h6{
+  font-size: 33px;
+  font-weight: 650;
+}
+/* View More css */
+.nav-toggle{
+  background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 20px 20px;
+        cursor: pointer;
+}
+/* @media only screen and (max-width:320px){
+      .body{font-size: 12px;}
+} */
+
+/* Activites */
+/* body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center
+} */
+
+.myimages {
+    display: flex;
+    overflow: hidden;
+    height: 50vw;
+    background: #333
+}
+
+.myimages img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 2px solid white;
+    box-sizing: border-box;
+    transition: opacity .2s
+}
+
+.myimages:hover img {
+    opacity: 0.5
+}
+
+.myimages img:hover {
+    opacity: 1
+}
+
+.first-column {
+    animation: var(--animation, none) 16s infinite linear
+}
+
+.first-column:hover {
+    animation-play-state: paused
+}
+
+.first-column:nth-of-type(odd) {
+    align-self: flex-end;
+    --direction: 50%
+}
+
+@keyframes slide {
+    to {
+        -webkit-transform: translateY(var(--direction, -50%));
+        transform: translateY(var(--direction, -50%))
+    }
+}
+
+/* Image zoom */
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+/* body {
+    background-color: #f9f9fa
+} */
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.main-image {
+    width: 100%
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 1rem
+}
+
+.card .card-title {
+    color: #000000;
+    margin-bottom: 0.625rem;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500
+}
+
+.card .card-description {
+    margin-bottom: .875rem;
+    font-weight: 400;
+    color: #76838f
+}
+
+/* Image hover ends here */
+/* .container h7{
+  background: #e01e2b;
+color: #fff;
+padding: 37px 25px 40px;
+text-align: center;
+font-size: 2.5rem;
+font-family: brandon-grotesque,sans-serif;
+text-transform: uppercase;
+} */
+
+/*  */
+/* Image hover */
+.card {
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.profile-pic {
+    width: 100px !important;
+    height: 100px;
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: #1E88E5 !important;
+    border: none;
+    padding: 5px 20px !important;
+    font: inherit;
+    font-size: 50px !important
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    color: #0D47A1 !important;
+    background-color: transparent !important
+}
+
+.owl-dots {
+    display: none
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.item {
+    display: none
+}
+
+.next {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.prev {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.item.show {
+    display: block;
+    transition-duration: 0.4s
+}
+
+@media screen and (max-width: 999px) {
+
+    .next,
+    .prev {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    .item {
+        display: block !important
+    }
+}
+
+
+div .barrie-address{
+    text-align: center;
+}

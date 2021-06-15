@@ -1,0 +1,33 @@
+/* CSS For Photo Gallery Images */
+.card{
+  margin-top:20px;
+  margin-bottom:50px;
+  margin-left:20px;
+  margin-right:20px;
+  background-color: lightgrey;
+}
+
+.card-img-top{
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 1.0;
+  border-style: outset;
+}
+
+.card-img-top:hover {
+  opacity: 0.8;
+}
+
+.card-body{
+  padding:.50rem
+}
+
+.card-title{
+  color: red;
+  font-size: 27px;
+}
+
+.card-text{
+  font-weight: 500;
+}
+/* CSS For Photo Gallery Images - Ends Here */

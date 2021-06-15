@@ -1,0 +1,20 @@
+/*
+This is required for scroll bars on modal
+*/
+#myModal .modal-content
+{
+  height:400px;
+  overflow:auto;
+}
+
+/* Line  */
+h1{
+    font-size: 23px;
+    color: blue;
+    font-weight: normal;
+    border-bottom: 1px solid #b4dc0f;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+

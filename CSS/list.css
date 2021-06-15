@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+    background: #f9f9f9;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+    opacity: 1
+}
+
+.content-image {
+    width: 130%;
+}
+
+.content-img {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4em;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+/*.content-details p {
+    color: #fff;
+    font-size: 0.8em
+}*/
+
+.fadeIn-bottom {
+    top: 80%
+}
+
+
+/*For heading over the cities images list*/
+.cityheading{
+    font-size:2em;
+}
+
+/*Modal*/
+.list-group-item{
+    padding:2px;
+}
+
+/* Light, moderate and extreme activities */
+h3{
+  text-align:center;
+  color: blue;
+  font-weight: 900;
+}
+
+
+/* This Css is for the content below the light, moderate and extreme activities. */
+p{
+  /* text-align: center; */
+  /* color: orange; */
+  /* font-size: 27px; */
+  /* font-weight: 900; */
+}
+
+
+/* Light, moderate and extreme activities */
+/* body {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000
+}
+
+h3{
+  text-align:center;
+  color: blue;
+  font-weight: 900;
+}
+
+.lib-panel {
+    margin-bottom: 20Px
+}
+
+.lib-panel img {
+    width: 140%;
+    background-color: transparent
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF
+}
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0
+}
+
+.lib-row.lib-header{
+    color: green;
+    font-weight: bold;
+} */
+
+/* .lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    /* font-family: cursive; */
+    /* font-size: 13px;
+    font-weight: bolder; */
+/* } */
+
+/* .lib-panel .lib-row.lib-desc a {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .10);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .40)
+}
+
+.no-padding {
+    padding: 0
+}
+
+.lib-row #booking{
+  margin-top: 3px;
+  font-size: 13px;
+  color: red;
+  font-weight: bold;
+} */
+/* Book Now button */
+/* .btn{
+  margin-left: 40px;
+  margin-bottom: 4px;
+} */

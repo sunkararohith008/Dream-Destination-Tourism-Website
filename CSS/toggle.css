@@ -1,0 +1,97 @@
+section#content {
+    min-height: 400px;
+    padding-top: 40px;
+    text-align: left;
+    background: #f5f5f5
+}
+
+.vc_row.inner-container {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.vc_row {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: #eeeeee
+}
+
+.destinations {
+    text-align: left
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 70px
+}
+
+.image-box .box,
+.image-box.box {
+    text-align: left;
+    background: #fff;
+    margin-bottom: 30px
+}
+
+.hover-effect {
+    display: block;
+    position: relative;
+    background: none;
+    overflow: hidden
+}
+
+.image-box .box>.details,
+.image-box.box>.details {
+    padding: 12px 15px
+section#content {
+    min-height: 400px;
+    padding-top: 40px;
+    text-align: left;
+    background: #f5f5f5
+}
+
+.vc_row.inner-container {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.vc_row {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: #eeeeee
+}
+
+.destinations {
+    text-align: left
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 70px
+}
+
+.image-box .box,
+.image-box.box {
+    text-align: left;
+    background: #fff;
+    margin-bottom: 30px
+}
+
+.hover-effect {
+    display: block;
+    position: relative;
+    background: none;
+    overflow: hidden
+}
+
+.image-box .box>.details,
+.image-box.box>.details {
+    padding: 12px 15px
+}
+
+
+/*For Text below the images that are in the toggle navbar. */
+/*#place-text{
+  font-weight: 500;
+  margin-left: 15px ;
+  margin-right: 15px ;
+}*/

@@ -1,0 +1,184 @@
+@import url(http://fonts.googleapis.com/css?family=Anaheim);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+html,
+body {
+    min-height: 100%
+}
+
+body {
+    /* background-color: #FF9100 */
+}
+
+h1 {
+    display: table;
+    margin: 5% auto 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Times Roman', sans-serif;
+    font-size: 3em;
+    font-weight: 550;
+    color: blue;
+    /* color: #fff; */
+    text-shadow: 0 1px white, 0 1px black
+}
+
+.box-container {
+    margin: 4% auto;
+    margin-bottom: 150px;
+    width: 210px;
+    height: 140px;
+    position: relative;
+    perspective: 1000px
+}
+
+#carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear
+}
+
+#carousel:hover {
+    animation-play-state: paused
+}
+
+#carousel figure {
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 120%;
+    left: 10px;
+    top: 10px;
+    background: black;
+    overflow: hidden;
+    border: solid 3px black
+}
+
+#carousel img{
+  height: 100%;
+  /* width: 100%; */
+}
+
+#carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(288px)
+}
+
+#carousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(288px)
+}
+
+#carousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(288px)
+}
+
+#carousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(288px)
+}
+
+#carousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(288px)
+}
+
+#carousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(288px)
+}
+
+#carousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(288px)
+}
+
+#carousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(288px)
+}
+
+#carousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(288px)
+}
+
+#carousel figure img:hover {
+    -webkit-filter: grayscale(0);
+    transform: scale(1.2, 1.2)
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg)
+    }
+
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
+
+/* .jumbotron{
+  position: relative;
+  background-image:url('edge-toronto.jpg');
+  height: 80vh;
+  background-size:cover;
+  background-position: center;
+  color: #ffffff;
+  border-radius: 0px!important;
+  margin-top:150px;
+  background:url('edge-toronto.jpg') white no-repeat;
+  background-size:cover;
+  background-position: center;
+  min-height:450px;
+  backface-visibility: 0.5;
+} */
+
+/* Text of adventure content */
+/* #adventure-content{
+  font-size: 30px;
+    color: #000;
+    font-weight: normal;
+    border-bottom: 1px solid #b4dc0f;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+} */
+/* #main-content{
+  font-weight: 500;
+  color: #bc2e1e;
+} */
+
+.container1 {
+  position: relative;
+  max-width: 800px;
+  margin-top: 50px;
+  margin: auto;
+
+  /* Full height */
+  /* height: 50%; */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* .container1 img {vertical-align: middle;} */
+
+.container1 .content {
+  position: absolute;
+  bottom: 20px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 5px;
+}
