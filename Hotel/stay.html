@@ -1,1 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
 
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="hotel.css" type="text/css" />
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../CSS/footer.css" type="text/css" />
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+ <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../about.html">About Us</a> | <a href="../sitemap.html">Site Map</a> | <a href="../privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item active">
+   <a class="nav-link px-3" href="../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+    <div class="container py-5">
+      <header class="text-center">
+        <h1>Explore The Hotels By Your Choice</h1>
+        <h6 class="mb-0">There's no time to be bored in a world as beautiful as this.</h6><br>
+        <!-- <p class="font-italic">Snippet By
+          <a href="https://bootstrapious.com" class="text-dark">
+            <u>Bootstrapious</u>
+          </a>
+        </p> -->
+      </header>
+
+<!-- Hotel Search Form -->
+    <div class="jumbotron">
+      <div data-skyscanner-widget="HotelSearchWidget" data-locale="en-GB" data-currency="CAD" data-font-colour="#9c1414" data-button-text-size="1.8" data-widget-scale="1.2" data-powered-by-size="0.5" data-powered-by-logo-colour="light"></div>
+      <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+    </div>
+
+<h2 class="display-4">Top Most Iconic Hotels In Canada</h2>
+
+  <div class="row">
+    <div class="col-lg-11 mx-auto">
+      <!-- FIRST EXAMPLE ===================================-->
+      <div class="row py-5">
+        <div class="col-lg-4">
+          <figure class="rounded p-3 bg-white shadow-sm">
+            <!-- copyright="&copy; https://w-dog.pw/android-wallpapers/2/6/553995484004352/banff-alberta-banff-national-park-canada-albert-national-park-town-mountain-hotel-tree-night-lighting-light-building.jpg" -->
+            <img src="h-1.jpg" alt="airmont Banff" class="w-100 card-img-top">
+            <figcaption class="p-4 card-img-bottom">
+              <h2 class="h5 font-weight-bold mb-2">Fairmont Banff Springs Hotel, Banff, Alberta</h2>
+              <p class="mb-0 text-small text-center hotel-content">Canada’s “Castle in the Rockies” opened its doors to the public 129 years ago.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure class="rounded p-3 bg-white shadow-sm">
+            <!-- copyright="&copy; https://farm4.staticflickr.com/3732/9518421535_e15209f05f_z.jpg" -->
+            <img src="h-2.jpg" alt="Fort Garry Hotel" class="w-100 card-img-top">
+            <figcaption class="p-4 card-img-bottom">
+              <h2 class="h5 font-weight-bold mb-2">Fort Garry Hotel, Winnipeg</h2>
+              <p class="mb-0 text-small text-center hotel-content">Designated a National Historic Site in 1981.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure class="rounded p-3 bg-white shadow-sm">
+              <!-- copyright="&copy; https://t-ec.bstatic.com/images/hotel/max1024x768/288/28870936.jpg" -->
+            <img src="h-3.jpg" alt="The Algonquin Resort" class="w-100 card-img-top">
+            <figcaption class="p-4 card-img-bottom">
+              <h2 class="h5 font-weight-bold mb-2">The Algonquin Resort, New Brunswick</h2>
+              <p class="mb-0 text-small text-center hotel-content">This recently renovated Tudor Revival resort, complete with half-timbered façade, also boasts a storied history.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+
+      <div class="separator my-3"></div>
+
+
+      <!-- SECOND EXAMPLE ===================================-->
+      <div class="row my-5">
+        <div class="col-lg-4">
+          <!-- item -->
+          <figure class="rounded caption-1">
+            <!-- copyright="&copy; https://farm4.staticflickr.com/3208/2823116346_a1068b2596_z.jpg" -->
+            <img src="h-4.jpg" alt="Fairmont Chateau Lake Louise" class="w-100 card-img-top border border-white border-md">
+            <figcaption class="px-5 py-4 text-right text-light">
+              <h2 class="h5 font-weight-bold mb-0">Fairmont Chateau Lake Louise, Lake Louise, Alberta</h2>
+
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-lg-4">
+          <!-- item -->
+          <figure class="rounded caption-1">
+            <!-- copyright="&copy; https://folkestone-paris-hotel.com/_novaimg/galleria/1321876.jpg" -->
+            <img src="h-5.jpg" alt="The James Hotel" class="w-100 card-img-top border border-white border-md">
+            <figcaption class="px-5 py-4 text-right text-light">
+              <h2 class="h5 font-weight-bold mb-0">The James Hotel, Saskatoon</h2>
+
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-lg-4">
+          <!-- item -->
+          <figure class="rounded caption-1">
+            <!-- copyright="&copy; https://i.pinimg.com/originals/d3/79/05/d3790546b8405550fc643fb483555bd5.jpg" -->
+            <img src="h-6.jpg" alt="Fogo Island Inn" class="w-100 card-img-top border border-white border-md">
+            <figcaption class="px-5 py-4 text-right text-light">
+              <h2 class="h5 font-weight-bold mb-0">Fogo Island Inn, Joe Batt’s Arm, Newfoundland</h2>
+
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="separator my-2"></div>
+
+
+      <!-- BIG EXAMPLE =================================== -->
+
+
+      <div class="py-5">
+        <h2 class="mb-4">Fairmont Le Chateau Frontenac, Quebec City</h2>
+        <div class="row">
+          <div class="col-lg-5">
+            <!-- copyright="&copy; https://frontier-canada.co.uk/wp-content/uploads/2018/09/quebec-fairmontchateaufrontenac-quebeccity-exterior800x800.jpg" -->
+            <img src="h-7.jpg" alt="The Fairmont Le Château Frontenac" class="w-100 mb-4 border border-md border-white shadow-sm">
+          </div>
+          <div class="col-lg-7">
+            <p class="text-muted"> The Fairmont Le Château Frontenac, formerly and commonly referred to as the Château Frontenac, is a historic hotel in Quebec City, Quebec, Canada. The hotel is situated in Old Quebec, within the historic district's Upper Town. The Château Frontenac was designed by Bruce Price, and was built by the Canadian Pacific Railway company. The hotel is presently managed by Fairmont Hotels and Resorts.
+</p>
+            <p class="text-muted">
+            In the 1870s, a restoration project began in Quebec under the British governor general of Canada aimed at restoring the capital to its former 17th century look. One of the contributors to this project was Lord Dufferin, who supervised the construction of the old city wall and many public buildings that followed the theme of old, medieval, European Quebec.</p>
+            <p class="text-muted"> Dufferin also made a plan to reconstruct the Chateau Saint-Louis which was located on the cape where the Chateau Frontenac currently stands and served as the home of the French governors from 1620 to 1834.</p>
+            <p class="text-muted">Dufferin's plan did not take off until the City Council and the Board of Trade adopted the idea and planned to instead construct a grand hotel on the site to attract upper-class tourism to the area, but after failing to finance its construction, businessmen from Toronto and Montreal with connections to the Canadian Pacific Railway took control of the project. </p>
+          </div>
+        </div>
+        <p class="text-muted mb-0">Opened in 1893, the Châteauesque-styled building has 18 floors; its 79.9-metre (262-foot) height is augmented by the 54 m (177 ft) elevation it sits at. It is one of the first completed grand railway hotels, and was designated a National Historic Site of Canada in 1981.The hotel was expanded on three occasions, with the last major expansion taking place in 1993.</p>
+      </div>
+
+
+      <div class="separator my-2"></div>
+
+
+      <!-- THIRD EXAMPLE =================================== -->
+      <div class="row py-5">
+
+        <div class="col-lg-4">
+          <figure class="caption-2 mb-0 shadow-sm border border-white border-md">
+            <!-- copyright="&copy; https://q-xx.bstatic.com/xdata/images/hotel/max750/186069517.jpg?k=87db91918b3c10b991093a11546220e695b1228fe8e663c3fb9431e257a375c4&o=" -->
+            <img src="h-8.jpg" alt="Ritz-Carlton" class="w-100">
+            <figcaption class="p-4 bg-white">
+              <h2 class="h5 font-weight-bold mb-2">Ritz-Carlton, Toronto</h2>
+              <p class="mb-0 text-small font-italic text-muted">Arguably Toronto’s most luxurious hotel (and the only one to enjoy CAA five-diamond status).</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-lg-4">
+          <figure class="caption-2 mb-0 shadow-sm border border-white border-md">
+            <!-- copyright="&copy; http://81dix1oo56s3h5et73pjxme1.wpengine.netdna-cdn.com/wp-content/uploads/2016/11/Fairmont_EMP01sliderl.jpg" -->
+            <img src="h-9.jpg" alt="The Fairmont Empress" class="w-100">
+            <figcaption class="p-4 bg-white">
+              <h2 class="h5 font-weight-bold mb-2">The Fairmont Empress, Victoria</h2>
+              <p class="mb-0 text-small font-italic text-muted">This Edwardian masterpiece looms large on Victoria’s Inner Harbour.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-lg-4">
+          <figure class="caption-2 mb-0 shadow-sm border border-white border-md">
+            <!-- copyright="&copy; http://1.bp.blogspot.com/-P2UmV3mIUZo/UQMQcQJRbQI/AAAAAAABQ-Y/359OePazCfM/s1600/cn_image_0.size.fairmont-pacific-rim-vancouver-vancouver-british-columbia-111342-1.jpg" -->
+            <img src="h-10.jpg" alt="Fairmont Pacific Rim" class="w-100">
+            <figcaption class="p-4 bg-white">
+              <h2 class="h5 font-weight-bold mb-2">Fairmont Pacific Rim, Vancouver</h2>
+              <p class="mb-0 text-small font-italic text-muted">Vancouver’s Fairmont Pacific Rim, where 70 per cent of rooms and suites face the grand sweep of the city’s famous harbour and mountains.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="separator my-2"></div>
+
+      <!-- THIRD EXAMPLE ===================================-->
+      <div class="row py-5">
+        <div class="col-lg-4">
+          <!-- Item -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h3> Dream Destination</h3>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../places/places.html">Places</a></li>
+                <li><a href="../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../activities/adventure.html">Activities</a></li>
+                <li><a href="../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../sitemap.html">Site Map</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+  </body>
+  </html>
