@@ -1,1 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
 
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="try.css" type="text/css">
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/footer.css" type="text/css">
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+  <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../../about.html">About Us</a> | <a href="../../sitemap.html">Site Map</a> | <a href="../../privacy.html">Privacy Policy</a>
+    </p> 
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../festival.html">Festivals</a>
+    <a class="dropdown-item" href="../shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item active">
+<a class="nav-link px-3" href="../../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="main-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../home.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../transport/main.html">Transport</a></li>
+            <li class="breadcrumb-item"><a href="../transport-try/road.html">Road</a></li>
+            <li class="breadcrumb-item active" aria-current="car-rental.html">Car Rentals</li>
+          </ol>
+        </nav>
+        <!-- /Breadcrumb -->
+
+        <div class="row gutters-sm">
+          <div class="col-md-4 d-none d-md-block">
+            <div class="card">
+              <div class="card-body">
+                <nav class="nav flex-column nav-pills nav-gap-y-1">
+                  <a href="#profile" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
+                    Barrie
+                  </a>
+                  <a href="#account" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Toronto
+                  </a>
+                  <a href="#security" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Vancouver
+                  </a>
+                  <a href="#notification" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Whistler, British Cloumbia
+                  </a>
+                  <a href="#billing" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Victoria, British Columbia
+                  </a>
+                  <a href="#prof" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Hamilton
+                  </a>
+                  <a href="#montreal" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Montreal
+                  </a>
+                  <a href="#halifax" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Halifax
+                  </a>
+                  <a href="#calgary" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Calgary
+                  </a>
+                  <a href="#foundland" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    New Foundland
+                  </a>
+                  <a href="#ottawa" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Ottawa
+                  </a>
+                  <a href="#kingston" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Kingston
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header border-bottom mb-3 d-flex d-md-none">
+                <ul class="nav nav-tabs card-header-tabs nav-gap-x-1" role="tablist">
+                  <li class="nav-item">
+                   <a href="#profile" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
+                    Barrie
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#account" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Toronto
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#security" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Vancouver
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#notification" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Whistler
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#billing" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Victoria
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                    <a href="#prof" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Hamilton
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#montreal" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Montreal
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#halifax" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Halifax
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                    <a href="#calgary" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Calgary
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                   <a href="#foundland" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    New Foundland
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#ottawa" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Ottawa
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#kingston" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Kingston
+                  </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+
+                <!-- Barrie -->
+                <div class="tab-pane active" id="profile">
+                  <!-- Page Heading -->
+      <h1 class="my-4">Car Rentals in Barrie
+      </h1>
+
+      <!-- Project One -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Enterprise-Car Rental Barrie</h3>
+          <!-- <p>Enterprise Rent-A-Car’s primary focus is the local rental car market, specializing in car rentals to consumers who need a replacement car as the result of an accident, mechanical repair, theft, or who require a vehicle for a special occasion such as a short business or leisure trip.</p> -->
+          <p>
+            <strong>Address:</strong> 305 Innisfil St, Barrie, ON L4N 3G2<br>
+            <strong>Hours:</strong>
+            Thursday	8a.m.–6p.m.<br>
+            Friday	8a.m.–6p.m.<br>
+            Saturday	9a.m.–12p.m.<br>
+            Sunday	Closed<br>
+            Monday	8a.m.–6p.m.<br>
+            Tuesday	8a.m.–6p.m.<br>
+            Wednesday	8a.m.–6p.m.<br>
+            <strong>Phone:</strong> (705) 728-1212<br>
+            <strong>Province:</strong> Ontario<br>
+          </p>
+          <a class="btn btn-primary" href="https://www.enterprise.ca/en/car-rental/locations/canada/on/barrie-c274.html?gclid=CjwKCAiAqJn9BRB0EiwAJ1Sztas8nnvxwt0ft6CruvvE_XHcKag9aG5G2_TNXLjMVqd2cGYlKEPDmBoCvUwQAvD_BwE&ef_id=CjwKCAiAqJn9BRB0EiwAJ1Sztas8nnvxwt0ft6CruvvE_XHcKag9aG5G2_TNXLjMVqd2cGYlKEPDmBoCvUwQAvD_BwE:G:s&s_kwcid=AL!4824!3!278481594380!b!!g!!&gclsrc=aw.ds&&mcid=paidsearch:24275746" target="_blank">View Website</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Avis-Car Rental</h3>
+          <p><strong>Address:</strong> 425 Dunlop St W, Barrie, ON L4N 1C3<br>
+          <strong>Hours:</strong>
+          Thursday	7:30a.m.–6p.m.<br>
+          Friday	7:30a.m.–6p.m.<br>
+          Saturday	8:30a.m.–12:30p.m., 1–5p.m.<br>
+          Sunday	Closed<br>
+          Monday	7:30a.m.–6p.m.<br>
+          Tuesday	7:30a.m.–6p.m.<br>
+          Wednesday	7:30a.m.–6p.m.<br>
+          <strong>Phone:</strong> (705) 726-6527<br>
+          <strong>Province:</strong> Ontario<br></p>
+          <a class="btn btn-primary" href="https://www.avis.ca/en/locations/ca/on/barrie/s16" target="_blank">View Website</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Three -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="bristol.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Bristol- Car & Truck Rentals</h3>
+          <p><strong>Address:</strong> Addison Rd, New Tecumseth, ON L9R 1K1<br>
+
+          <strong>Phone:</strong> (705) 434-9199<br>
+          <strong>Province:</strong> Ontario<br></p>
+          <a class="btn btn-primary" href="https://www.bristoltruckrentals.com/" target="_blank">View Website</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Four -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="afford.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Affordable car rental</h3>
+          <p><strong>Address:</strong> 24795 Woodbine Ave #2, Keswick, ON L4P 3E9<br>
+          <strong>Hours:</strong>
+          Thursday	9a.m.–6p.m.<br>
+          Friday	9a.m.–6p.m.<br>
+          Saturday	9a.m.–12p.m.<br>
+          Sunday	Closed<br>
+          Monday	9a.m.–6p.m.<br>
+          Tuesday	9a.m.–6p.m.<br>
+          Wednesday	9a.m.–6p.m.<br>
+          <strong>Phone:</strong> (905) 487-0036<br>
+          <strong>Province:</strong> Ontario<br></p>
+          <a class="btn btn-primary" href="https://www.affordablecarrental.ca/" target="_blank">View Website</a>
+        </div>
+      </div>
+      <!-- /.row -->
+                </div>
+
+                <!-- Toronto -->
+
+                <div class="tab-pane" id="account">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In Toronto
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="advantage.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Advantage-Car & Truck Rental Toronto</h3>
+                <p><strong>Address:</strong> 431 Queen St E, Toronto, ON M5A 1T5<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–6:30p.m.<br>
+                Friday	7:30a.m.–6:30p.m.<br>
+                Saturday	8a.m.–4p.m.<br>
+                Sunday	Closed<br>
+                Monday	7:30a.m.–6:30p.m.<br>
+                Tuesday	7:30a.m.–6:30p.m.<br>
+                Wednesday	7:30a.m.–6:30p.m.<br>
+                <strong>Phone:</strong> (416) 364-0387<br>
+                <strong>Province:</strong> Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.advantagecarrentals.com/car-rental/ontario/downtown-toronto/yonge-esplanade/?utm_source=GMB&utm_medium=Downtown-%20Esplanade&utm_campaign=Downtown-%20Esplanade" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise-Car Rental Toronto</h3>
+                <p><strong>Address:</strong> 200 Front St W, Toronto, ON M5V 3K2<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5p.m.<br>
+                Friday	8a.m.–5p.m.<br>
+                Saturday	9a.m.–2p.m.<br>
+                Sunday	9a.m.–2p.m.<br>
+                Monday	8a.m.–5p.m.<br>
+                Tuesday	8a.m.–5p.m.<br>
+                Wednesday	8a.m.–5p.m.<br>
+                <strong>Phone:</strong>(416) 751-1342<br>
+                <strong>Province:</strong> Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/en/car-rental/locations/canada/on/barrie-c274.html?gclid=CjwKCAiAqJn9BRB0EiwAJ1Sztas8nnvxwt0ft6CruvvE_XHcKag9aG5G2_TNXLjMVqd2cGYlKEPDmBoCvUwQAvD_BwE&ef_id=CjwKCAiAqJn9BRB0EiwAJ1Sztas8nnvxwt0ft6CruvvE_XHcKag9aG5G2_TNXLjMVqd2cGYlKEPDmBoCvUwQAvD_BwE:G:s&s_kwcid=AL!4824!3!278481594380!b!!g!!&gclsrc=aw.ds&&mcid=paidsearch:24275746" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Avis-Car Rental Toronto</h3>
+                <p><strong>Address:</strong> 1910 Yonge Street (at, Davisville Ave, Toronto, ON M4S 3B2<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5p.m.<br>
+                Friday	8a.m.–5p.m.<br>
+                Saturday	8a.m.–2p.m.<br>
+                Sunday	9a.m.–2p.m.<br>
+                Monday	8a.m.–5p.m.<br>
+                Tuesday	8a.m.–5p.m.<br>
+                Wednesday	8a.m.–5p.m.<br>
+                <strong>Phone:</strong>(416) 932-2847<br>
+                <strong>Province:</strong> Ontario<br>.</p>
+                <a class="btn btn-primary" href="https://www.avis.ca/en/locations/ca/on/toronto/b02" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="Budget.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Budget Car Rental</h3>
+                <p><strong>Address:</strong> 80 Bloor St E, Toronto, ON M4W 3G8<br>
+                <strong>Hours:</strong>
+                Thursday	8:30a.m.–5p.m.<br>
+                Friday	8:30a.m.–5p.m.<br>
+                Saturday	8a.m.–2p.m.<br>
+                Sunday	9a.m.–2p.m.<br>
+                Monday	8:30a.m.–5p.m.<br>
+                Tuesday	8:30a.m.–5p.m.<br>
+                Wednesday	8:30a.m.–5p.m<br>
+                <strong>Phone:</strong>(416) 928-1205<br>
+                <strong>Province:</strong> Ontario<br>.</p>
+                <a class="btn btn-primary" href="https://www.budget.ca/en/locations/ca/on/toronto/q2n" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+                </div>
+
+                <!-- Vancouver -->
+
+                <div class="tab-pane" id="security">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In Vancouver
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="pacific.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Pacific Car Rental - Vancouver</h3>
+                <p><strong>Address:</strong>501 W Georgia St, Vancouver, BC V6B 1Z5<br>
+                <strong>Hours:</strong>
+                Thursday	9a.m.–5p.m.<br>
+                Friday	9a.m.–5p.m.<br>
+                Saturday	9a.m.–5p.m.<br>
+                Sunday	9a.m.–5p.m.<br>
+                Monday	9a.m.–5p.m.<br>
+                Tuesday	9a.m.–5p.m.<br>
+                Wednesday	9a.m.–5p.m.<br>
+                <strong>Phone:</strong>(604) 689-4506<br>
+                <strong>Appointments:</strong>pacificcarrentals.com<br>
+                <strong>Province:</strong> British Columbia<br>.</p>
+                <a class="btn btn-primary" href="https://www.pacificcarrentals.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise-Car Rental Vancouver</h3>
+                <p><strong>Address:</strong>1250 Granville St Unit 2, Vancouver, BC V6Z 1M4<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5p.m.<br>
+                Friday	8a.m.–5p.m.<br>
+                Saturday	9a.m.–3p.m.<br>
+                Sunday	9a.m.–1p.m.<br>
+                Monday	8a.m.–5p.m.<br>
+                Tuesday	8a.m.–5p.m.<br>
+                Wednesday	8a.m.–5p.m.<br>
+                <strong>Phone:</strong>(604) 688-5500<br>
+                <strong>Province:</strong> British Columbia<br>.</p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/bc/vancouver-centre-ville-granville-st-c411.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="expo.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Expo - Rent a car</h3>
+                <p><strong>Address:</strong>234 Hornby St, Vancouver, BC V6Z 1W2<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–6p.m.<br>
+                Friday	8a.m.–6p.m.<br>
+                Saturday	8a.m.–6p.m.<br>
+                Sunday	8a.m.–6p.m.<br>
+                Monday	8a.m.–6p.m.<br>
+                Tuesday	8a.m.–6p.m.<br>
+                Wednesday	8a.m.–6p.m.<br>
+                <strong>Phone:</strong>(604) 726-6502<br>
+                <strong>Province:</strong> British Columbia<br>.</p>
+                <a class="btn btn-primary" href="https://exporentacar.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Avis-Car Rental Vancouver</h3>
+                <p><strong>Address:</strong> 757 Hornby St, Vancouver, BC V6Z 1S2<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–4:30p.m.<br>
+                Friday	8a.m.–4:30p.m.<br>
+                Saturday	8a.m.–4:30p.m.<br>
+                Sunday	Closed<br>
+                Monday	8a.m.–4:30p.m.<br>
+                Tuesday	8a.m.–4:30p.m.<br>
+                Wednesday	8a.m.–4:30p.m.<br>
+                <strong>Phone:</strong>(604) 606-2868<br>
+                <strong>Province:</strong> British Columbia<br>.</p>
+                <a class="btn btn-primary" href="https://www.avis.ca/en/locations/ca/bc/vancouver/s73" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Victoria, B.C. -->
+
+                <div class="tab-pane" id="billing">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In Victoria, British Columbia
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="national.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>National Car Rental</h3>
+                <p><strong>Address:</strong> 767 Douglas St, Victoria, BC V8W 2B4<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5p.m.<br>
+                Friday	8a.m.–5p.m.<br>
+                Saturday	8a.m.–5p.m.<br>
+                Sunday	8a.m.–5p.m.<br>
+                Monday	8a.m.–5p.m.<br>
+                Tuesday	8a.m.–5p.m.<br>
+                Wednesday	8a.m.–5p.m.<br>
+                <strong>Phone:</strong>(250) 386-1213<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="https://www.nationalcar.ca/en/car-rental/locations/ca/bc/downtown-victoria-conference-centre-l281.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="budget.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Budget Car Rental - Victoria, BC</h3>
+                <p><strong>Address:</strong> 757 Douglas St, Victoria, BC V8W 2B9<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–5:30p.m.<br>
+                Friday	7:30a.m.–5:30p.m.<br>
+                Saturday	7:30a.m.–5:30p.m.<br>
+                Sunday	7:30a.m.–5:30p.m.<br>
+                Monday	7:30a.m.–5:30p.m.<br>
+                Tuesday	7:30a.m.–5:30p.m.<br>
+                Wednesday	7:30a.m.–5:30p.m.<br>
+                <strong>Phone:</strong>(250) 953-5218<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="https://www.budget.ca/en/locations/ca/bc/victoria/yy1" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise-Car Rental Victoria, BC</h3>
+                <p><strong>Address:</strong> 2507 Government St, Victoria, BC V8T 4P6<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–5p.m.<br>
+                Friday	7:30a.m.–5p.m.<br>
+                Saturday	9a.m.–12p.m.<br>
+                Sunday	9a.m.–12p.m.<br>
+                Monday	7:30a.m.–5p.m.<br>
+                Tuesday	7:30a.m.–5p.m.<br>
+                Wednesday	7:30a.m.–5p.m.<br>
+                <strong>Phone:</strong>(250) 475-6900<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/bc/port-de-victoria-cruise-externe-c430.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Avis-Car Rental Vancouver</h3>
+                <p><strong>Address:</strong> 1001 Douglas Street Sussex Place G2B, Victoria, BC V8W 2C5<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–4p.m.<br>
+                Friday	8a.m.–4p.m.<br>
+                Saturday	9a.m.–3p.m.<br>
+                Sunday	Closed<br>
+                Monday	8a.m.–4p.m.<br>
+                Tuesday	8a.m.–4p.m.<br>
+                Wednesday	8a.m.–4p.m.<br>
+                <strong>Phone:</strong>(250) 386-8468<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="https://www.avis.ca/en/locations/ca/bc/victoria/vt3" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Hamilton -->
+                <div class="tab-pane" id="prof">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals
+              <small>In Hamilton</small>
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Avis Car Rental, Hamilton</h3>
+                <p><strong>Address:</strong> 9300 Airport Rd, Mount Hope, ON L0R 1W0<br>
+                <strong>Hours:</strong>
+                Thursday	5a.m.–1:30a.m.<br>
+                Friday	5a.m.–1:30a.m.<br>
+                Saturday	5a.m.–1a.m.<br>
+                Sunday	5a.m.–1a.m.<br>
+                Monday	5a.m.–1:30a.m.<br>
+                Tuesday	5a.m.–1:30a.m.<br>
+                Wednesday	5a.m.–1:30a.m.<br>
+                <strong>Phone:</strong>(905) 679-3233<br>
+                <strong>Province:</strong> Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.avis.ca/en/locations/ca/on/hamilton/yhm" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="hertz.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Hertz Car Rental</h3>
+                <p><strong>Address:</strong> 190 Main St E, Hamilton, ON L8L 4S9<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–6p.m.<br>
+                Friday	8a.m.–6p.m.<br>
+                Saturday	9a.m.–3p.m.<br>
+                Sunday	10a.m.–2p.m.<br>
+                Monday	8a.m.–6p.m.<br>
+                Tuesday	8a.m.–6p.m.<br>
+                Wednesday	8a.m.–6p.m.<br>
+                <strong>Phone:</strong>(905) 522-2277<br>
+                <strong>Province:</strong> Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.hertz.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise-Car Rental, Hamilton</h3>
+                <p><strong>Address:</strong> 1124 Rymal Rd E, Hamilton, ON L8W 3N7<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–5p.m.<br>
+                Friday	7:30a.m.–5p.m.<br>
+                Saturday	9a.m.–12p.m.<br>
+                Sunday	Closed<br>
+                Monday	7:30a.m.–5p.m.<br>
+                Tuesday	7:30a.m.–5p.m.<br>
+                Wednesday	7:30a.m.–5p.m.<br>
+                <strong>Phone:</strong>(905) 388-6777<br>
+                <strong>Province:</strong> Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/on/hamilton-inters-stone-church-et-upper-james-c141.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="torq.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>TORQ CAR RENTAL</h3>
+                <p><strong>Address:</strong>  2113 King St E, Hamilton, ON L8K 1W4<br>
+                <strong>Hours:</strong>
+                Thursday	9a.m.–5p.m.<br>
+                Friday	9a.m.–5p.m.<br>
+                Saturday	Closed<br>
+                Sunday	Closed<br>
+                Monday	9a.m.–5p.m.<br>
+                Tuesday	9a.m.–5p.m.<br>
+                Wednesday	9a.m.–5p.m.<br>
+                <strong>Phone:</strong>+1 844-425-8677<br>
+                <strong>Province:</strong> Ontario<br></p>
+                <a class="btn btn-primary" href="http://www.torqcarrental.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Whistler, B.C. -->
+                <div class="tab-pane" id="notification">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In Whistler
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Avis Car Rental, Hamilton</h3>
+                <p><strong>Address:</strong> 9300 Airport Rd, Mount Hope, ON L0R 1W0<br>
+                <strong>Hours:</strong>
+                Thursday	5a.m.–1:30a.m.<br>
+                Friday	5a.m.–1:30a.m.<br>
+                Saturday	5a.m.–1a.m.<br>
+                Sunday	5a.m.–1a.m.<br>
+                Monday	5a.m.–1:30a.m.<br>
+                Tuesday	5a.m.–1:30a.m.<br>
+                Wednesday	5a.m.–1:30a.m.<br>
+                <strong>Phone:</strong>(905) 679-3233<br>
+                <strong>Province:</strong> British Columbia<br></p>
+                <a class="btn btn-primary" href="https://www.avis.com/en/locations/ca/bc/whistler" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="hotwire.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Hot Wire Car Rental</h3>
+                <p>Enterprise Rent-A-Car’s primary focus is the local rental car market, specializing in car rentals to consumers who need a replacement car as the result of an accident, mechanical repair, theft, or who require a vehicle for a special occasion such as a short business or leisure trip.</p>
+                <a class="btn btn-primary" href="https://www.hotwire.com/Car-Rentals-In-Whistler.d4115.Car-Rental-Guide" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="kayak.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Kayak - Car Rental</h3>
+                <p>Enterprise Rent-A-Car’s primary focus is the local rental car market, specializing in car rentals to consumers who need a replacement car as the result of an accident, mechanical repair, theft, or who require a vehicle for a special occasion such as a short business or leisure trip.</p>
+                <a class="btn btn-primary" href="ca.kayak.com/Cheap-Whistler-Car-Rentals.40386.cars.ksp" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="carrentals.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Cheap CAR RENTAL in Whistler</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                <a class="btn btn-primary" href="https://www.carrentals.com/Whistler-Car-Rentals-g-cty.d4115.Car-Rental-Deals" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Montreal-->
+                <div class="tab-pane" id="montreal">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In Montreal
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="alamo.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Alamo Rent A Car</h3>
+                <p><strong>Address:</strong> 1200 Stanley St, Montreal, Quebec H3B 2S8<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–6p.m.<br>
+                Friday	8a.m.–6p.m.<br>
+                Saturday	8a.m.–5p.m.<br>
+                Sunday	9a.m.–7p.m.<br>
+                Monday	8a.m.–6p.m.<br>
+                Tuesday	8a.m.–6p.m.<br>
+                Wednesday	8a.m.–6p.m.<br>
+                <strong>Phone:</strong>(514) 875-9988<br>
+                <strong>Province:</strong> Quebec<br></p>
+                <a class="btn btn-primary" href="https://www.alamo.ca/fr_CA/car-rental/locations/ca/ymqc71-montreal-stanley-st.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="budget.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Budget Car Rental</h3>
+                <p><strong>Address:</strong> 5210 Rue Jean-Talon O, Montréal, QC H4P 1X3<br>
+                <strong>Hours:</strong>
+                Thursday	9a.m.–5p.m.<br>
+                Friday	9a.m.–5p.m.<br>
+                Saturday	9a.m.–1p.m.<br>
+                Sunday	9a.m.–1p.m.<br>
+                Monday	9a.m.–5p.m.<br>
+                Tuesday	9a.m.–5p.m.<br>
+                Wednesday	9a.m.–5p.m.<br>
+                <strong>Phone:</strong>(514) 387-2847<br>
+                <strong>Province:</strong> Quebec<br></p>
+                <a class="btn btn-primary" href="https://www.budget.ca/en/locations/ca/pq/montreal/j1t" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise Rent-A-Car</h3>
+                <p><strong>Address:</strong> 1005 Guy St, Montreal, Quebec H3H 2K4<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–6p.m.<br>
+                Friday	7:30a.m.–6p.m.<br>
+                Saturday	8a.m.–1p.m.<br>
+                Sunday	10a.m.–2p.m.<br>
+                Monday	7:30a.m.–6p.m.<br>
+                Tuesday	7:30a.m.–6p.m.<br>
+                Wednesday	7:30a.m.–6p.m.<br>
+                <strong>Phone:</strong>(514) 931-3722<br>
+                <strong>Province:</strong> Quebec<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/qc/montreal-centre-ville-c712.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="national.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>National Car Rental</h3>
+                <p><strong>Address:</strong> 1200 Stanley St, Montreal, Quebec H3B 2S8<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–6p.m.<br>
+                Friday	8a.m.–6p.m.<br>
+                Saturday	8a.m.–5p.m.<br>
+                Sunday	9a.m.–7p.m.<br>
+                Monday	8a.m.–6p.m.<br>
+                Tuesday	8a.m.–6p.m.<br>
+                Wednesday	8a.m.–6p.m.<br>
+                <strong>Phone:</strong>(514) 878-2771<br>
+                <strong>Province:</strong> Quebec<br></p>
+                <a class="btn btn-primary" href="https://www.nationalcar.ca/en/car-rental/locations/ca/qc/downtown-montreal-stanley-st-c71n.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Halifax-->
+                <div class="tab-pane" id="halifax">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In Halifax
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="thirfty.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Thrifty Car Rental</h3>
+                <p><strong>Address:</strong> 1181 Hollis St, Halifax, NS B3H 2P6<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5p.m.<br>
+                Friday	8a.m.–5p.m.<br>
+                Saturday	8a.m.–1p.m.<br>
+                Sunday	8a.m.–1p.m.<br>
+                Monday	8a.m.–5p.m.<br>
+                Tuesday	8a.m.–5p.m.<br>
+                Wednesday	8a.m.–5p.m.<br>
+                <strong>Phone:</strong>(902) 422-4455<br>
+                <strong>Province:</strong> Nova Scotia<br></p>
+                <a class="btn btn-primary" href="https://www.thrifty.com/loc/ll/ca/ns/halifax-westin-hotel/1181-hollis-st/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise Rent-A-Car</h3>
+                <p><strong>Address:</strong>  3387 Kempt Rd, Halifax, NS B3K 4X5<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5:30p.m.<br>
+                Friday	8a.m.–5:30p.m.<br>
+                Saturday	8a.m.–12p.m.<br>
+                Sunday	12–4p.m.<br>
+                Monday	8a.m.–5:30p.m.<br>
+                Tuesday	8a.m.–5:30p.m.<br>
+                Wednesday	8a.m.–5:30p.m.<br>
+                <strong>Phone:</strong>(902) 453-6929<br>
+                <strong>Province:</strong> Nova Scotia<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/ns/halifax-centre-ville-scotia-square-c910.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Avis Car Rental, Halifax</h3>
+                <p><strong>Address:</strong>362 Lacewood Dr Unit 14, Halifax, NS B3S 1M7<br>
+                <strong>Hours:</strong>
+                Thursday	7a.m.–6p.m.<br>
+                Friday	7a.m.–6p.m.<br>
+                Saturday	8a.m.–5p.m.<br>
+                Sunday	9a.m.–5p.m.<br>
+                Monday	7a.m.–6p.m.<br>
+                Tuesday	7a.m.–6p.m.<br>
+                Wednesday	7a.m.–6p.m.<br>
+                <strong>Phone:</strong>(902) 450-2847<br>
+                <strong>Province:</strong> Nova Scotia<br></p>
+                <a class="btn btn-primary" href="https://www.avis.ca/en/locations/ca/ns/halifax/ta9" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="budget.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Budget Car Rental</h3>
+                <p><strong>Address:</strong>1717 Grafton St, Halifax, NS B3J 2C6<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5p.m.<br>
+                Friday	8a.m.–5p.m.<br>
+                Saturday	8a.m.–1p.m.<br>
+                Sunday	8a.m.–4p.m.<br>
+                Monday	8a.m.–5p.m.<br>
+                Tuesday	8a.m.–5p.m.<br>
+                Wednesday	8a.m.–5p.m.<br>
+                <strong>Phone:</strong>(902) 492-7963<br>
+                <strong>Province:</strong> Nova Scotia<br></p>
+                <a class="btn btn-primary" href="https://www.budget.ca/en/locations/ca/ns/halifax/h4a" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Calgary-->
+                <div class="tab-pane" id="calgary">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In Calgary
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="zoom.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Zoom Rent A Car Calgary Airport</h3>
+                <p><strong>Address:</strong>Calgary International Airport YYC (Off Airport New Location, 11124 36 St NE UNIT#2010, Calgary, AB T3N 1L3<br>
+                <strong>Hours:</strong>
+                Thursday	7a.m.–7p.m.<br>
+                Friday	7a.m.–7p.m.<br>
+                Saturday	9a.m.–6p.m.<br>
+                Sunday	9a.m.–6p.m.<br>
+                Monday	7a.m.–7p.m.<br>
+                Tuesday	7a.m.–7p.m.<br>
+                Wednesday	7a.m.–7p.m.<br>
+                <strong>Phone:</strong>(587) 885-8888<br>
+                <strong>Province:</strong> Alberta<br></p>
+                <a class="btn btn-primary" href="https://www.zoomrentals.com/calgary-airport-car-rentals" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="budget.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Budget Car Rental</h3>
+                <p><strong>Address:</strong>724 6 Ave SW, Calgary, AB T2P 0X6<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–4p.m.<br>
+                Friday	8a.m.–4p.m.<br>
+                Saturday	8a.m.–4p.m.<br>
+                Sunday	8a.m.–4p.m.<br>
+                Monday	8a.m.–4p.m.<br>
+                Tuesday	8a.m.–4p.m.<br>
+                Wednesday	8a.m.–4p.m.<br>
+                <strong>Phone:</strong>(403) 226-1550<br>
+                <strong>Province:</strong> Alberta<br></p>
+                <a class="btn btn-primary" href="https://www.budget.ca/en/locations/ca/ab/calgary/y75" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Avis Car Rental, Calgary</h3>
+                <p><strong>Address:</strong>2000 Airport Rd NE, Calgary, AB T2E 6W5<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–12a.m.<br>
+                Friday	7:30a.m.–12a.m.<br>
+                Saturday	7:30a.m.–12a.m.<br>
+                Sunday	7:30a.m.–12a.m.<br>
+                Monday	7:30a.m.–12a.m.<br>
+                Tuesday	7:30a.m.–12a.m.<br>
+                Wednesday	7:30a.m.–12a.m.<br>
+                <strong>Phone:</strong>(403) 221-1700<br>
+                <strong>Province:</strong> Alberta<br></p>
+                <a class="btn btn-primary" href="https://www.avis.ca/en/locations/ca/ab/calgary/yyc" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise Rent-A-Car</h3>
+                <p><strong>Address:</strong> 2000 Airport Rd NE, Calgary, AB T2E 6W5<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–12a.m.<br>
+                Friday	7:30a.m.–12a.m.<br>
+                Saturday	7:30a.m.–12a.m.<br>
+                Sunday	7:30a.m.–12a.m.<br>
+                Monday	7:30a.m.–12a.m.<br>
+                Tuesday	7:30a.m.–12a.m.<br>
+                Wednesday	7:30a.m.–12a.m.<br>
+                <strong>Phone:</strong>+1 833-619-3654<br>
+                <strong>Province:</strong> Alberta<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/ab/aeroport-international-de-calgary-c5ei.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- New Foundland-->
+                <div class="tab-pane" id="foundland">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In New Foundland
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="centsible.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Centsible Car and Truck Rentals</h3>
+                <p><strong>Address:</strong> 909 Topsail Rd, Mount Pearl, NL A1N 3K1<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–6p.m.<br>
+                Friday	8a.m.–6p.m.<br>
+                Saturday	9a.m.–5p.m.<br>
+                Sunday	9a.m.–5p.m.<br>
+                Monday	8a.m.–6p.m.<br>
+                Tuesday	8a.m.–6p.m.<br>
+                Wednesday	8a.m.–6p.m.<br>
+                <strong>Phone:</strong>(709) 753-2277<br>
+                <strong>Province:</strong>Newfoundland and Labrador<br></p>
+                <a class="btn btn-primary" href="https://www.centsible.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="national.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>National Car Rental</h3>
+                <p><strong>Address:</strong>1 Airport Rd Ste 9, Deer Lake, NL A8A 1A3<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5p.m.<br>
+                Friday	8a.m.–5p.m.<br>
+                Saturday	Closed<br>
+                Sunday	Closed<br>
+                Monday	8a.m.–5p.m.<br>
+                Tuesday	8a.m.–5p.m.<br>
+                Wednesday	8a.m.–5p.m.<br>
+                <strong>Phone:</strong>(709) 635-3282<br>
+                <strong>Province:</strong>Newfoundland and Labrador<br></p>
+                <a class="btn btn-primary" href="https://www.nationalcar.ca/en/car-rental/locations/ca/nl/deer-lake-airport-c977.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="thirfty.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Thrifty Car Rental</h3>
+                <p><strong>Address:</strong>100 World Pkwy, St. John's, NL A1A 5T2<br>
+                <strong>Hours:</strong>
+                Thursday	7a.m.–2a.m.<br>
+                Friday	7a.m.–2a.m.<br>
+                Saturday	7a.m.–2a.m.<br>
+                Sunday	7a.m.–2a.m.<br>
+                Monday	7a.m.–2a.m.<br>
+                Tuesday	7a.m.–2a.m.<br>
+                Wednesday	7a.m.–2a.m.<br>
+                <strong>Phone:</strong>+1 877-283-0898<br>
+                <strong>Province:</strong>Newfoundland and Labrador<br></p>
+                <a class="btn btn-primary" href="https://www.thrifty.com/loc/ll/ca/nf/st-johns-nf/100-world-parkway/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise Rent-A-Car</h3>
+                <p><strong>Address:</strong>1206 Topsail Rd, Mount Pearl, NL A1N 5E8<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5:30p.m.<br>
+                Friday	8a.m.–5:30p.m.<br>
+                Saturday	9a.m.–12p.m.<br>
+                Sunday	Closed<br>
+                Monday	8a.m.–5:30p.m.<br>
+                Tuesday	8a.m.–5:30p.m.<br>
+                Wednesday	8a.m.–5:30p.m.<br>
+                <strong>Phone:</strong>(709) 739-6570<br>
+                <strong>Province:</strong>Newfoundland and Labrador<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/nl/saint-johns-c954.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+
+                <!-- Ottawa-->
+                <div class="tab-pane" id="ottawa">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals In Ottawa
+
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="hertz.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Hertz</h3>
+                <p><strong>Address:</strong>Paul Benoit Driveway, Ottawa, ON K1V 2E5<br>
+                <strong>Hours:</strong>
+                Thursday	5:30a.m.–12:30a.m.<br>
+                Friday	5:30a.m.–12:30a.m.<br>
+                Saturday	5:30a.m.–12:30a.m.<br>
+                Sunday	5:30a.m.–12:30a.m.<br>
+                Monday	5:30a.m.–12:30a.m.<br>
+                Tuesday	5:30a.m.–12:30a.m.<br>
+                Wednesday	5:30a.m.–12:30a.m<br>
+                <strong>Phone:</strong>(613) 521-3332<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.hertz.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="avis.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Avis Car Rental</h3>
+                <p><strong>Address:</strong>345 Slater St., Ottawa, ON K1R 7X7<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–6p.m.<br>
+                Friday	7:30a.m.–6p.m.<br>
+                Saturday	8a.m.–1p.m.<br>
+                Sunday	8a.m.–1p.m.<br>
+                Monday	7:30a.m.–4:30p.m.<br>
+                Tuesday	7:30a.m.–4:30p.m.<br>
+                Wednesday	7:30a.m.–4:30p.m.<br>
+                <strong>Phone:</strong>(613) 232-2847<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.avis.ca/en/locations/ca/on/ottawa/s51" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="national.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>National Car Rental</h3>
+                <p><strong>Address:</strong>226 Queen St, Ottawa, ON K1P 5E4<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–5p.m.<br>
+                Friday	7:30a.m.–5p.m.<br>
+                Saturday	9a.m.–12p.m.<br>
+                Sunday	Closed<br>
+                Monday	7:30a.m.–5p.m.<br>
+                Tuesday	7:30a.m.–5p.m.<br>
+                Wednesday	7:30a.m.–5p.m.<br>
+                <strong>Phone:</strong>(613) 232-3536<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.nationalcar.ca/en/car-rental/locations/ca/on/ottawa-international-airport-c377.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise Rent-A-Car</h3>
+                <p><strong>Address:</strong>1615 Laperriere Ave, Ottawa, ON K1Z 8S7<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–5p.m.<br>
+                Friday	7:30a.m.–5p.m.<br>
+                Saturday	9a.m.–12p.m.<br>
+                Sunday	Closed<br>
+                Monday	7:30a.m.–5p.m.<br>
+                Tuesday	7:30a.m.–5p.m.<br>
+                Wednesday	7:30a.m.–5p.m.<br>
+                <strong>Phone:</strong>(613) 729-4009<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/on/ottawa-intersection-alta-vista-et-bank-c311.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+                <!-- Kingston-->
+                <div class="tab-pane" id="kingston">
+                  <!-- Page Heading -->
+            <h1 class="my-4">Car Rentals in Kingston
+            </h1>
+
+            <!-- Project One -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="discount1.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Discount Car & Truck Rentals</h3>
+                <p><strong>Address:</strong>1288 Bath Rd, Kingston, ON K7M 4X3<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–5p.m.<br>
+                Friday	8a.m.–5p.m.<br>
+                Saturday	9a.m.–12p.m.<br>
+                Sunday	Closed<br>
+                Monday	8a.m.–5p.m.<br>
+                Tuesday	8a.m.–5p.m.<br>
+                Wednesday	8a.m.–5p.m.<br>
+                <strong>Phone:</strong>(613) 384-6002<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.discountcar.com/locations/kingston/140-bath-rd-and-armstrong-rd-car-rental" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Two -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>CarOne Kingston</h3>
+                <p><strong>Address:</strong> 775 Gardiners Rd, Kingston, ON K7M 7H8<br>
+                <strong>Hours:</strong>
+                Thursday	9a.m.–8p.m.<br>
+                Friday	9a.m.–5p.m.<br>
+                Saturday	9a.m.–5p.m.<br>
+                Sunday	10a.m.–4p.m.<br>
+                Monday	9a.m.–8p.m.<br>
+                Tuesday	9a.m.–8p.m.<br>
+                Wednesday	9a.m.–8p.m.<br>
+                <strong>Appointments:</strong>car1.ca<br>
+                <strong>Phone:</strong>(343) 266-4557<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.car1.ca/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Three -->
+            <div class="row">
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="dixon.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Dixon's Car and Truck Rental</h3>
+                <p><strong>Address:</strong> 2392 Princess St, Kingston, ON K7M 3G4<br>
+                <strong>Hours:</strong>
+                Thursday	8a.m.–6p.m.<br>
+                Friday	8a.m.–6p.m.<br>
+                Saturday	8a.m.–12p.m.<br>
+                Sunday	Closed<br>
+                Monday	7:30a.m.–6p.m.<br>
+                Tuesday	8a.m.–6p.m.<br>
+                Wednesday	8a.m.–6p.m.<br>
+                <strong>Phone:</strong>(613) 542-2222<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="http://www.dixonscarandtruckrental.com/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Project Four -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <a href="#">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="enterprise-car.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-5">
+                <h3>Enterprise Rent-A-Car</h3>
+                <p><strong>Address:</strong>2244 Princess St, Kingston, ON K7M 3G3<br>
+                <strong>Hours:</strong>
+                Thursday	7:30a.m.–5p.m.<br>
+                Friday	7:30a.m.–5p.m.<br>
+                Saturday	9a.m.–12p.m.<br>
+                Sunday	Closed<br>
+                Monday	7:30a.m.–5p.m.<br>
+                Tuesday	7:30a.m.–5p.m.<br>
+                Wednesday	7:30a.m.–5p.m.<br>
+                <strong>Phone:</strong>(613) 547-0755<br>
+                <strong>Province:</strong>Ontario<br></p>
+                <a class="btn btn-primary" href="https://www.enterprise.ca/fr/location-voiture/emplacements/canada/on/kingston-centre-ville-c336.html?mcid=yext:245709" target="_blank">View Website</a>
+              </div>
+            </div>
+            <!-- Row -->
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../../places/places.html">Places</a></li>
+                <li><a href="../../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../../activities/adventure.html">Activities</a></li>
+                <li><a href="../../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../../sitemap.html">Site Map</a></li>
+                <li><a href="../../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+  </body>
+  </html>
