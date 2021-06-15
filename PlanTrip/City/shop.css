@@ -1,0 +1,62 @@
+ .gallery-title {
+     font-size: 36px;
+     color: blue;
+     text-align: center;
+     font-weight: 500;
+     margin-bottom: 70px
+ }
+
+ .gallery-title:after {
+     content: "";
+     position: absolute;
+     width: 22.5%;
+     left: 38.5%;
+     height: 45px;
+     border-bottom: 1px solid #5e5e5e
+ }
+
+ .filter-button {
+     font-size: 18px;
+     border: 1px solid #0af70e;
+     border-radius: 5px;
+     text-align: center;
+     color: black;
+     margin-bottom: 30px
+ }
+
+ .filter-button:hover {
+     font-size: 18px;
+     border: 1px solid #0af70e;
+     border-radius: 5px;
+     text-align: center;
+     color: #ffffff;
+     background-color: #0af70e;
+ }
+
+ .btn-default:active .filter-button:active {
+     background-color: #0af70e;
+     color: white
+ }
+
+ .port-image {
+     width: 100%
+ }
+
+ .gallery_product {
+     margin-bottom: 30px
+ }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h1{
+  text-align: center;
+  color: red;
+}
+
+h4#sub-heading{
+    color: blue;
+}

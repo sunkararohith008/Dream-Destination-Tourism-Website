@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="shop.css" type="text/css" />
+
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/footer.css" type="text/css" />
+
+
+
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- Bootstrap slide gallery -->
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <!-- Link to adventure Css Stylesheet -->
+<link rel=" stylesheet" href="../CSS/adventure.css" type="text/css" />
+
+ <script>
+   $(document).ready(function(){
+
+$(".filter-button").click(function(){
+var value = $(this).attr('data-filter');
+
+if(value == "all")
+{
+
+$('.filter').show('1000');
+}
+else
+{
+
+$(".filter").not('.'+value).hide('3000');
+$('.filter').filter('.'+value).show('3000');
+
+}
+});
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+ </script>
+
+
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../../about.html">About Us</a> | <a href="../../sitemap.html">Site Map</a> | <a href="../../privacy.html">Privacy Policy</a>
+    </p> 
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item active">
+<a class="nav-link px-3" href="../../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Navbar ends here -->
+
+
+
+<div class="container">
+    <!-- <div class="row"> -->
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Multiday Tour Packages Of Halifax</h1>
+        </div>
+        <div align="center">
+          <button class="filter-button" data-filter="all">All</button>
+          <button class="filter-button" data-filter="one">How to spend 1 day in Halifax</button>
+          <button class="filter-button" data-filter="two">How to spend 2 days in Halifax</button>
+          <button class="filter-button" data-filter="three">How to spend 3 days in Halifax</button>
+        </div>
+        
+
+       
+      <div class="row">
+        <!-- How to spend 1 day in Halifax -->
+      <div class="col-lg-12 mb-6 mb-lg-0 filter one">
+        <h1 class="display-4 font-weight-bold">How to spend 1 day in Halifax</h1>
+        <div class="container container-fluid">
+          <div class="jumbotron" >
+            <!-- copyright="&copy; https://img.theculturetrip.com/wp-content/uploads/2017/09/town-clock-on-halifax-citadel-1.jpg-->
+            <img src="../../places/halifax-images/clock.jpg" alt="Paris" class="center"> <br>
+            <p>A natural harbor, numerous heritage buildings, and a thriving arts and culinary scene make Halifax one of the most charming maritime towns in Nova Scotia. Even if you’re pressed for time, you can still experience the highlights of the fabulous waterfront community. Here are some tips for making the most of your 24 hours in Halifax.</p> 
+            
+            <h4 id="sub-heading">Morning: City Sightseeing</h4>
+            <p>Get an early start for a morning tour of the historic Halifax waterfront. Tour Citadel Hill and the Halifax Citadel National Historic Site, and see some of the city’s notable landmarks, including Argyle Street, Grand Parade Square, Victoria Park, the Halifax Public Gardens, Government House, and St. Mary’s Cathedral Basilica. Take a more traditional tour by vehicle, or opt for a Segway tour for alfresco fun. If you’d rather explore at your own pace, climb aboard a vintage hop-on hop-off bus for your own self-guided tour of the city.</p>
+            
+            <h4 id="sub-heading">Afternoon: Peggy’s Cove</h4>
+            <p>Many sightseeing tours of Halifax include a visit to Peggy’s Cove, and for good reason. This afternoon, make the scenic drive to this picturesque fishing village, best known for its colorful salt-weathered houses and historic red and white lighthouse. Go tide pooling by the seashore, watch fishermen bring in their daily catch, or shop some of the small boutiques in the village.</p>
+            
+            <h4 id="sub-heading">Night: Dinner Cruise</h4>
+            <p>After a day of sightseeing, relax aboard a Mississippi-style sternwheeler during a leisurely harbor cruise. Learn about the city’s naval history as you take in the views of the Halifax waterfront, or sit down for dinner onboard, complete with live music and a full bar. Alternatively, if you’re still feeling energetic, opt instead for an open-deck party aboard a traditional tall ship. Order a drink and hit the dance floor in the salty sea air. Sunset sailing excursions offer a perfect night out for couples.</p>
+            
+            <small> &copy; Powered by Viator. </small>
+          </div>
+        </div>
+      </div>
+
+<!-- How to spend 2 day in Halifax -->
+      <div class="col-lg-12 mb-6 mb-lg-0 filter two">
+        <h1 class="display-4 font-weight-bold">How to spend 2 days in Halifax</h1>
+        <div class="container container-fluid">
+          <div class="jumbotron" >
+            <!-- copyright="&copy; https://images.squarespace-cdn.com/content/v1/5e6f923c6106c2523295fbf5/1606078911475-76K4WH8R6THDG8QDR0CM/ke17ZwdGBToddI8pDm48kAgzYejSbWGRoJP4yk7IdNQUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dtCOkMDEaPiGoIoGazr_ji7tWlVp5kgqCHrK9bIsxYYSbSexTd1-frD7527z4SM9QQ/PAR_2660-1920x800_3.jpg?format=2500w-->
+            <img src="../../places/halifax-images/harbour.jpg" alt="Paris" class="center"> <br>
+            <p>With two days to spend in picturesque Halifax on Eastern Canada’s maritime coast, you’ll have time to enjoy the charming atmosphere of the city, learn about its naval history, spend some time in the great outdoors, and venture to nearby Peggy’s Cove. Here are some tips for how to best spend your 48 hours in Halifax.</p> 
+            
+            <h4 id="sub-heading">Day 1: History and Heritages</h4>
+            <p><b>Morning:</b> Start your day with a morning sightseeing tour of the city, both to get oriented and to learn more about its history. One of the most popular ways to get around is by Segway, zipping between the Waterfront, Public Gardens, Argyle Street, and Citadel National Historic Site. If you’d rather move at your own pace, opt for the hop-on hop-off sightseeing bus instead.</p>
+            <p><b>Afternoon: </b> Even though it’s located about an hour outside Halifax, Peggy’s Cove is a must-see if you’re in the area. Get a feel for life in the Canadian Maritimes as you tour the red and white lighthouse standing guard over St. Margaret’s Bay, or browse the boutiques and shops of the village. Some Halifax sightseeing tours include a visit to Peggy’s Cove.</p>
+            <p><b>Night:</b> After a day of exploration, treat yourself (and your tastebuds) to the taste of Halifax with dinner at one of the city’s many excellent restaurants. The Brewery Complex on Lower Water Street offers a range of options in what was once North America’s oldest brewery. Lobster is always a good option in these parts.</p>
+            
+            <h4 id="sub-heading">Day 2: Outdoor Adventure</h4>
+            <p><b>Morning:</b> Just because you’re short on time doesn’t mean you have to pass up the chance to explore the natural beauty of the Halifax area. This morning, hop in a kayak for a leisurely paddle at Long Lake Provincial Park, located just 10 minutes from downtown Halifax.</p>
+            <p><b>Afternoon:</b> Take this afternoon to pursue your own interests in the city. Get schooled in Nova Scotia’s naval history at the Maritime Museum of the Atlantic; retrace the first steps of immigrants to Canada at the Canadian Museum of Immigration at Pier 21; do some shopping in the Spring Garden district; or make the hour-long drive north of Halifax for an afternoon of wine tasting in the scenic Annapolis Valley.</p>
+            <p><b>Night:</b> Finish off your trip with a relaxing cruise on Halifax Harbor. Opt for a romantic sunset sail with an onboard wine and cheese tasting, or sit down for dinner on a traditional paddlewheeler as you take in the sights to the sound of live music. </p>
+            
+            <small> &copy; Powered by Viator. </small>
+          </div>
+        </div>
+      </div>
+
+<!-- How to spend 3 days in halifax -->
+      <div class="col-lg-12 mb-6 mb-lg-0 filter three">
+        <h1 class="display-4 font-weight-bold">How to spend 3 days in Halifax</h1>
+        <div class="container container-fluid">
+          <div class="jumbotron" >
+            <!-- copyright="&copy; https://i.pinimg.com/originals/83/74/a0/8374a08b7cfd3dcb32f3d0e8acd77bb6.jpg-->
+            <img src="../../places/halifax-images/cityhall.jpg" alt="Paris" class="center"> <br>
+            <p>Three days in Halifax gives you enough time to enjoy the town itself—its history, heritage, and modern culture—but also experience some of the highlights of Nova Scotia, including Peggy’s Cove, Lunenburg, Mahone Bay, or the Annapolis Valley wine country. Read on for suggestions on how to spend the ultimate three days in Halifax.</p> 
+            
+            <h4 id="sub-heading">Day 1: Waterfront and Peggy’s Cove</h4>
+            <p>Kick off your day with a sightseeing tour of Halifax. Move at your own pace aboard the hop-on hop-off sightseeing bus, or zip around town on a Segway for a fun way to see the sights. However you choose to explore, be sure to visit the Halifax Public Gardens, Citadel National Historic Site, Argyle Street, and the Halifax Waterfront Boardwalk. After lunch, make the short drive to Peggy’s Cove to get a feel for small-town life in the Canadian Maritimes. Soak up the sea views from the red and white historic lighthouse, do some tide pooling on the coast, or stroll through town to check out the shops, boutiques, and cafés. Once back in Halifax, spend your evening over a cold pint at Alexander Keith’s, one of the oldest breweries in Canada.</p>
+            
+            <h4 id="sub-heading">Day 2: The Great Outdoors</h4>
+            <p>Nova Scotia boasts as much natural beauty as it does cultural appeal, so today is all about the great outdoors. Head offshore for a day of deep-sea fishing for the chance to snag cod, haddock, Boston bluefish, or mackerel, or rent a kayak for a paddle and picnic at Long Lake Provincial Park. If you’re not the outdoorsy type, take the day to dive deeper into your own personal interests in town. Visit one of the city’s museums (Maritime Museum of the Atlantic, Canadian Museum of Immigration at Pier 21), do some shopping in the Spring Garden neighborhood, visit the final resting place of some 100Titanic passengers at the Fairview Lawn Cemetery, or go for a walk in Point Pleasant Park. End your day on a sunset cruise of Halifax Harbor, either by sailboat or Mississippi-style paddlewheeler.</p>
+
+            <h4 id="sub-heading">Day 3: Nova Scotia Day Trip</h4>
+            <p>Now that you’ve experienced the best of Halifax, take a day to explore the greater Nova Scotia area. Head to the South Shore to visit the well-preserved colonial settlement of Lunenburg, a UNESCO World Heritage Site. Learn more about the supposed hidden treasures that gave Oak Island the nickname “Money Pit” as you wander the streets of coastal Mahone Bay. Alternatively, head north of Halifax on a day trip to the Annapolis Valley, Nova Scotia’s very own wine region. Taste a range of red, white, sparkling, and dessert wines while touring some of the winemaking facilities. Back in Halifax, polish off your trip with a lobster dinner at a waterfront restaurant overlooking Halifax Harbor.</p>
+            
+            <small> &copy; Powered by Viator. </small>
+          </div>
+        </div>
+      </div>
+
+      
+      </div>
+    
+    <br>
+
+       
+</div>
+<!--  -->
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../../places/places.html">Places</a></li>
+                <li><a href="../../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../../activities/adventure.html">Activities</a></li>
+                <li><a href="../../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../../sitemap.html">Site Map</a></li>
+                <li><a href="../../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+</body>
+</html>

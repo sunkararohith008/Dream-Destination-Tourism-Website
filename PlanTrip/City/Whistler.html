@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="shop.css" type="text/css" />
+
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/footer.css" type="text/css" />
+
+
+
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- Bootstrap slide gallery -->
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <!-- Link to adventure Css Stylesheet -->
+<link rel=" stylesheet" href="../CSS/adventure.css" type="text/css" />
+
+ <script>
+   $(document).ready(function(){
+
+$(".filter-button").click(function(){
+var value = $(this).attr('data-filter');
+
+if(value == "all")
+{
+
+$('.filter').show('1000');
+}
+else
+{
+
+$(".filter").not('.'+value).hide('3000');
+$('.filter').filter('.'+value).show('3000');
+
+}
+});
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+ </script>
+
+
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../../about.html">About Us</a> | <a href="../../sitemap.html">Site Map</a> | <a href="../../privacy.html">Privacy Policy</a>
+    </p> 
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item active">
+<a class="nav-link px-3" href="../../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Navbar ends here -->
+<br>
+<!-- Nav Bar ends here -->
+
+
+
+<div class="container">
+    <!-- <div class="row"> -->
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Multiday Tour Packages Of Whistler</h1>
+        </div>
+        <div align="center">
+          <button class="filter-button" data-filter="all">All</button>
+          <button class="filter-button" data-filter="one">How to spend 1 day in Whistler</button>
+          <button class="filter-button" data-filter="two">How to spend 2 days in Whistler</button>
+          <button class="filter-button" data-filter="three">How to spend 3 days in Whistler</button>
+        </div>
+        
+
+       
+      <div class="row">
+        <!-- How to spend 1 day in Whistler -->
+      <div class="col-lg-12 mb-6 mb-lg-0 filter one">
+        <h1 class="display-4 font-weight-bold">How to spend 1 day in Whistler</h1>
+        <div class="container container-fluid">
+          <div class="jumbotron" >
+            <!-- copyright="&copy; https://hdwallpaperup.in/wp-content/uploads/2018/12/Lake-rocks-mountains-reflection-4k-3840x2160.jpg-->
+            <img src="../../places/attraction-pic/whistler-callaghan.jpg" alt="Paris" class="center"> <br>
+            <p>North of Vancouver, Whistler is a compact, year-round outdoor playground. In just a single day, you can ski, snowboard, hike, or mountain bike down Whistler Blackcomb’s world-class runs—nestled among the Coast Range mountains, home to glaciers and alpine lakes—and have time for sightseeing and fine dining. Here’s how to maximize 24 hours in Whistler.</p> 
+            
+            <h4 id="sub-heading">Morning: Go Peak to Peak</h4>
+            <p>Whistler Blackcomb is Canada’s premier ski resort and one of the largest in North America. Its Peak 2 Peak Gondola connects Whistler and Blackcomb mountains, showcasing the region’s spectacular scenery. The gondola spans about 2 miles (3 kilometers) of fresh mountain air, making it one of the world’s longest. Come in winter and be treated to spectacular snowy scenes; in summer, glide under blue skies and endless panoramas. You might use the gondola to access ski terrain or snowshoeing and hiking trails high on the mountains, or simply to enjoy sightseeing from this lofty perch.</p>
+            
+            <h4 id="sub-heading">Afternoon: Choose Your Outdoor Adventure</h4>
+            <p>Whistler is packed with outdoor adventure options. One extremely popular activity is ziplining over white-water rivers and alpine forests. Or get your adrenaline pumping on a helicopter tour of Whistler, which shows off some of the area’s pristine scenery without the challenges of hiking and skiing into the backcountry. In winter, snowmobiling is another top choice: guides lead you along groomed trails perfect for getting a feel for this thrilling sport, no experience required. Of course, you can also get a lift ticket and ski, snowboard, or ride to your heart’s delight.</p>
+            
+            <h4 id="sub-heading">Night: Enjoy the Dining Scene</h4>
+            <p>The folks at Whistler know a thing or two about great dining. After all, visitors need high-quality fuel for all those outdoor activities. The restaurants clustered in Whistler Village are especially top-notch, with menus incorporating everything from inventive cocktails and regional wines to tapas, sushi, and more. Several tours take you to the best of these restaurants, including some of the more hidden gems, and typically include food and drink. As the night grows later, Whistler keeps the party going with lively bars and pubs that feature music and stand-up comedy.</p>
+            
+            <small> &copy; Powered by Viator. </small>
+          </div>
+        </div>
+      </div>
+
+<!-- How to Spend 2 Days in Whistler -->
+      <div class="col-lg-12 mb-6 mb-lg-0 filter two">
+        <h1 class="display-4 font-weight-bold">How to Spend 2 Days in Whistler</h1>
+        <div class="container container-fluid">
+          <div class="jumbotron" >
+            <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/4/45/Whistler_Olympic_Park_%E2%80%93_Ski_Jumping_Center_%28CAN%29.jpg-->
+            <img src="../../places/attraction-pic/whistler-olympic.jpg" alt="Paris" class="center"> <br>
+            <p>Two days in Whistler, British Columbia’s premier ski resort, is plenty of time to explore the area’s stunning mountain scenery and indulge in more relaxing epicurean pursuits as well. Fly over glaciers, take a backcountry tour, go white-water rafting, hit the slopes, and more. Here are a few ways to maximize 48 hours in and around Whistler.</p> 
+            
+            <h4 id="sub-heading">Day 1: Get to Know Whistler</h4>
+            <p><b>Morning:</b> See Whistler and its spectacular mountain scenery from above on the Peak 2 Peak Gondola, which spans Whistler and Blackcomb mountains. One of the longest gondola runs in the world, the Peak 2 Peak is ideal for general sightseeing, or for accessing prime skiing, snowshoeing, and hiking terrain.</p>
+            <p><b>Afternoon: </b> Whistler is surrounded by the glacier-capped Coast Range. See it all by helicopter, soaring above the mountains. Some tours touch down in the backcoutnry, leading you to untouched wilderness for picnics and hiking.</p>
+            <p><b>Night:</b> Discover Whistler Village’s diverse dining scene, enjoying inventive cocktails, stellar wines, and a wide range of cuisines, from international flavors to well-executed comfort food. Whether you pick a restaurant squarely on the region’s radar for top-notch dining or go with an underrated gem, there’s something for every diner in Whistler.</p>
+            
+            <h4 id="sub-heading">Day 2: Explore the Great Outdoors</h4>
+            <p><b>Morning:</b> If you’re visiting in the colder months, you might opt for a snowmobiling tour of the Whistler backcountry. Guides take even inexperienced snowmobilers on exhilarating trips into the winter wonderland. In warm weather, white-water rafting tours get your adrenaline pumping while allowing access to the area’s endless scenery.</p>
+            <p><b>Afternoon:</b> Again, as with most things in Whistler, your activity options depend on the time of year. In summer, don’t miss the Via Ferrata—essentially a high alpine ropes course that traverses the mountains. In winter, you might pick a snowshoeing tour, another way to access remote mountainous terrain with the help of a guide.</p>
+            <p><b>Night:</b> The adventures don’t stop at dinnertime—and again, your options are seasonal. Snowmobile up to Crystal Hut, high above Whistler Village, for a fondue dinner under the stars. Or, in warmer weather, drive your ATV to a scenic spot for an evening salmon bake with a view.</p>
+            
+            <small> &copy; Powered by Viator. </small>
+          </div>
+        </div>
+      </div>
+
+<!-- How to Spend 3 Days in Whistler -->
+      <div class="col-lg-12 mb-6 mb-lg-0 filter three">
+        <h1 class="display-4 font-weight-bold">How to Spend 3 Days in Whistler</h1>
+        <div class="container container-fluid">
+          <div class="jumbotron" >
+            <!-- copyright="&copy; https://i.pinimg.com/originals/ed/c5/b2/edc5b23c94f105c893f985472c660a39.jpg-->
+            <img src="../../places/attraction-pic/whistler-bike.jpg" alt="Paris" class="center"> <br>
+            <p>One of North America’s largest and most celebrated ski resorts, Whistler Blackcomb sits in the spectacular Coast Range, north of Vancouver. And there’s much to celebrate, from ski runs fit for Olympians (and novices) to top-notch dining to outdoor activities for every fitness level. Here’s how to experience all of Whistler in three glorious days.</p> 
+            
+            <h4 id="sub-heading">Day 1: Hit the Slopes</h4>
+            <p>When Vancouver hosted the 2010 Winter Olympics, Whistler’s world-class ski runs gained international attention. There are two primary mountains here: Whistler and Blackcomb, each boasting numerous runs of varying difficulty. Skilled instructors will show you the ropes if you’re new to skiing or snowboarding, or just want to brush up on your abilities. Or, if you want to explore the natural beauty in a more relaxed manner, guided snowshoeing trips trek around the mountains—and going with a guide ensures that you stay safe traveling through avalanche territory. In warmer months, when the snow melts, hiking trails crisscross the mountains. Lace up your boots and ride the Peak 2 Peak Gondola, which runs year-round, to access backcountry terrain. Alternatively, book a half- or full-day mountain biking tour, suited for riders of all levels.</p>
+            
+            <h4 id="sub-heading">Day 2: See the Sights</h4>
+            <p>With so many mountains surrounding Whistler begging for exploration, getting a bird’s-eye perspective might be the best way to take it all in. Numerous options exist for seeing the glacier-capped range by air. A shorter helicopter or flightseeing tour is a great option for travelers wanting less physical activity. Other options take you heli-hiking or heli-skiing, dropping you deep in the wilderness for access to untouched alpine terrain. Other flights simply land in the backcountry for a picnic after aerial pursuits, allowing you some time in the backcountry without needing much in the way of ability, skill, or equipment. Unwind with a trip to the luxurious Scandinave Spa, complete with multiple hot pools in a mountainside setting. End your night in Whistler Village, where you can grab a top-notch dinner, or explore multiple restaurants via a food tour. The nightlife, ranging from live music to hip cocktail bars, will keep you busy if you’re looking to spend a night on the town.</p>
+
+            <h4 id="sub-heading">Day 3: Pump the Adrenaline</h4>
+            <p>Whistler is a hub for adventure enthusiasts, as there are myriad options year-round for getting your adrenaline flowing. Often these activities last only a few hours, so you can combine several in one day. Maybe you’ll start the morning flying through the air on a zipline over pristine alpine forest. Or dig a paddle into frothy white-water on a nearby river. If there’s snow on the ground, you might opt to zoom through the winter terrain on a snowmobile, a perfect option for visitors lacking ski or snowboard experience or interest. If you enjoy horseback riding, nearby Pemberton is ideal for this sport, with guides leading groups on 1- or 2-hour trips. Other options include riding the Peak 2 Peak Gondola, a year-round attraction that is worthwhile for the views—whether you’re skiing or not. You might also try the Via Ferrata, essentially a high ropes course built high i the mountains.</p>
+            
+            <small> &copy; Powered by Viator. </small>
+          </div>
+        </div>
+      </div>
+
+      
+      </div>
+    
+    <br>
+
+       
+</div>
+<!--  -->
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../../places/places.html">Places</a></li>
+                <li><a href="../../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../../activities/adventure.html">Activities</a></li>
+                <li><a href="../../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../../sitemap.html">Site Map</a></li>
+                <li><a href="../../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+</body>
+</html>
