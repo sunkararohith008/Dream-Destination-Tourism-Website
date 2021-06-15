@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to Places Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/try.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <!-- <link rel=" stylesheet" href="CSS/gallery.css" type="text/css" /> -->
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../CSS/footer.css" type="text/css" />
+  <!-- Link to toggle navbar css stylesheet -->
+  <link rel="stylesheet" href="../CSS/toggle.css" type="text/css" />
+
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for autoplay -->
+  <style>
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%
+}
+
+#custCarousel .carousel-indicators {
+  position: static;
+  margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+  width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+  display: block;
+  opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+  opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+  opacity: 0.75
+}
+
+.carousel-item img {
+  width: 100%
+}
+  </style>
+<script>
+  $(document).ready(function(){
+
+  $('.items').slick({
+  dots: true,
+  infinite: true,
+  speed: 800,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+  {
+  breakpoint: 1024,
+  settings: {
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  infinite: true,
+  dots: true
+  }
+  },
+  {
+  breakpoint: 600,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 2
+  }
+  },
+  {
+  breakpoint: 480,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1
+  }
+  }
+
+  ]
+  });
+  });
+</script>
+</head>
+<body>
+   <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../about.html">About Us</a> | <a href="../sitemap.html">Site Map</a> | <a href="../privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item active">
+    <a class="nav-link px-3" href="../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+<!-- For weather from weatherwidget.ca -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/51d05n114d07/calgary/" data-label_1="CALGARY" data-label_2="WEATHER" data-theme="original" >CALGARY WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<!-- weather ends here -->
+
+
+<!-- For Toronto Content -->
+<!-- <div class = "toronto-content"> -->
+<div class="jumbotron-fluid">
+<div class="container">
+<h1 style="text-align: center; margin-bottom:5px"> Calgary </h1>
+<p id="city-content"> Calgary, a cosmopolitan Alberta city with numerous skyscrapers, owes its rapid growth to its status as the centre of Canada’s oil industry. However, it’s still steeped in the western culture that earned it the nickname “Cowtown,” evident in the Calgary Stampede, its massive July rodeo and festival that grew out of the farming exhibitions once presented here. </p>
+</div>
+</div>
+
+
+
+<!-- Gif for Travelling -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://thumbs.gfycat.com/WearyGargantuanCornsnake-size_restricted.gif" -->
+          <img class= "img-fluid" src="try-1.gif" id="gif">
+        </div>
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://theneverendingpursuitofawesome.files.wordpress.com/2016/03/hello-talent-logo.png" -->
+          <img class= "img-fluid" src="try-2.gif" id="gif">
+    </div>
+</div>
+</div>
+<!-- Gif ends here -->
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                <!-- slides -->
+                <!-- copyright="&copy; https://www.studiobell.ca/assets/images/_square/StudioBell_crBittermannPhotography-LR-1.jpg" -->
+                <!-- copyright="&copy; http://2.bp.blogspot.com/-sSVb-XBTBCo/Tg9eLSczuwI/AAAAAAAABxA/C6uIFduEj34/s1600/Imagesmicro-Calaw6_W_calaway_park_rollercoaster_calgary.jpg" -->
+                <!-- copyright="&copy; https://adn.harmanpro.com/news/news_photos/1615_1573508847/Boxen7027_original.jpg" -->
+                <!-- copyright="&copy; https://www.aceac.com/wp-content/uploads/2016/02/World-of-Beer-VA.jpg" -->
+                <!-- copyright="&copy; http://venueconcierge.ca/wp-content/uploads/2017/04/14AERO0107.jpg" -->
+                <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/a/a7/Calgary_Tower_with_flame_1-cropped.jpg" -->
+                <!-- copyright="&copy; http://winsport.goalline.ca/news_images/org_1273/Image/winsportgather2.jpg" -->
+                <div class="carousel-inner pics-main">
+                    <div class="carousel-item active"> <img src="calgary-images/music.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="calgary-images/way.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="calgary-images/spark.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="calgary-images/zoo.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="calgary-images/flight.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="calgary-images/tower.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="calgary-images/sport.jpg" alt="Hills"> </div>
+                </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                <ol class="carousel-indicators list-inline">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="calgary-images/music.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="calgary-images/way.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="calgary-images/spark.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="calgary-images/zoo.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="4" data-target="#custCarousel"> <img src="calgary-images/flight.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="5" data-target="#custCarousel"> <img src="calgary-images/tower.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="6" data-target="#custCarousel"> <img src="calgary-images/sport.jpg" class="img-fluid"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card -->
+  <h1 style="text-align: center; margin-top: 10px;">Top Most Attractions to visit in Toronto</h1>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<div class="items">
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/tower.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/a/a7/Calgary_Tower_with_flame_1-cropped.jpg" -->
+          <h5 class="card-title">Calgary Tower</h5>
+          <p class="card-text">Standing sentinel over the city’s downtown since 1968, Calgary Tower features an observation deck with a glass floor and a revolving restaurant 627 feet (191 meters) above ground. Both afford 360-degree views across the city to the snow-capped Rocky Mountains in the distance. The Calgary Tower is one of the best places to do just that.The Sky 360 restaurant makes one complete revolution
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/music.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.studiobell.ca/assets/images/_square/StudioBell_crBittermannPhotography-LR-1.jpg" -->
+          <h5 class="card-title">Studio Bell, home of the National Music Centre</h5>
+          <p class="card-text">Studio Bell, home of the National Music Centre, is a state-of-the-art cultural center in Calgary. Spanning 160,000 square feet (14,865 square meters), the architecturally notable center includes a museum, performance hall, live music venue, recording studios, radio station, classrooms, and media center.Celebrate the icons in the Canadian Music Hall of Fame, Canadian Country Music.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/glen.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.facebook.com/watch/live/?v=706041510208132&ref=watch_permalink" -->
+          <h5 class="card-title">Glenbow Museum</h5>
+          <p class="card-text">Glenbow is the largest cultural museum in western Canada, in particular highlighting the history and culture of indigenous Canadians. The museum combines artifacts, artworks, archives, documents and fun interactive exhibits. Tour the Blackfoot nations gallery, imagine riding in an Inuit kayak or pioneer wagon, and see photographic exhibits, sculptures, modernist and historical art.It’s a block away from the LRT C-Train line.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/sport.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://winsport.goalline.ca/news_images/org_1273/Image/winsportgather2.jpg" -->
+          <h5 class="card-title">WinSport</h5>
+          <p class="card-text">A legacy of the 1988 Winter Games, WinSport, Canada's Olympic Park, has hosted Olympic events in ski jumping, bobsled, and luge. These days, its professional-standard facilities are mostly used for recreational purposes, with visitors flocking here not only to ski, snowboard, and bobsled but also to try other activities, such as ziplining.WinSport is a dream for active travelers, with a whole host of exhilarating experiences on offer.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/zoo.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.aceac.com/wp-content/uploads/2016/02/World-of-Beer-VA.jpg" -->
+          <h5 class="card-title">Calgary Zoo</h5>
+          <p class="card-text">Possibly the city’s most popular attraction, the Calgary Zoo has been caring for animals and animal lovers since 1929. Surrounded by botanical gardens with a rain forest and butterfly enclosure, Canada’s second largest zoo is home to more than 1,000 critters representing dozens of species from all corners of the globe.Admission to the Calgary Zoo grants visitors access to all the animal exhibits (divided into geographical regions),
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/park.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://pbs.twimg.com/profile_banners/19668931/1399588542/1500x500" -->
+          <h5 class="card-title">Heritage Park</h5>
+          <p class="card-text">Heritage Park in Calgary, Alberta, is an open-air historical and learning museum that gives visitors the chance to experience what life was like on the Canadian Prairies from 1860 to 1950. Costumed interpreters and many hands-on, interactive exhibits help you go deeper into your fun-filled encounter with the living past.Canada’s largest living history museum is divided into several sections, with something to interest pretty much every visitor.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/calgary.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www2.calgarystampede.com/sites/default/files/cowboys-bucking-horse-rodeo-granstand-arena.jpg" -->
+          <h5 class="card-title">Calgary Stampede </h5>
+          <p class="card-text">The Calgary Stampede is a grand celebration of Canada’s Western heritage that has been attracting visitors every year since 1923. Visit to experience small-town fun in a big way. The Stampede includes rodeo events, chuckwagon races, blacksmithing competitions, a midway, 300 performers on five stages, and First Nations cultural events.The self-proclaimed Greatest Outdoor Show on Earth attracts more than a million visitors over 10 days of events
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/way.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://2.bp.blogspot.com/-sSVb-XBTBCo/Tg9eLSczuwI/AAAAAAAABxA/C6uIFduEj34/s1600/Imagesmicro-Calaw6_W_calaway_park_rollercoaster_calgary.jpg" -->
+          <h5 class="card-title">Calaway Park</h5>
+          <p class="card-text">For all the fun of the fair, with family-friendly rides and live entertainment, visit Calaway Park. The largest amusement park in Canada’s west, Calaway Park has 34 rides spread over 36 hectares (90 acres). From special rides for youngsters like the Aeromax crop duster to the whirling Adrenaline Test Zone and Bumper Boat splashdown, there are rides for all ages, from calm to thrilling.Height restrictions apply and some rides require adults.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/spark.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://adn.harmanpro.com/news/news_photos/1615_1573508847/Boxen7027_original.jpg" -->
+          <h5 class="card-title">TELUS Spark</h5>
+          <p class="card-text">For adults and kids alike, the TELUS Spark Science Center, is a highlight of a visit to Calgary. From ecology to forensics, human health to robotics, Spark knows no bounds. The HD Digital Dome Theatre brings science to the huge screen, and year-round exhibits entertain and inform. Explore the universe, discover the scientific innovations that have changed the world, put on your thinking cap in the inventor’s workshop at Open Studio.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/flight.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://venueconcierge.ca/wp-content/uploads/2017/04/14AERO0107.jpg" -->
+          <h5 class="card-title">The Hangar Flight Museum</h5>
+          <p class="card-text">Kids big and small are fascinated by The Hangar Flight Museum, highlighting the history of Canadian aviation. As well as displaying historic civilian and military aircraft, the museum hosts exhibits of visiting aircraft. Go for a spin in a plane flight simulator, or take an educational tour to learn more about the museum’s prized collection of vintage aircraft.The Aero Space Museum of Calgary is just south of the airport, north of downtown.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="calgary-images/med.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://i.dailymail.co.uk/i/pix/2012/07/04/article-2168868-13EC459A000005DC-756_1024x615_large.jpg" -->
+          <h5 class="card-title">Medalta</h5>
+          <p class="card-text">For 40 years in the early 1900s the Medalta factory produced tens of thousands of durable and still-popular dishes and storage crocks from imported Saskatchewan clay. But, the industry boomtown was left to ruin with machines and punch-cards still in place when the plant shuttered in 1954. Today, the Medalta Potteries National Historic Site lends insight into western Canada’s earliest large-scale industry.
+</p>
+      </div>
+  </div>
+</div>
+<!-- Nav bar -->
+
+
+
+<!--  -->
+<!--  -->
+<!-- toggle.css -   image content of .card-text is in toggle.css -->
+<!-- Toggle Nav Bar Stats here-->
+<div class="container">
+  <h2>Choose activities according to your choice.</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#city">City Tour</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#attractions">Attractions Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#art">Art & Culture Tour</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#water">Water Tour</a>
+    </li>
+  </ul>
+  <!-- Toggle nav bar ends here -->
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+    <!-- First - Historical Sites  -->
+    <div id="attractions" class="container tab-pane place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> Attractions Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="155849P1,62314P6,220265P12,62314P3,180217P7,220265P14,3026C09,220265P2,3026C12,11245P4,155849P3,74643P16" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+<div id="city" class="container tab-pane  active place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> City Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="63661P6,104204P351,85636P1,85636P6,192315P1,208872P24,104204P115" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+    <!-- Museums-->
+    <div id="art" class="container tab-pane fade place-list">
+      <!-- <h3>Museum</h3> -->
+      <div class="jumbotron" >
+      <h3>Art & Culture Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="6757ADMISSION,220265P13,74643P5,104204P115" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+    <!-- Zoos/Aquariums-->
+    <div id="water" class="container tab-pane fade place-list"><br>
+      <!-- <h3>Zoos/Aquariums</h3> -->
+     <div class="jumbotron" >
+      <h3>Water Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="241033P1,3827P38,124651P3,62314P19,62314P8,62314P7" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+  </div>   <!-- div class="tab-content" -->
+</div>  <!-- Toggle Nav Bar Stats here-->
+
+<!--  -->
+<!-- Toggle navbar ends here -->
+
+<!-- For Adventure page Link -->
+<div class="py-5 text-center text-info background-info" style="">
+    <div class="container actpage">
+        <div class="row">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Activities To Do </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/adventure.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="../list/paint-final.jpeg"></a>
+                <a href="../activities/adventure.html"><h4> <b>Adventure Activities</b> </h4></a>
+            </div>
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/festival.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="festival.jpg" alt="Card image cap" width="200"></a>
+              <!-- copyright="&copy; https://www.jetpunk.com/img/user-photo-library/c5/c5f160c057-450.jpg" -->
+                <a href="../activities/festival.html"><h4> <b>Festivals</b> </h4></a>
+            </div>
+            <div class="col-lg-4 p-4"> <a href="../activities/shopping.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="../list/shopping-final.jpg" width="200"></a>
+                <!-- copyright="&copy; https://i.ebayimg.com/00/s/OTAwWDYwMA==/z/ucUAAOSwrklVBLBJ/$_1.JPG?set_id=2" -->
+               <a href="../activities/shopping.html"> <h4> <b>Shopping</b> </h4></a>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+<!-- For Transport page Link -->
+    <div class="container actpage">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Your Mode Of Transport </h1>
+            </div>
+        <div class="row ">
+          <!-- copyright="&copy; https://www.kettering.com.au/wp-content/uploads/shutterstock_305567459-1024x683.jpg" -->
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/transport-try/road.html"><img class="img-fluid d-block mb-3 mx-auto" alt="Card image cap" width="300" src="road.jpg"></a>
+                <a href="../Transport/transport-try/road.html"><h4> <b>By Road</b> </h4></a>
+            </div>
+            <!-- copyright="&copy; http://allpicts.in/download/7642/2016/03/Airplane_Images_with_Beautiful_Picture_of_Flight_in_Sunset-1152x864.jpg" -->
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/air/flight.html"><img class="img-fluid d-block mb-3 mx-auto" src="flight.jpg" alt="Card image cap" width="300"></a>
+                <a href="../Transport/air/flight.html"><h4> <b>By Air</b> </h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../places/places.html">Places</a></li>
+                <li><a href="../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../activities/adventure.html">Activities</a></li>
+                <li><a href="../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../sitemap.html">Site Map</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+</body>
+</html>

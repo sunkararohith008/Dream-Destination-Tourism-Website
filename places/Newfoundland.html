@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to Places Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/try.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <!-- <link rel=" stylesheet" href="CSS/gallery.css" type="text/css" /> -->
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../CSS/footer.css" type="text/css" />
+  <!-- Link to toggle navbar css stylesheet -->
+  <link rel="stylesheet" href="../CSS/toggle.css" type="text/css" />
+
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for autoplay -->
+  <style>
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%
+}
+
+#custCarousel .carousel-indicators {
+  position: static;
+  margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+  width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+  display: block;
+  opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+  opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+  opacity: 0.75
+}
+
+.carousel-item img {
+  width: 100%
+}
+  </style>
+<script>
+  $(document).ready(function(){
+
+  $('.items').slick({
+  dots: true,
+  infinite: true,
+  speed: 800,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+  {
+  breakpoint: 1024,
+  settings: {
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  infinite: true,
+  dots: true
+  }
+  },
+  {
+  breakpoint: 600,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 2
+  }
+  },
+  {
+  breakpoint: 480,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1
+  }
+  }
+
+  ]
+  });
+  });
+</script>
+</head>
+<body>
+   <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../about.html">About Us</a> | <a href="../sitemap.html">Site Map</a> | <a href="../privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item active">
+    <a class="nav-link px-3" href="../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+<!-- For weather from weatherwidget.ca -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/53d14n57d66/newfoundland-and-labrador/" data-label_1="NEWFOUNDLAND" data-label_2="WEATHER" data-theme="original" >NEWFOUNDLAND WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<!-- weather ends here -->
+
+
+<!-- For Toronto Content -->
+<!-- <div class = "toronto-content"> -->
+<div class="jumbotron-fluid">
+<div class="container">
+<h1 style="text-align: center; margin-bottom:5px"> Newfoundland </h1>
+<p id="city-content"> Newfoundland and Labrador form the most easterly province of Canada. On Newfoundland island, the Norse archaeological site L'Anse aux Meadows is the reputed settlement of Viking explorer Leif Erikson. Gros Morne National Park, on the Gulf of St Lawrence, has cliffs, waterfalls and glacial fjords. Southeastern capital city St. John’s is known for the 17th-century Signal Hill citadel, with a hillside walking trail. </p>
+</div>
+</div>
+
+<!-- <img src="try-1.gif" alt="gif">
+<img src="try-2.gif" alt="gif"> -->
+
+
+<!-- Gif for Travelling -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://thumbs.gfycat.com/WearyGargantuanCornsnake-size_restricted.gif" -->
+          <img class= "img-fluid" src="try-1.gif" id="gif">
+        </div>
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://theneverendingpursuitofawesome.files.wordpress.com/2016/03/hello-talent-logo.png" -->
+          <img class= "img-fluid" src="try-2.gif" id="gif">
+    </div>
+</div>
+</div>
+<!-- Gif ends here -->
+
+<!--  -->
+
+<!-- <div class="row">
+  <div class="column">
+      <img src="try-1.gif" alt="gif">
+  </div>
+  <div class="column">
+      <img src="try-2.gif" alt="gif">
+  </div>
+</div> -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+              <!-- slides -->
+              <div class="carousel-inner pics-main">
+                  <!-- copyright="&copy; https://live.staticflickr.com/1428/5102408840_17a15c144e_h.jpg-->
+                <div class="carousel-item active"> <img src="newfoundland-images/park.jpg" alt="Newfoundland"> </div>
+                <!-- copyright="&copy; https://i.pinimg.com/originals/49/dd/0a/49dd0ae27af32dab02fda6760f02d253.jpg-->
+                <div class="carousel-item"> <img src="newfoundland-images/site.jpg" alt="Newfoundland"> </div>
+                <!-- copyright="&copy; https://i.pinimg.com/736x/a6/f4/2a/a6f42a7336a796df4ae226940af81147.jpg-->
+                <div class="carousel-item"> <img src="newfoundland-images/bon.jpg" alt="Newfoundland"> </div>
+                <!-- copyright="&copy; https://live.staticflickr.com/8395/8693376952_17f0c37e0c.jpg-->
+                <div class="carousel-item"> <img src="newfoundland-images/light.jpg" alt="Newfoundland"> </div>
+                <!-- copyright="&copy; https://www.gatheralls.com/wp-content/uploads/2019/11/3-whales-surface.jpg-->
+                <div class="carousel-item"> <img src="newfoundland-images/bay.jpg" alt="Newfoundland"> </div>
+                <!-- copyright="&copy; https://www.newfoundlandlabrador.com/-/media/marquees/top-destinations/cape-st-marys/cape-st-marys/cape-st-marys-main-header.jpg?mh=960&mw=1280&hash=3638522938693A0746DEDC8A761FD6394A9E495D&mh=960&mw=1280&hash=3638522938693A0746DEDC8A761FD6394A9E495D-->
+                <div class="carousel-item"> <img src="newfoundland-images/reserve.jpg" alt="Newfoundland"> </div>
+                <!-- copyright="&copy; https://pcacdn.azureedge.net/-/media/lhn-nhs/nl/castlehill/Ash/carousel-1-correct.jpg?modified=20170329171551-->
+                <div class="carousel-item"> <img src="newfoundland-images/castle.jpg" alt="Newfoundland"> </div>
+              </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                <ol class="carousel-indicators list-inline">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="newfoundland-images/park.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="newfoundland-images/site.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="newfoundland-images/bon.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="newfoundland-images/light.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="4" data-target="#custCarousel"> <img src="newfoundland-images/bay.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="5" data-target="#custCarousel"> <img src="newfoundland-images/reserve.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="6" data-target="#custCarousel"> <img src="newfoundland-images/castle.jpg" class="img-fluid"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card -->
+  <h1 style="text-align: center; margin-top: 10px;">Top Most Attractions to visit in NewFoundland</h1>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<div class="items">
+  <div class="card">
+    <!-- copyright="&copy; https://live.staticflickr.com/1428/5102408840_17a15c144e_h.jpg-->
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/park.jpg"> </div>
+      <div class="card-body">
+          <h5 class="card-title"> Gros Morne National Park</h5>
+          <p class="card-text">Gros Morne National Park is undoubtedly one of the most impressive natural features in eastern Canada, a magnificent landscape of fjords and mountains, partly covered with dense forest. Unique wildlife and plant life has adapted to the cold conditions, which are found scarcely anywhere else so far south.This is one of Newfoundland's most popular attractions, with hiking trails and sightseeing boat excursions in the dramatic landlocked fjord at Western Brook Pond. </p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/site.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://i.pinimg.com/originals/49/dd/0a/49dd0ae27af32dab02fda6760f02d253.jpg-->
+          <h5 class="card-title"> L'Anse aux Meadows National Historic Site</h5>
+          <p class="card-text">L'Anse aux Meadows National Historic Site, a green plain with some moorland, lies at the northern tip of Newfoundland's Great Northern Peninsula. Here were discovered six houses made of grass sods, probably built by the Vikings around the year 1,000 and rediscovered in 1962. It is the oldest known European settlement in North America and, to date, is the only authentic trace of Viking settlement in the New World. It is probably the "Vinland" discovered by Leif Erikson.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/hill.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://www.historic-uk.com/wp-content/uploads/2017/01/lydford-devon.jpg-->
+          <h5 class="card-title">Signal Hill National Historic Site</h5>
+          <p class="card-text">Atop its namesake hill, Signal Hill National Historic Site overlooks the Atlantic Ocean, St. John's harbor, and the small historic downtown. In 1901, Guglielmo Marconi received the first transatlantic wireless signal here. The landmark Cabot Tower commemorates the 400th anniversary of John Cabot's voyage. Hiking trails lead to the fortifications at the Queen's Battery Barracks and along the perilous cliffs, including spectacular.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/room.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://edroche.com/era/wp-content/uploads/2017/11/Kings-Cove-Daisies-at-Dusk-510x382.jpg-->
+          <h5 class="card-title">The Rooms</h5>
+          <p class="card-text">Dominating the hilltop in sharp contrast to the neighboring 19th-century Romanesque Revival-style Catholic Basilica, St. John's newest museum is called The Rooms and includes several different collections divided by subject. Sections include wildlife and natural history, aboriginal finds, contemporary art, and historical and cultural exhibits that give a good picture of both Newfoundland and Labrador. The museum has a popular restaurant.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/bon.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://i.pinimg.com/736x/a6/f4/2a/a6f42a7336a796df4ae226940af81147.jpg-->
+          <h5 class="card-title">Bonavista Peninsula</h5>
+          <p class="card-text">The best-known peninsula in Newfoundland is Bonavista, where John Cabot is thought to have sighted the "New World" for the first time in 1497. At Cape Bonavista, stands a statue of Cabot, and visitors can watch for whales, puffins, and icebergs along the coast. The old lighthouse, a provincial historic site, dates from 1843 and was restored around 1870. Picturesque Trinity is an old fishing and trading town, where the historical character has been well preserved. </p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/light.jpg"> </div>
+      <div class="card-body">
+          <!-- copyright="&copy; https://live.staticflickr.com/8395/8693376952_17f0c37e0c.jpg-->
+          <h5 class="card-title">Cape Spear Lighthouse National Historic Site</h5>
+          <p class="card-text">Cape Spear Lighthouse National Historic Site, 11 kilometers south of St. John's, is the most easterly point in North America, and has Newfoundland's oldest lighthouse. It is a popular, if chilly, spot to watch the sunrise as well as sight whales, seabirds, and icebergs. Dating from 1835, the light station was in operation until 1955 and is now an interesting museum. In addition, there are massive half-ruined gun emplacements from the Second World War.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/bay.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.gatheralls.com/wp-content/uploads/2019/11/3-whales-surface.jpg-->
+          <h5 class="card-title">Puffin and Whale Cruises in Witless Bay</h5>
+          <p class="card-text">Boat cruises to the islands, where puffins nest and to observe the whales that frequent the Witless Bay Ecological Reserve leave from the town of Bay Bulls, south of St. John's. Whales follow the icebergs that are also found in the bay, and it is not unusual to see icebergs, whales, and puffins, as well as other sea birds on a single cruise. The four islands of the reserve are the nesting sites for more than 260,000 pairs of puffins, North America's largest Atlantic puffin colony. </p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/reserve.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.newfoundlandlabrador.com/-/media/marquees/top-destinations/cape-st-marys/cape-st-marys/cape-st-marys-main-header.jpg?mh=960&mw=1280&hash=3638522938693A0746DEDC8A761FD6394A9E495D&mh=960&mw=1280&hash=3638522938693A0746DEDC8A761FD6394A9E495D-->
+          <h5 class="card-title">Cape St. Mary's Ecological Reserve</h5>
+          <p class="card-text">There are major colonies of seabirds at Cape St. Mary's, including about 24,000 northern gannet. The birds are a spectacular sight, whether nesting on the rocks or dive-bombing the ocean for a meal. Other seabird species at the cliff-side reserve include black-legged kittiwake, common murre, razorbill, and great cormorant.Nearby Fogo Island is a holdout from the days of fishing outports. The island culture and an old Irish dialect are distinct from that on the main island of Newfoundland. </p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/island.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://thumbs.dreamstime.com/b/beach-la-azohia-spain-27159720.jpg-->
+          <h5 class="card-title">Twillingate and Fogo Island</h5>
+          <p class="card-text">The traditional Newfoundland fishing village of Twillingate is located on the northern coast, known as the Kittiwake coast, and it is a good place to experience local village life. Twillingate was originally settled in 1738 and known as Toulinguet. Near Twillingate is the Long Point Lighthouse, built in 1889. It has a range of 40 kilometers and is an excellent location to watch for whales and icebergs.Small museums and seafood restaurants make the community an interesting stop for tourists.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/castle.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://listing-images.homejunction.com/ctxmls/373351463/photo_20.jpg-->
+          <h5 class="card-title">Castle Hill National Historic Site</h5>
+          <p class="card-text">Castle Hill National Historic Site is between Highway 100 and Placentia, where one of the two ferry routes to Nova Scotia begins and ends. It is the site of historic English and French fortifications, and an interpretive center. The French founded the colony of "Plaisance" in 1662 and built Fort Royal in 1693. But only 20 years later they handed over the strategic location to the British, who renamed it Castle Hill. There is a magnificent view over Placentia Bay.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="newfoundland-images/terra.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://delhitoshimla.net/wp-content/uploads/2012/02/Camping-in-Night-300x253.jpg-->
+          <h5 class="card-title">Terra Nova National Park</h5>
+          <p class="card-text">erra Nova National Park is known for its fjords and quiet coastline. In spring, icebergs drift by, and in summer, kayakers and canoeists take to the waters, while families fill the park campgrounds. Winter offers cross-country skiing opportunities. Just north of the national park, Salvage is a small fishing community with the classic Newfoundland charm of waterfront fishing sheds, tilting wharves, and rocky headlands.</p>
+      </div>
+  </div>
+</div>
+<!-- Nav bar -->
+
+
+
+<!--  -->
+<!--  -->
+<!-- toggle.css -   image content of .card-text is in toggle.css -->
+<!-- Toggle Nav Bar Stats here-->
+<div class="container">
+  <h2>Choose activities according to your choice.</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#city">City Tour</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#attractions">Attractions Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#art">Art & Culture Tour</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#water">Water Tour</a>
+    </li>
+  </ul>
+  <!-- Toggle nav bar ends here -->
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+    <!-- First - Historical Sites  -->
+    <div id="attractions" class="container tab-pane active place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> Attractions Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="16132P9,9347P1,233504P1,178531P1,16132P5,16132P7,16132P8,5856P15,5856P18,219525P1" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+<div id="city" class="container tab-pane place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> City Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="141018P1,6483P44,49494P1,28725P1,49494P2,19128P7" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+    <!-- Museums-->
+    <div id="art" class="container tab-pane fade place-list">
+      <!-- <h3>Museum</h3> -->
+      <div class="jumbotron" >
+      <h3>Art & Culture Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="104204P287" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+    <!-- Zoos/Aquariums-->
+    <div id="water" class="container tab-pane fade place-list"><br>
+      <!-- <h3>Zoos/Aquariums</h3> -->
+     <div class="jumbotron" >
+      <h3>Water Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="9347P1,16132P5,16132P7,16132P8,219525P1" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+  </div>   <!-- div class="tab-content" -->
+</div>  <!-- Toggle Nav Bar Stats here-->
+
+<!--  -->
+<!-- Toggle navbar ends here -->
+
+<!-- For Adventure page Link -->
+<div class="py-5 text-center text-info background-info" style="">
+    <div class="container actpage">
+        <div class="row">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Activities To Do </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/adventure.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="../list/paint-final.jpeg"></a>
+                <a href="../activities/adventure.html"><h4> <b>Adventure Activities</b> </h4></a>
+            </div>
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/festival.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="festival.jpg" alt="Card image cap" width="200"></a>
+                <a href="../activities/festival.html"><h4> <b>Festivals</b> </h4></a>
+            </div>
+            <div class="col-lg-4 p-4"> <a href="../activities/shopping.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="../list/shopping-final.jpg" width="200"></a>
+               <a href="../activities/shopping.html"> <h4> <b>Shopping</b> </h4></a>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+<!-- For Transport page Link -->
+    <div class="container actpage">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Your Mode Of Transport </h1>
+            </div>
+        <div class="row ">
+          <!-- copyright="&copy; https://www.kettering.com.au/wp-content/uploads/shutterstock_305567459-1024x683.jpg" -->
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/transport-try/road.html"><img class="img-fluid d-block mb-3 mx-auto" alt="Card image cap" width="300" src="road.jpg"></a>
+                <a href="../Transport/transport-try/road.html"><h4> <b>By Road</b> </h4></a>
+            </div>
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/air/flight.html"><img class="img-fluid d-block mb-3 mx-auto" src="flight.jpg" alt="Card image cap" width="300"></a>
+              <!-- copyright="&copy; http://allpicts.in/download/7642/2016/03/Airplane_Images_with_Beautiful_Picture_of_Flight_in_Sunset-1152x864.jpg" -->
+                <a href="../Transport/air/flight.html"><h4> <b>By Air</b> </h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../places/places.html">Places</a></li>
+                <li><a href="../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../activities/adventure.html">Activities</a></li>
+                <li><a href="../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../sitemap.html">Site Map</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+
+</body>
+</html>

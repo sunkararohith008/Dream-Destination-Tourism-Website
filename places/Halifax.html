@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to Places Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/try.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <!-- <link rel=" stylesheet" href="CSS/gallery.css" type="text/css" /> -->
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../CSS/footer.css" type="text/css" />
+  <!-- Link to toggle navbar css stylesheet -->
+  <link rel="stylesheet" href="../CSS/toggle.css" type="text/css" />
+
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for autoplay -->
+  <style>
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%
+}
+
+#custCarousel .carousel-indicators {
+  position: static;
+  margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+  width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+  display: block;
+  opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+  opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+  opacity: 0.75
+}
+
+.carousel-item img {
+  width: 100%
+}
+  </style>
+<script>
+  $(document).ready(function(){
+
+  $('.items').slick({
+  dots: true,
+  infinite: true,
+  speed: 800,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+  {
+  breakpoint: 1024,
+  settings: {
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  infinite: true,
+  dots: true
+  }
+  },
+  {
+  breakpoint: 600,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 2
+  }
+  },
+  {
+  breakpoint: 480,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1
+  }
+  }
+
+  ]
+  });
+  });
+</script>
+</head>
+<body>
+   <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../about.html">About Us</a> | <a href="../sitemap.html">Site Map</a> | <a href="../privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item active">
+    <a class="nav-link px-3" href="../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+<!-- For weather from weatherwidget.ca -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/44d65n63d58/halifax/" data-label_1="HALIFAX" data-label_2="WEATHER" data-theme="original" >HALIFAX WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<!-- weather ends here -->
+
+
+<!-- For Toronto Content -->
+<!-- <div class = "toronto-content"> -->
+<div class="jumbotron-fluid">
+<div class="container">
+<h1 style="text-align: center; margin-bottom:5px"> Halifax - Halifax Regional Municipality (HRM) </h1>
+<p id="city-content">Halifax, formally known as the Halifax Regional Municipality (HRM), is the capital of the Canadian province of Nova Scotia. It owes its existence largely to its location on one of the largest and deepest ice-free natural harbours in the world, which, over time, made Halifax one of the most important Canadian commercial ports on the Atlantic seaboard. </p>
+</div>
+</div>
+
+<!-- <img src="try-1.gif" alt="gif">
+<img src="try-2.gif" alt="gif"> -->
+
+
+<!-- Gif for Travelling -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://thumbs.gfycat.com/WearyGargantuanCornsnake-size_restricted.gif" -->
+          <img class= "img-fluid" src="try-1.gif" id="gif">
+        </div>
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://theneverendingpursuitofawesome.files.wordpress.com/2016/03/hello-talent-logo.png" -->
+          <img class= "img-fluid" src="try-2.gif" id="gif">
+    </div>
+</div>
+</div>
+<!-- Gif ends here -->
+
+<!--  -->
+
+<!-- <div class="row">
+  <div class="column">
+      <img src="try-1.gif" alt="gif">
+  </div>
+  <div class="column">
+      <img src="try-2.gif" alt="gif">
+  </div>
+</div> -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                <!-- slides -->
+                <!-- copyright="&copy; http://www.grantpitcher.co.za/wp-content/uploads/2012/01/vancouver_2011_435.jpg" -->
+                <!-- copyright="&copy; https://www.ferries.ca/content/uploads/2016/06/halifax-vibrantcity.jpg" -->
+                <!-- copyright="&copy; https://www.captainschoice.com.au/-/media/cc-responsive-website-for-prod/hero-images/hc-na-canada-nova-scotia-peggys-cove-lighthouse-642794938-getty-rf-1920-x-1080.jpg" -->
+                <!-- copyright="&copy; https://travellingfoodie.net/wp-content/uploads/2018/12/Halifax-City-Hall-and-Grand-Parade-Halifax-Nova-Scotia-2.jpg" -->
+                <!-- copyright="&copy; https://thumbs.dreamstime.com/b/alberta-government-house-823354.jpg" -->
+                <!-- copyright="&copy; https://i.ytimg.com/vi/yoj1BJo3DyQ/maxresdefault.jpg" -->
+                <!-- copyright="&copy; https://www.hardimanimages.com/wp-content/uploads/2014/08/1408Public-Gardens-1.jpg" -->
+                <div class="carousel-inner pics-main">
+                    <div class="carousel-item active"> <img src="halifax-images/harbour.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="halifax-images/clock.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="halifax-images/peggy.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="halifax-images/cityhall.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="halifax-images/government.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="halifax-images/maritime.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="halifax-images/garden.jpg" alt="Hills"> </div>
+                </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                <ol class="carousel-indicators list-inline">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="halifax-images/harbour.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="halifax-images/clock.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="halifax-images/peggy.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="halifax-images/cityhall.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="4" data-target="#custCarousel"> <img src="halifax-images/government.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="5" data-target="#custCarousel"> <img src="halifax-images/maritime.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="6" data-target="#custCarousel"> <img src="halifax-images/garden.jpg" class="img-fluid"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card -->
+  <h1 style="text-align: center; margin-top: 10px;">Top Most Attractions to visit in Toronto</h1>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<div class="items">
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/garden.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.hardimanimages.com/wp-content/uploads/2014/08/1408Public-Gardens-1.jpg" -->
+          <h5 class="card-title">Halifax Public Gardens</h5>
+          <p class="card-text">The Halifax Public Gardens is one of the oldest Victorian gardens in North America. This National Historic Site of Canada was built on two formerly adjacent gardens, and today this idyllic urban green space is home to a variety of trees, flowers, and even tropical plants.The Halifax Harbour Hopper amphibious-vehicle visits the gardens, though many travelers head there on their own. Free weekly tours of the gardens are available from May to November.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/maritime.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://i.ytimg.com/vi/yoj1BJo3DyQ/maxresdefault.jpg" -->
+          <h5 class="card-title">Maritime Museum of the Atlantic</h5>
+          <p class="card-text">Located on the city’s waterfront, Halifax’s Maritime Museum of the Atlantic is where you go to get schooled on Nova Scotia’s maritime heritage.The ocean has shaped the lives of those living in the Maritimes for centuries, whether it’s through the fishery, boatbuilding, or the navy. Here there’s an emphasis placed on boats themselves, from small crafts to World War Convoys. Various exhibits will take you through the sailing days.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/government.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://thumbs.dreamstime.com/b/alberta-government-house-823354.jpg" -->
+          <h5 class="card-title">Government House</h5>
+          <p class="card-text">Welcome to the Queen’s official residence in Halifax – and also that of her Lieutenant Governor in Nova Scotia. As one of the few official residences to be located in an urban setting, Government House definitely stands out from other similar properties elsewhere in the country.Built in 1800, it has welcomed hundreds of foreign dignitaries and royal families from around the world since its opening.
+
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/harbour.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://www.grantpitcher.co.za/wp-content/uploads/2012/01/vancouver_2011_435.jpg" -->
+          <h5 class="card-title">Halifax Harbour</h5>
+          <p class="card-text">Set along the Atlantic Coast of Nova Scotia in eastern Canada, the vast natural harbor in Halifax has welcomed boats for centuries. Still a shipping hot spot, the harbor contains several islands, among them Georges Island, the former site of a British naval station, and the hiking trail–threaded McNabs Island. A bustling boardwalk lines the waterfront.Halifax Harbour is busy, with lots of boat traffic visible out on the water.
+
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/cityhall.jpg"> </div>
+      <div class="card-body">
+          <!-- copyright="&copy; https://travellingfoodie.net/wp-content/uploads/2018/12/Halifax-City-Hall-and-Grand-Parade-Halifax-Nova-Scotia-2.jpg" -->
+          <h5 class="card-title">Halifax City Hall</h5>
+          <p class="card-text">Halifax City Hall stands at the north end of the city’s historical Grand Parade, which dates back to when Halifax was founded in 1749. The building itself was constructed between 1887 and 1890, and it’s now one of the oldest public buildings in Nova Scotia. It’s also a National Historic Site of Canada.Using a combination of sandstone and granite, the building’s architecture stands out from other nearby buildings.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/clock.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.ferries.ca/content/uploads/2016/06/halifax-vibrantcity.jpg" -->
+          <h5 class="card-title">Old Town Clock</h5>
+          <p class="card-text">As one of the most recognizable landmarks in Halifax’s historic core, the Old Town Clock gets its fair share of visitors. Ordered by Prince Edward, Duke of Kent and then commander-in-chief of all military forces in British North America, the tower was built as a way to potentially resolve the unpunctuality of the local garrison. Completed in 1803, the three-tiered tower is built in the utmost classic Palladian style.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/park.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://cdn.thecrazytourist.com/wp-content/uploads/2019/02/ccimage-shutterstock_526636375.jpg" -->
+          <h5 class="card-title">Point Pleasant Park</h5>
+          <p class="card-text">The vast green space and wooded trails of Point Pleasant Park, on the southern tip of the Halifax peninsula, contains 185 acres (75 hectares) of oceanside parkland. Bustling with walkers, joggers, and visitors to the seaside city, this park is home to statues, events, and memorials including the Halifax Monument erected in 1969.Point Pleasant Park is one of Halifax’s top attractions for nature lovers.You can walk the outskirts of the park for ocean.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/beer.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.sun-sentinel.com/resizer/9_UXlv8c-A9hAW2hKbQEoQc8LnI=/1200x786/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/EAZJOCA44RC77NOOPAI7OY55ZQ.jpg" -->
+          <h5 class="card-title">Alexander Keith's Brewery</h5>
+          <p class="card-text">Ask anyone from Nova Scotia what the province’s favorite beer is, and they’re bound to say Alexander Keith’s. You can’t make a trip to Halifax without visiting the famous brewery, founded in 1820. Nowadays, Alexander Keith’s still makes up for every 1 in 3 beers sold within the province. The brewery is one of the oldest breweries in Canada, built in 1820 and made of ironstone and granite. It’s located on the waterfront of Halifax.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/peggy.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.captainschoice.com.au/-/media/cc-responsive-website-for-prod/hero-images/hc-na-canada-nova-scotia-peggys-cove-lighthouse-642794938-getty-rf-1920-x-1080.jpg" -->
+          <h5 class="card-title">Peggy’s Cove</h5>
+          <p class="card-text">Appearance-wise, little has changed in this picturesque Nova Scotia fishing village over the past century. Colorful, salt-weathered fishermen’s houses and the town’s iconic red-and-white lighthouse stand strong along the sea-splashed shore of St. Margaret’s Bay, and lobster traps, jetties, and fishing boats are still all over the place.Peggy’s Cove is one of the best places to get a taste of small-town life in the Maritimes.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/yard.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.your-nova-scotia-holiday.com/images/TitanicCemetery1.jpg" -->
+          <h5 class="card-title">Fairview Lawn Cemetery</h5>
+          <p class="card-text">Fairview Lawn Cemetery is a fascinating place to encounter some of the tragedies that have befallen Halifax, Nova Scotia. Most notably, Fairview is the final resting place of more than 100 people who were lost in the sinking of the Titanic, as well as many others who died in the 1917 Halifax Explosion that devastated the provincial capital.Fairview Lawn Cemetery is a nondenominational municipal cemetery with sizable Greek and Chinese sections
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="halifax-images/valley.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.oldonesdream.com/.a/6a017d3fa1f89b970c019101caf636970c-pi" -->
+          <h5 class="card-title">Annapolis Valley</h5>
+          <p class="card-text">Running along the south shore of the Bay of Fundy, Nova Scotia’s fertile Annapolis Valley produces some of Canada’s finest fruit and vegetables. Apple orchards and vineyards carpet the verdant valley, U-pick farms and farmers markets abound, and several historic sites recount the history of early Acadian settlers.With its pretty rural landscapes and dramatic coastline, the Annapolis Valley is a popular option among hikers and cyclists.
+</p>
+      </div>
+  </div>
+</div>
+<!-- Nav bar -->
+
+
+
+<!--  -->
+<!--  -->
+<!-- toggle.css -   image content of .card-text is in toggle.css -->
+<!-- Toggle Nav Bar Stats here-->
+<div class="container">
+  <h2>Choose activities according to your choice.</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#historical">Historical Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#city">City Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#art">Museum</a>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#art">Art Gallery</a>
+    </li> -->
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#sea">Sea/Coastal Tour</a>
+    </li>
+
+  </ul>
+  <!-- Toggle nav bar ends here -->
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+  <!-- First - Historical Sites  -->
+    <div id="historical" class="container tab-pane active place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> Historical Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="172939P5,6483P20,273936P3,5856P6,260105P1,155758P1,251803P1,208872P16,5856P10,251803P2,251803P4,260105P3,5856P12,223103P3,5856P19" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+    <!-- Zoos/Aquariums-->
+    <div id="city" class="container tab-pane fade place-list"><br>
+      <!-- <h3>Zoos/Aquariums</h3> -->
+     <div class="jumbotron" >
+      <h3>City Tour</h3>
+     <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="9444P44,193610P1,273936P2,223103P1,75737P1,63661P11,152849P22,172939P1,214606P22,208872P15,251803P5,5856P13,5691P17,5691P16,251803P3,65736P1,65736P2" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+    <!-- Museums-->
+    <div id="art" class="container tab-pane fade place-list">
+      <!-- <h3>Museum</h3> -->
+      <div class="jumbotron" >
+      <h3>Museum</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="75737P1,152849P22" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+<!-- Zoos/Aquariums-->
+    <div id="sea" class="container tab-pane fade place-list"><br>
+      <!-- <h3>Zoos/Aquariums</h3> -->
+     <div class="jumbotron" >
+      <h3>Sea/Coastal Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="9444P43,251803P4,5856P12,5856P19,5856P14,5856P9,5856P17,5856P11,5856P20,5856P22,5856P21" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+  </div>   <!-- div class="tab-content" -->
+</div>  <!-- Toggle Nav Bar Stats here-->
+
+<!--  -->
+<!-- Toggle navbar ends here -->
+
+
+<!-- For Adventure page Link -->
+<div class="py-5 text-center text-info background-info" style="">
+    <div class="container actpage">
+        <div class="row">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Activities To Do </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/adventure.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="../list/paint-final.jpeg"></a>
+                <a href="../activities/adventure.html"><h4> <b>Adventure Activities</b> </h4></a>
+            </div>
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/festival.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="festival.jpg" alt="Card image cap" width="200"></a>
+              <!-- copyright="&copy; https://www.jetpunk.com/img/user-photo-library/c5/c5f160c057-450.jpg" -->
+                <a href="../activities/festival.html"><h4> <b>Festivals</b> </h4></a>
+            </div>
+            <div class="col-lg-4 p-4"> <a href="../activities/shopping.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="../list/shopping-final.jpg" width="200"></a>
+              <!-- copyright="&copy; https://i.ebayimg.com/00/s/OTAwWDYwMA==/z/ucUAAOSwrklVBLBJ/$_1.JPG?set_id=2" -->
+               <a href="../activities/shopping.html"> <h4> <b>Shopping</b> </h4></a>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+<!-- For Transport page Link -->
+    <div class="container actpage">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Your Mode Of Transport </h1>
+            </div>
+        <div class="row ">
+          <!-- copyright="&copy; https://www.kettering.com.au/wp-content/uploads/shutterstock_305567459-1024x683.jpg" -->
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/transport-try/road.html"><img class="img-fluid d-block mb-3 mx-auto" alt="Card image cap" width="300" src="road.jpg"></a>
+                <a href="../Transport/transport-try/road.html"><h4> <b>By Road</b> </h4></a>
+            </div>
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/air/flight.html"><img class="img-fluid d-block mb-3 mx-auto" src="flight.jpg" alt="Card image cap" width="300"></a>
+              <!-- copyright="&copy; http://allpicts.in/download/7642/2016/03/Airplane_Images_with_Beautiful_Picture_of_Flight_in_Sunset-1152x864.jpg" -->
+                <a href="../Transport/air/flight.html"><h4> <b>By Air</b> </h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../places/places.html">Places</a></li>
+                <li><a href="../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../activities/adventure.html">Activities</a></li>
+                <li><a href="../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../sitemap.html">Site Map</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+
+</body>
+</html>

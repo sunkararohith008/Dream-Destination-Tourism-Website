@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to Places Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/try.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <!-- <link rel=" stylesheet" href="CSS/gallery.css" type="text/css" /> -->
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../CSS/footer.css" type="text/css" />
+  <!-- Link to toggle navbar css stylesheet -->
+  <link rel="stylesheet" href="../CSS/toggle.css" type="text/css" />
+
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for autoplay -->
+  <style>
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%
+}
+
+#custCarousel .carousel-indicators {
+  position: static;
+  margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+  width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+  display: block;
+  opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+  opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+  opacity: 0.75
+}
+
+.carousel-item img {
+  width: 100%
+}
+  </style>
+<script>
+  $(document).ready(function(){
+
+  $('.items').slick({
+  dots: true,
+  infinite: true,
+  speed: 800,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+  {
+  breakpoint: 1024,
+  settings: {
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  infinite: true,
+  dots: true
+  }
+  },
+  {
+  breakpoint: 600,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 2
+  }
+  },
+  {
+  breakpoint: 480,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1
+  }
+  }
+
+  ]
+  });
+  });
+</script>
+</head>
+<body>
+   <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../about.html">About Us</a> | <a href="../sitemap.html">Site Map</a> | <a href="../privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item active">
+    <a class="nav-link px-3" href="../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+<!-- For weather from weatherwidget.ca -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/45d50n73d57/montreal/" data-label_1="MONTREAL" data-label_2="WEATHER" data-theme="original" >MONTREAL WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<!-- weather ends here -->
+
+
+<!-- For Toronto Content -->
+<!-- <div class = "toronto-content"> -->
+<div class="jumbotron-fluid">
+<div class="container">
+<h1 style="text-align: center; margin-bottom:5px"> Montreal - Second largest city in Canada.</h1>
+<p id="city-content"> Montréal is the largest city in Canada's Québec province. It’s set on an island in the Saint Lawrence River and named after Mt. Royal, the triple-peaked hill at its heart. Its boroughs, many of which were once independent cities, include neighbourhoods ranging from cobblestoned, French colonial Vieux-Montréal – with the Gothic Revival Notre-Dame Basilica at its centre – to bohemian Plateau. </p>
+</div>
+</div>
+<!-- <br> -->
+<!-- <img src="try-1.gif" alt="gif">
+<img src="try-2.gif" alt="gif"> -->
+
+
+<!-- Gif for Travelling -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://thumbs.gfycat.com/WearyGargantuanCornsnake-size_restricted.gif" -->
+          <img class= "img-fluid" src="try-1.gif" id="gif">
+        </div>
+        <div class="col-md-6">
+          <!-- copyright="&copy; https://theneverendingpursuitofawesome.files.wordpress.com/2016/03/hello-talent-logo.png" -->
+          <img class= "img-fluid" src="try-2.gif" id="gif">
+    </div>
+</div>
+</div>
+<!-- Gif ends here -->
+
+<!--  -->
+
+<!-- <div class="row">
+  <div class="column">
+      <img src="try-1.gif" alt="gif">
+  </div>
+  <div class="column">
+      <img src="try-2.gif" alt="gif">
+  </div>
+</div> -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                <!-- slides -->
+                <!-- copyright="&copy; https://www.mavenconsultingservices.com/wp-content/uploads/2019/10/study-in-canada.jpg" -->
+                <!-- copyright="&copy; https://live.staticflickr.com/1142/4733546051_898cbc3e3e_b.jpg" -->
+                <!-- copyright="&copy; http://www.nychinatown.org/storefronts/mott/22mott_b_med.jpg" -->
+                <!-- copyright="&copy; https://www.movie-locations.com/movies/x/X-Men-Days-Of-Future-Past-Hotel-De-Ville.jpg" -->
+                <!-- copyright="&copy; https://loringpark.org/wp-content/uploads/2019/02/harmon_place.jpg" -->
+                <!-- copyright="&copy; https://montrealvisitorsguide.com/wp-content/uploads/montreal-st-joseph-oratory-summer.jpg" -->
+                <!-- copyright="&copy; https://i.dailymail.co.uk/i/pix/2016/01/15/22/3034D13C00000578-3401934-image-m-85_1452898620783.jpg" -->
+                <div class="carousel-inner pics-main">
+                    <div class="carousel-item active"> <img src="montreal-images/garden.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="montreal-images/park.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="montreal-images/china.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="montreal-images/hall.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="montreal-images/montreal.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="montreal-images/joseph.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="montreal-images/notre.jpg" alt="Hills"> </div>
+                </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                <ol class="carousel-indicators list-inline">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="montreal-images/garden.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="montreal-images/park.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="montreal-images/china.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="montreal-images/hall.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="4" data-target="#custCarousel"> <img src="montreal-images/montreal.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="5" data-target="#custCarousel"> <img src="montreal-images/joseph.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="6" data-target="#custCarousel"> <img src="montreal-images/notre.jpg" class="img-fluid"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card -->
+  <h1 style="text-align: center; margin-top: 10px;">Top Most Attractions to visit in Montreal</h1>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<div class="items">
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/notre.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://i.dailymail.co.uk/i/pix/2016/01/15/22/3034D13C00000578-3401934-image-m-85_1452898620783.jpg" -->
+          <h5 class="card-title">Notre-Dame Basilica of Montreal</h5>
+          <p class="card-text">Notre-Dame Basilica of Montreal (Basilique Notre-Dame de Montréal) is the city's oldest Catholic church and the venue of Quebec hero Celine Dion’s wedding. The Gothic Revival-style church is one of Canada’s most lavish cathedrals, with stained-glass windows, intricate wood carvings, frescoes, sculptures, and a 7,000-pipe organ all vying for attention beneath.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/park.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://live.staticflickr.com/1142/4733546051_898cbc3e3e_b.jpg" -->
+          <h5 class="card-title">Montreal Olympic Park </h5>
+          <p class="card-text">Built for the 1976 Olympic Games, the Montreal Olympic Park (Parc Olympique de Montréal) now houses several attractions that form Montreal’s Space for Life museum district. There’s the Rio Tinto Alcan Planetarium, the 56,000-seater Olympic Stadium, the Biodome, an indoor zoo with around 4,500 animals, as well as the Botanical Gardens and Insectarium.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/royal.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://bbqboy.net/wp-content/uploads/2014/06/St.-Hubert-Montreal-1.jpg" -->
+          <h5 class="card-title">Plateau-Mont-Royal</h5>
+          <p class="card-text">Artsy and laid-back, Plateau-Mont-Royal, aka the Plateau, captures the spirit of Montreal perhaps more than any other neighborhood. Spiraling iron staircases crawl up Victorian-era residences on tree-lined streets, while magnificent street murals add color to commercial thoroughfares. Restaurants, cafés, bars, and boutiques abound.To understand Montreal,a visit Plateau-Mont-Royal is must.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/china.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://www.nychinatown.org/storefronts/mott/22mott_b_med.jpg" -->
+          <h5 class="card-title">Montreal Chinatown</h5>
+          <p class="card-text">Montreal Chinatown was established in the late 19th century with the arrival of Chinese immigrants from western Canada who came to work on the Canadian Pacific Railway. Though just a couple of blocks long, the district offers a wide selection of Asian eateries and shops selling traditional handicrafts and souvenirs.Chinatown is situated in downtown Montreal.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/out.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://ankenterprises.com/wp-content/uploads/2015/11/st-clair-terraces-slider.jpg" -->
+          <h5 class="card-title">Outremont </h5>
+          <p class="card-text">The aptly named Outremont (French for “beyond the mountain”) is situated northwest of Mount Royal. Since its establishment in the 1800s, Outremont has remained one of Montreal’s most upscale Francophone areas and a hub for the city’s Hasidic population. Today, the neighborhood features parks, historic homes, and hidden gem bars.Outremont is often added to walking.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/hall.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.movie-locations.com/movies/x/X-Men-Days-Of-Future-Past-Hotel-De-Ville.jpg" -->
+          <h5 class="card-title">Montreal City Hall</h5>
+          <p class="card-text">Built in the 1870s and rebuilt after a 1922 fire, Montreal City Hall (Hôtel de Ville de Montréal) has long found itself at the center of Quebec history. In 1967, the building hosted one of the most significant political moments in the province’s recent past, when then–French President Charles de Gaulle gave a rousing speech from the balcony—one that spurred Quebec’s separatist movement.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/mount.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://partyspace.com/images/blog_entries/Eagle_Ridge_Golf_Club_Lakewood_events_and_weddings1.jpg" -->
+          <h5 class="card-title">Mount Royal</h5>
+          <p class="card-text">Mount Royal (Mont Royal), a 764-foot (233-meter) “mountain” in the midst of urban Montreal, is much-loved by locals and visitors alike, with Montrealers frequenting the leafy slopes as if the area were their own backyard. Cyclists, joggers, sunbathers, picnickers, and strollers abound in summer, while snowshoers, tobogganers, ice skaters, and cross-country skiers dominate in winter.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/city.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://images.indianexpress.com/2019/07/us1.jpg" -->
+          <h5 class="card-title">Montreal Underground City</h5>
+          <p class="card-text">Montreal’s Underground City (or RÉSO) is a vast indoor complex that extends across a large portion of Downtown Montreal. Subterranean tunnels connect malls, hotels, cinemas, theaters, offices, museums, banks, universities, and metro stations, serving as a warm refuge during the city’s brutal winters.Some tours split their time between the Underground City and the ground-level.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/joseph.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://montrealvisitorsguide.com/wp-content/uploads/montreal-st-joseph-oratory-summer.jpg" -->
+          <h5 class="card-title">St. Joseph's Oratory of Mount Royal</h5>
+          <p class="card-text">St. Joseph’s Oratory of Mount Royal (L'Oratoire Saint-Joseph du Mont-Royal) located in Montreal’s Westmount neighborhood, is Canada’s largest church and a registered National Historic Site. Started as a small chapel in 1904, the Roman Catholic basilica has grown to contain a cryptic church, a museum, gardens, a 56-bell carillon, and one of the largest church domes in the world.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/montreal.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://loringpark.org/wp-content/uploads/2019/02/harmon_place.jpg" -->
+          <h5 class="card-title">Montreal Place d'Armes</h5>
+          <p class="card-text">Montreal's Place d’Armes, meaning parade square, is a major public venue in Old Montreal (Vieux-Montréal). The picturesque plaza is bordered by some of Montreal’s most notable architectural landmarks, including the 17th-century Saint-Sulpice Seminary, the Gothic Revival-style Notre-Dame Basilica, and the art deco Aldred Building.Most walking tours of Old Montreal follow routes.
+</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="montreal-images/garden.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://www.mavenconsultingservices.com/wp-content/uploads/2019/10/study-in-canada.jpg" -->
+          <h5 class="card-title">Montreal Botanical Garden</h5>
+          <p class="card-text">With more than 20,000 species growing across 185 acres (75 hectares), the expansive Montreal Botanical Garden (Jardin Botanique de Montréal) is often ranked among the world’s finest. Explore themed gardens—among them, Japanese, Chinese, First Nations, alpine, and medicinal—as well as hot and humid greenhouses dotted with orchids and tropical flowers.
+</p>
+      </div>
+  </div>
+</div>
+<!-- Nav bar -->
+
+
+
+<!--  -->
+<!--  -->
+<!-- toggle.css -   image content of .card-text is in toggle.css -->
+<!-- Toggle Nav Bar Stats here-->
+<div class="container">
+  <h2>Choose activities according to your choice.</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#old">Old Montreal Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#city">City Tour</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#attractions">Attractions Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#art">Art & Culture Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#zoo">Zoo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#haunted">Haunted Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#water">Water Tour</a>
+    </li>
+  </ul>
+  <!-- Toggle nav bar ends here -->
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+  <!-- First - Historical Sites  -->
+    <div id="old" class="container tab-pane active place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> Old Montreal Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="3321P5,3321WALK,46377P4,3321P9,124208P4,124208P1,252828P2,124208P6,152849P12" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+    <!-- First - Historical Sites  -->
+    <div id="attractions" class="container tab-pane place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> Attractions Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="37455P1,217620P4,3571M_GUIDED,208872P19,12745P1,30791P625" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+<div id="city" class="container tab-pane place-list"><br>
+      <!-- <h3>Natural Attractions</h3> -->
+      <div class="jumbotron" >
+        <h3> City Tour</h3>
+        <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="13149P4,46377P11,3321P6,3355C1,6483P18,124208P5,217620P5,63661P8,217620P2,217620P8,30791P678,217620P7,260216P1,220795P1,30791P673,152849P1,8647P625" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+    <!-- Museums-->
+    <div id="art" class="container tab-pane fade place-list">
+      <!-- <h3>Museum</h3> -->
+      <div class="jumbotron" >
+      <h3>Art & Culture Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="116985P6,46377P11,164562P1,13149P3,5393P8,164562P2,5280BIKE,183902P2,152849P19,152849P31,152849P18" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+<!-- Zoos-->
+    <div id="zoo" class="container tab-pane fade place-list"><br>
+      <!-- <h3>Zoos/Aquariums</h3> -->
+     <div class="jumbotron" >
+      <h3>Zoo</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="125693P7,228260P9" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+<!-- Zoos/Aquariums-->
+    <div id="haunted" class="container tab-pane fade place-list"><br>
+      <!-- <h3>Zoos/Aquariums</h3> -->
+     <div class="jumbotron" >
+      <h3>Haunted Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="3631GHOST,37207P11,37207P6,37207P9,37207P5" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+
+<!-- Zoos/Aquariums-->
+    <div id="water" class="container tab-pane fade place-list"><br>
+      <!-- <h3>Zoos/Aquariums</h3> -->
+     <div class="jumbotron" >
+      <h3>Water Tour</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="3571M_DINNER,3571M_GUIDED,28770P6,3355PRTYULCS,28770P1" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+    </div>
+
+  </div>   <!-- div class="tab-content" -->
+</div>  <!-- Toggle Nav Bar Stats here-->
+
+<!--  -->
+<!-- Toggle navbar ends here -->
+
+<!-- For Adventure page Link -->
+<div class="py-5 text-center text-info background-info" style="">
+    <div class="container actpage">
+        <div class="row">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Activities To Do </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/adventure.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="../list/paint-final.jpeg"></a>
+                <a href="../activities/adventure.html"><h4> <b>Adventure Activities</b> </h4></a>
+            </div>
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/festival.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="festival.jpg" alt="Card image cap" width="200"></a>
+              <!-- copyright="&copy; https://www.jetpunk.com/img/user-photo-library/c5/c5f160c057-450.jpg" -->
+                <a href="../activities/festival.html"><h4> <b>Festivals</b> </h4></a>
+            </div>
+            <div class="col-lg-4 p-4"> <a href="../activities/shopping.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="../list/shopping-final.jpg" width="200"></a>
+              <!-- copyright="&copy; https://i.ebayimg.com/00/s/OTAwWDYwMA==/z/ucUAAOSwrklVBLBJ/$_1.JPG?set_id=2" -->
+               <a href="../activities/shopping.html"> <h4> <b>Shopping</b> </h4></a>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+<!-- For Transport page Link -->
+    <div class="container actpage">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Your Mode Of Transport </h1>
+            </div>
+        <div class="row ">
+          <!-- copyright="&copy; https://www.kettering.com.au/wp-content/uploads/shutterstock_305567459-1024x683.jpg" -->
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/transport-try/road.html"><img class="img-fluid d-block mb-3 mx-auto" alt="Card image cap" width="300" src="road.jpg"></a>
+                <a href="../Transport/transport-try/road.html"><h4> <b>By Road</b> </h4></a>
+            </div>
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/air/flight.html"><img class="img-fluid d-block mb-3 mx-auto" src="flight.jpg" alt="Card image cap" width="300"></a>
+              <!-- copyright="&copy; http://allpicts.in/download/7642/2016/03/Airplane_Images_with_Beautiful_Picture_of_Flight_in_Sunset-1152x864.jpg" -->
+                <a href="../Transport/air/flight.html"><h4> <b>By Air</b> </h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../places/places.html">Places</a></li>
+                <li><a href="../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../activities/adventure.html">Activities</a></li>
+                <li><a href="../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../sitemap.html">Site Map</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+</body>
+</html>

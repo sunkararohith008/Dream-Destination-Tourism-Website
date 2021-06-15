@@ -1,1 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
 
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to Places Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/try.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <!-- <link rel=" stylesheet" href="CSS/gallery.css" type="text/css" /> -->
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../CSS/footer.css" type="text/css" />
+  <!-- Link to toggle navbar css stylesheet -->
+  <link rel="stylesheet" href="../CSS/toggle.css" type="text/css" />
+
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for autoplay -->
+  <style>
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%
+}
+
+#custCarousel .carousel-indicators {
+  position: static;
+  margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+  width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+  display: block;
+  opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+  opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+  opacity: 0.75
+}
+
+.carousel-item img {
+  width: 100%
+}
+  </style>
+<script>
+  $(document).ready(function(){
+
+  $('.items').slick({
+  dots: true,
+  infinite: true,
+  speed: 800,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+  {
+  breakpoint: 1024,
+  settings: {
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  infinite: true,
+  dots: true
+  }
+  },
+  {
+  breakpoint: 600,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 2
+  }
+  },
+  {
+  breakpoint: 480,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1
+  }
+  }
+
+  ]
+  });
+  });
+</script>
+</head>
+<body>
+   <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../about.html">About Us</a> | <a href="../sitemap.html">Site Map</a> | <a href="../privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item active">
+    <a class="nav-link px-3" href="../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+<!-- For weather from weatherwidget.ca -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/44d39n79d69/barrie/" data-label_1="BARRIE" data-label_2="WEATHER" data-theme="original" >BARRIE WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<!-- weather ends here -->
+
+
+<!-- For Toronto Content -->
+<!-- <div class = "toronto-content"> -->
+<div class="jumbotron-fluid">
+<div class="container">
+<h1 style="text-align: center; margin-bottom:5px"> Barrie - Central Ontario's Premier Waterfront Community </h1>
+<p id="city-content"> Barrie is now a summer and winter resort, with an economy based on services and diversified manufacturing. Its attractions include Centennial Park and, immediately to the north, the Simcoe County Museum and Archives and Springwater Provincial Park. </p>
+</div>
+</div>
+
+<!-- <img src="try-1.gif" alt="gif">
+<img src="try-2.gif" alt="gif"> -->
+
+
+<!-- Gif for Travelling -->
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-md-6 mb-4">
+          <!-- copyright="&copy; https://thumbs.gfycat.com/WearyGargantuanCornsnake-size_restricted.gif" -->
+          <img class= "img-fluid" src="try-1.gif" id="gif">
+        </div>
+        <div class="col-xl-6 col-md-6 mb-4">
+          <!-- copyright="&copy; https://theneverendingpursuitofawesome.files.wordpress.com/2016/03/hello-talent-logo.png" -->
+          <img class= "img-fluid" src="try-2.gif" id="gif">
+    </div>
+</div>
+</div>
+<!-- Gif ends here -->
+
+
+<!-- <div class="row">
+  <div class="column">
+      <img src="try-1.gif" alt="gif">
+  </div>
+  <div class="column">
+      <img src="try-2.gif" alt="gif">
+  </div>
+</div> -->
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                <!-- slides -->
+                <!-- copyright="&copy; https://live.staticflickr.com/65535/49451733012_417c7ba9b8_m.jpg" -->
+                <!-- copyright="&copy; https://c2.staticflickr.com/8/7503/26372701814_e143dc179f_b.jpg" -->
+                <!-- copyright="&copy; https://bloximages.newyork1.vip.townnews.com/gillettenewsrecord.com/content/tncms/assets/v3/editorial/6/41/64167688-79a2-5de7-92bb-35f0bbf7fad2/5e29eeedb0891.image.jpg?resize=1200%2C799" -->
+                <!-- copyright="&copy; https://ogmtavern.com/files/2016/04/IMG_5833.jpg" -->
+                <!-- copyright="&copy; https://live.staticflickr.com/8183/8101810367_57e767ce67_n.jpg" -->
+                <!-- copyright="&copy; http://nashvilleguru.com/officialwebsite/wp-content/uploads/2014/04/Cafe-Roze-1-1-1024x683.jpg" -->
+                <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-s/0f/60/36/12/penticton-wibit-water.jpg" -->
+                <div class="carousel-inner pics-main">
+                    <div class="carousel-item active"> <img src="../pics/Barrie/spirit-catcher.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="../pics/Barrie/centennial-park.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="../pics/Barrie/downtown.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="../pics/Barrie/heritage-park.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="../pics/Barrie/masonic-temple.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="../pics/Barrie/brewery.jpg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="../pics/Barrie/splash.jpg" alt="Hills"> </div>
+                </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                <ol class="carousel-indicators list-inline">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="../pics/Barrie/spirit-catcher.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="../pics/Barrie/centennial-park.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="../pics/Barrie/downtown.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="../pics/Barrie/heritage-park.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="4" data-target="#custCarousel"> <img src="../pics/Barrie/masonic-temple.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="5" data-target="#custCarousel"> <img src="../pics/Barrie/brewery.jpg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="6" data-target="#custCarousel"> <img src="../pics/Barrie/splash.jpg" class="img-fluid"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card -->
+  <h1 style="text-align: center; margin-top: 10px;">Top Most Attractions to visit in Barrie</h1>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<div class="items">
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/spirit-catcher.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://live.staticflickr.com/65535/49451733012_417c7ba9b8_m.jpg" -->
+          <h5 class="card-title">Spirit Catcher Sculpture</h5>
+          <p class="card-text">Spirit Catcher – and it’s come to be known as an iconic image of Barrie.he Spirit Catcher was originally created by artist Ron Baird for the 1986 Canadian Expo held in Vancouver. Made to resemble a Thunderbird from Aboriginal myth on Canada’s West Coast, it was donated to Barrie (to what is now the MacLaren Art Centre) and moved to its current place from Vancouver in 1987.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/centennial-park.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://c2.staticflickr.com/8/7503/26372701814_e143dc179f_b.jpg" -->
+          <h5 class="card-title">Barrie Centennial Beach</h5>
+          <p class="card-text">The Royal Ontario Museum, known as the ROM, is one of Canada's premier museums, with an international reputation for excellence. It houses an outstanding collection, which covers natural history, art, and culture from a great variety of periods from all over the world. It is also well-known for featuring exhibitions from across the globe</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/downtown.jpg"> </div>
+      <div class="card-body">
+          <!-- copyright="&copy; https://bloximages.newyork1.vip.townnews.com/gillettenewsrecord.com/content/tncms/assets/v3/editorial/6/41/64167688-79a2-5de7-92bb-35f0bbf7fad2/5e29eeedb0891.image.jpg?resize=1200%2C799" -->
+          <h5 class="card-title">Barrie Downtown</h5>
+          <p class="card-text">A tour to Niagara Falls from Toronto is an easy way to see the falls if you don't want to drive yourself. Tours offer hotel pickup and drop-off and include a Hornblower Niagara Cruise, which takes you up close to the wall of water tumbling that is the main Horseshoe Falls.Tours also stop at some of the key sites in the area, including Whirlpool Rapids, the Floral Clock.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/heritage-park.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://ogmtavern.com/files/2016/04/IMG_5833.jpg" -->
+          <h5 class="card-title">Heritage Park</h5>
+          <p class="card-text">Toronto zoo has an outstanding and diverse collection, with approximately 5,000 animals. Some of the favorites include pygmy hippos, lions, tigers, giraffes, penguins, orangutans, and many more. The zoo is divided into several sections, each representing a major region of the globe.Zoo include the Gorilla Rainforest; the Tundra Trek, featuring polar bears.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/masonic-temple.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://live.staticflickr.com/8183/8101810367_57e767ce67_n.jpg" -->
+          <h5 class="card-title">Masonic-Temple</h5>
+          <p class="card-text">Standing in beautifully kept grounds, Casa Loma is an extraordinary building somewhat reminiscent of a medieval castle. It was originally constructed in 1914 for Sir Henry Pellatt, an eccentric Canadian multi-millionaire who was among the first to recognize and exploit the money-making potential of Niagara Falls.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/brewery.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://nashvilleguru.com/officialwebsite/wp-content/uploads/2014/04/Cafe-Roze-1-1-1024x683.jpg" -->
+          <h5 class="card-title">Flying Monkey craft brewery</h5>
+          <p class="card-text">the spacious Nathan Philips Square with its bronze sculpture, The Archer, by Henry Moore, is the still highly acclaimed new City Hall. It was designed by the gifted Finnish architect Viljo Revell and built in 1965. City Hall consists of two arc-shaped high-rise blocks, 20 and 27 stories high respectively, wrapped around a lower central building topped by a flattened.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/splash.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-s/0f/60/36/12/penticton-wibit-water.jpg" -->
+          <h5 class="card-title">Splash on wibit water park</h5>
+          <p class="card-text">The ferry trip from Queen's Quay Terminal to the Toronto Islands, about a kilometer offshore, is the prelude to a thoroughly enjoyable outing. There are lovely walks on the islands, as well as the opportunity for rowing, sailing, swimming, and other outdoor activities. In summer, the Toronto Islands are the venue for numerous open-air events.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/brewery.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; http://nashvilleguru.com/officialwebsite/wp-content/uploads/2014/04/Cafe-Roze-1-1-1024x683.jpg" -->
+          <h5 class="card-title">Flying Monkey craft brewery</h5>
+          <p class="card-text">the spacious Nathan Philips Square with its bronze sculpture, The Archer, by Henry Moore, is the still highly acclaimed new City Hall. It was designed by the gifted Finnish architect Viljo Revell and built in 1965. City Hall consists of two arc-shaped high-rise blocks, 20 and 27 stories high respectively, wrapped around a lower central building topped by a flattened.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/masonic-temple.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://live.staticflickr.com/8183/8101810367_57e767ce67_n.jpg" -->
+          <h5 class="card-title">Masonic-Temple</h5>
+          <p class="card-text">Standing in beautifully kept grounds, Casa Loma is an extraordinary building somewhat reminiscent of a medieval castle. It was originally constructed in 1914 for Sir Henry Pellatt, an eccentric Canadian multi-millionaire who was among the first to recognize and exploit the money-making potential of Niagara Falls.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/downtown.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://bloximages.newyork1.vip.townnews.com/gillettenewsrecord.com/content/tncms/assets/v3/editorial/6/41/64167688-79a2-5de7-92bb-35f0bbf7fad2/5e29eeedb0891.image.jpg?resize=1200%2C799" -->
+          <h5 class="card-title">Barrie Downtown</h5>
+          <p class="card-text">A tour to Niagara Falls from Toronto is an easy way to see the falls if you don't want to drive yourself. Tours offer hotel pickup and drop-off and include a Hornblower Niagara Cruise, which takes you up close to the wall of water tumbling that is the main Horseshoe Falls.Tours also stop at some of the key sites in the area, including Whirlpool Rapids, the Floral Clock.</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="../pics/Barrie/heritage-park.jpg"> </div>
+      <div class="card-body">
+        <!-- copyright="&copy; https://ogmtavern.com/files/2016/04/IMG_5833.jpg" -->
+          <h5 class="card-title">Heritage Park</h5>
+          <p class="card-text">Toronto zoo has an outstanding and diverse collection, with approximately 5,000 animals. Some of the favorites include pygmy hippos, lions, tigers, giraffes, penguins, orangutans, and many more. The zoo is divided into several sections, each representing a major region of the globe.Zoo include the Gorilla Rainforest; the Tundra Trek, featuring polar bears.</p>
+      </div>
+  </div>
+</div>
+<!-- Nav bar -->
+
+
+
+<!--  -->
+<!--  -->
+<!-- toggle.css -   image content of .card-text is in toggle.css -->
+<!-- Toggle Nav Bar Stats here-->
+<div class="container">
+  <h2>Choose activities according to your choice.</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#tour">Barrie Tour</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#wildlife">Wildlife Centre</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#park">Water Park & Resort</a>
+    </li>
+  </ul>
+  <!-- Toggle nav bar ends here -->
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+  <!-- Barrie Tour  -->
+    <div id="tour" class="container tab-pane active place-list"><br>
+      <div class="jumbotron" >
+      <h3>Tour To Barrie</h3>
+      <div data-vi-partner-id="brand-subbrand-P00038782" data-vi-language="en" data-vi-currency="CAD" data-vi-partner-type="VBA" data-vi-url="214606P6,214606P12,214606P13" data-vi-total-products=""></div>
+      <script async src="https://www.viator.com/orion/partner/widget.js"></script>
+    </div>
+</div>
+
+    <!-- Wildlife-->
+    <div id="wildlife" class="container tab-pane fade place-list"><br>
+      <div class="jumbotron" >
+      <h3>Wye Marsh Wildlife Centre</h3>
+
+
+      <!--For Page-->
+      <!-- <div class="vc_row wpb_row vc_inner vc_row-fluid section destinations inner-container">
+        <div class="container"> -->
+          <div class="row shadow-lg">
+            <div class="wpb_column col-sm-12">
+                <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+
+                        <div class="row image-box">
+
+                            <div class="col-sm-6 col-sms-6 col-md-3">
+                              <!-- copyright="&copy; https://i.ytimg.com/vi/DdHN37KSycQ/maxresdefault.jpg" -->
+                                    <a href="https://www.wyemarsh.com/" data-post_id="1145" class="hover-effect">
+                                      <img width="500" height="200" src="Barrie-images/wildlife.jpg" alt="wildlife">
+                                    </a>
+                                    <div class="barrie-address">
+                                     <p> 16160 Highway 12, Midland, Ontario L4R 4K6 <br>Tel: (705) 526-7809</p>
+                                        <h2><a href="https://www.wyemarsh.com/"> Wye Marsh Wildlife Centre</a></h2>
+                                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</div>
+</div>  <!-- div id="museum" -->
+
+<!-- Splash On Water Park-->
+    <div id="park" class="container tab-pane fade place-list"><br>
+      <div class="jumbotron" >
+      <h3>Splash On Water Park</h3>
+
+
+      <!--For Page-->
+      <!-- <div class="vc_row wpb_row vc_inner vc_row-fluid section destinations inner-container">
+        <div class="container"> -->
+          <div class="row shadow-lg">
+            <div class="wpb_column col-sm-12">
+                <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+
+                        <div class="row image-box">
+
+                            <div class="col-sm-6 col-sms-6 col-md-3">
+                              <!-- copyright="&copy; https://www.familyvacationcritic.com/uploads/sites/19/2016/04/NonaAdventurePark.jpg" -->
+                                    <a href="https://okanaganwibit.com/ontario/" data-post_id="1145" class="hover-effect">
+                                      <img width="500" height="200" src="Barrie-images/splash.jpg" alt="">
+                                    </a>
+                                    <div class="barrie-address">
+                                     <p> 55 Lakeshore Drive, Barrie, Ontario L4N 6E9 <br>Tel: (705) 279-1322</p>
+                                        <h2><a href="https://okanaganwibit.com/ontario/"> Splash On Water Park</a></h2>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-sms-6 col-md-3">
+                              <!-- copyright="&copy; https://img4.onthesnow.com/image/la/64/6405.jpg" -->
+                                    <a href="https://horseshoeresort.com/" data-post_id="1145" class="hover-effect">
+                                      <img width="500" height="200" src="Barrie-images/horseshoe.jpg" alt="">
+                                    </a>
+                                    <div class="barrie-address">
+                                     <p>1101 Horseshoe Valley Rd. Comp 10, Barrie, Ontario L4M 4Y8 <br>Tel: (705) 835-2790 <br> Toll Free: 1-800-461-5627</p>
+                                        <h2><a href="https://horseshoeresort.com/"> Horseshoe Resort</a></h2>
+                                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</div>
+</div>  <!-- div id="park" -->
+
+
+
+
+  </div>   <!-- div class="tab-content" -->
+</div>  <!-- Toggle Nav Bar Stats here-->
+
+<!--  -->
+<!-- Toggle navbar ends here -->
+
+
+<!-- For Adventure page Link -->
+<div class="py-5 text-center text-info background-info" style="">
+    <div class="container actpage">
+        <div class="row">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Activities To Do </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/adventure.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="../list/paint-final.jpeg"></a>
+                <a href="../activities/adventure.html"><h4> <b>Adventure Activities</b> </h4></a>
+            </div>
+            <div class="col-lg-4 col-md-6 p-4"> <a href="../activities/festival.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="festival.jpg" alt="Card image cap" width="200"></a>
+              <!-- copyright="&copy; https://www.jetpunk.com/img/user-photo-library/c5/c5f160c057-450.jpg" -->
+                <a href="../activities/festival.html"><h4> <b>Festivals</b> </h4></a>
+            </div>
+            <div class="col-lg-4 p-4"> <a href="../activities/shopping.html"><img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="../list/shopping-final.jpg" width="200"></a>
+              <!-- copyright="&copy; https://i.ebayimg.com/00/s/OTAwWDYwMA==/z/ucUAAOSwrklVBLBJ/$_1.JPG?set_id=2" -->
+               <a href="../activities/shopping.html"> <h4> <b>Shopping</b> </h4></a>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+<!-- For Transport page Link -->
+    <div class="container actpage">
+            <div class="mx-auto col-md-12">
+                <h1 class="mb-3" contenteditable="true">Choose Your Mode Of Transport </h1>
+            </div>
+        <div class="row ">
+          <!-- copyright="&copy; https://www.kettering.com.au/wp-content/uploads/shutterstock_305567459-1024x683.jpg" -->
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/transport-try/road.html"><img class="img-fluid d-block mb-3 mx-auto" alt="Card image cap" width="300" src="road.jpg"></a>
+                <a href="../Transport/transport-try/road.html"><h4> <b>By Road</b> </h4></a>
+            </div>
+            <div class="col-lg-6 col-md-6 p-4"> <a href="../Transport/air/flight.html"><img class="img-fluid d-block mb-3 mx-auto" src="flight.jpg" alt="Card image cap" width="300"></a>
+              <!-- copyright="&copy; http://allpicts.in/download/7642/2016/03/Airplane_Images_with_Beautiful_Picture_of_Flight_in_Sunset-1152x864.jpg" -->
+                <a href="../Transport/air/flight.html"><h4> <b>By Air</b> </h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../places/places.html">Places</a></li>
+                <li><a href="../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../activities/adventure.html">Activities</a></li>
+                <li><a href="../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../sitemap.html">Site Map</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+</body>
+</html>
