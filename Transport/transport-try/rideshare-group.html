@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="keywords" content="Trip, tour, uber, rideshare groups, tourism website, car rentals, taxi, road, transport, georgian college">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel="stylesheet" href="try.css" type="text/css" />
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../../CSS/footer.css" type="text/css">
+  <!-- Link to Bootstrap  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Logo -->
+   <div class="navbar">
+   <div class="navbar-inner">
+   <img src="../../logo.png" class="img-fluid">
+   </div>
+   <div class="my-2 my-sm-0">
+   <p>
+       <a href="../../about.html">About Us</a> | <a href="../../sitemap.html">Site Map</a> | <a href="../../privacy.html">Privacy Policy</a>
+   </p>
+   </div>
+   </div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../../activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="../../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item active">
+<a class="nav-link px-3" href="../../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="main-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../home.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../transport/main.html">Transport</a></li>
+            <li class="breadcrumb-item"><a href="../transport-try/road.html">Road</a></li>
+            <li class="breadcrumb-item"> <a href="../transport-try/rideshare/ride.html">RideShare</a></li>
+            <li class="breadcrumb-item active" aria-current="../transport-try/rideshare-group.html">Rideshare Groups</li>
+          </ol>
+        </nav>
+        <!-- /Breadcrumb -->
+
+        <div class="row gutters-sm">
+          <div class="col-md-4 d-none d-md-block">
+            <div class="card">
+              <div class="card-body">
+                <nav class="nav flex-column nav-pills nav-gap-y-1">
+                  <a href="#barrie" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
+                    Barrie
+                  </a>
+                  <a href="#toronto" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Toronto
+                  </a>
+                  <a href="#vancouver" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Vancouver
+                  </a>
+                  <a href="#whistler" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Whistler
+                  </a>
+                  <a href="#victoria" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Victoria
+                  </a>
+                  <a href="#yellow" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Yellowknife
+                  </a>
+                  <a href="#montreal" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Montreal
+                  </a>
+                  <a href="#halifax" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Halifax
+                  </a>
+                  <a href="#calgary" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Calgary
+                  </a>
+                  <a href="#foundland" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    New Foundland
+                  </a>
+                  <a href="#ottawa" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Ottawa
+                  </a>
+                  <a href="#kingston" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Kingston
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header border-bottom mb-3 d-flex d-md-none">
+                <ul class="nav nav-tabs card-header-tabs nav-gap-x-1" role="tablist">
+                  <li class="nav-item">
+                   <a href="#barrie" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
+                    Barrie
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#toronto" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Toronto
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#vancouver" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Vancouver
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#whistler" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Whistler
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#victoria" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Victoria
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                    <a href="#yellow" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Yellowknife
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#montreal" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Montreal
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#halifax" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Halifax
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                    <a href="#calgary" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Calgary
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                   <a href="#foundland" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    New Foundland
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#ottawa" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Ottawa
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                   <a href="#kingston" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                    Kingston
+                  </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+
+<!-- Barrie -->
+<div class="tab-pane active" id="barrie">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Barrie RideShare Groups </h1>
+      <hr>
+      <!-- Ride Share - Barrie -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Ride Share - Barrie</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/207728262914303" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- Ride Share - Georgian College -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Ride Share - Georgian College</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/391457154311072" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Barrie Community 3 -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Barrie Community 3</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-success" href="https://chat.whatsapp.com/DZ7YLpo8mQWIyeWrAoW6l4" target="_blank" role="button">Join Whatsapp Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Barrie Local rides 24×7 -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Barrie Local rides 24×7</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-success" href="https://chat.whatsapp.com/BcISUtcmd0zG1KbZNQR3xo" target="_blank" role="button">Join Whatsapp Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Ride Shares 3 -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Ride Shares 3</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-success" href="https://chat.whatsapp.com/LxhAMlXWc1j4EBV3b3YIv5" target="_blank" role="button">Join Whatsapp Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Ride Shares 3 -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Ride Shares 3</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-success" href="https://chat.whatsapp.com/LxhAMlXWc1j4EBV3b3YIv5" target="_blank" role="button">Join Whatsapp Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideguru -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideguru</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://ride.guru/cities/barrie-ontario-canada" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Poparide barrie -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Poparide</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.poparide.com/travel/from/barrie-on?origin=ChIJbSDXGjejKogRWlNLqAAPLh0" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- ridesharing.com -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">ridesharing.com</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.ridesharing.com/en-ca/ca/Barrie" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- CarPoolWorld -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">CarPoolWorld</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.carpoolworld.com/carpool.html?to=Barrie&wc=CAN,CA&ws=ON&lat=44.3979986&lon=-79.7275277" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- kangaride.com -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">kangaride.com</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.kangaride.com/publish" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+      <!-- barrie.craigslist.org -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">barrie.craigslist.org</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://barrie.craigslist.org/d/rideshare/search/rid" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Share Your Ride -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Share Your Ride</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.shareyourride.net/carpool/Canada/ON/Barrie/" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+  </div>
+
+<!-- Toronto-->
+<div class="tab-pane" id="toronto">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Toronto RideShare Groups </h1>
+      <hr>
+      <!-- RideShare - Toronto & GTA -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">RideShare - Toronto & GTA</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/761296020705858" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- Rideshare@International Students in Canada -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare@International Students in Canada</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/250979092229813" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Montreal-Toronto rideshare -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Montreal-Toronto rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/453970331348083" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare Toronto to New York -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Toronto to New York</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/2253831088182455" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- University of Toronto Rideshare -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">University of Toronto Rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1553299768057529" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Waterloo Kitchener Cambridge Guelph Toronto Niagara Falls Ride Share -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Waterloo Kitchener Cambridge Guelph Toronto Niagara Falls Ride Share</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/740969866059936" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare Ottawa Kingston Toronto Montreal -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Ottawa Kingston Toronto Montreal</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1833583736971779" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- Vancouver-->
+<div class="tab-pane" id="vancouver">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Vancouver RideShare Groups </h1>
+      <hr>
+      <!-- Rideshare Vancouver-->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Vancouver</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/rideshare.vancouver" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- Vancouver Island WOMEN'S Rideshare Group -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Vancouver Island WOMEN'S Rideshare Group</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1909370989321111" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Vancouver Island Ride Share -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Vancouver Island Ride Sharee</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/161870270688771" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Vancouver to Okanagan Ride-share -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Vancouver to Okanagan Ride-share</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/170937307029938" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Vancouver Island Carpooling -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Vancouver Island Carpooling</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/180016568833129" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Vancouver/Banff/Calgary/Toronto Canada RideShare-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Vancouver/Banff/Calgary/Toronto Canada RideShare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/westoftoronto" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- RIDESHARE-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">RIDESHARE</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/rideshares" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Tag Along - Metro Vancouver RideShare-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Tag Along - Metro Vancouver RideShare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1233001387078015" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+  </div>
+
+
+<!-- Whistler -->
+<div class="tab-pane" id="whistler">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Whistler RideShare Groups </h1>
+      <hr>
+      <!-- Whistler Ride Share -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Whistler Ride Share</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/432798400102800" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- RIDESHARE-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">RIDESHARE</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/rideshares" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Whistler Winter 20/21 Rider’s Only -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Whistler Winter 20/21 Rider’s Only</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/544599009815498" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Whistler Dirtbike Group -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Whistler Dirtbike Group</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1725951807673223" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- Victoria -->
+<div class="tab-pane" id="victoria">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Victoria RideShare Groups </h1>
+      <hr>
+      <!-- ridesharing.com -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">ridesharing.com</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.ridesharing.com/en-ca/ca/Victoria" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- https://victoria.craigslist.org-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">victoria.craigslist.org</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://victoria.craigslist.org/d/rideshare/search/rid" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare University of Victoria - Poparide -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare University of Victoria - Poparide</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.poparide.com/uvic" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Victoria - Vancouver rideshare / ferry-pooling -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Victoria - Vancouver rideshare / ferry-pooling</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/925799697501263/" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- Yellowknife -->
+<div class="tab-pane" id="yellow">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Yellowknife RideShare Groups </h1>
+      <hr>
+      <!-- Carpool Yellowknife Northwest Territories Canada -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Carpool Yellowknife Northwest Territories Canada</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.carpoolworld.com/carpool.html?to=Yellowknife&wc=CAN,CA&ws=NT&lat=62.4544164&lon=-114.3710463" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- RIDEGURU-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">RIDEGURU</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://ride.guru/cities/yellowknife-northwest-territories-canada" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Share Your Ride -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Share Your Ride</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.shareyourride.net/carpool/Canada/Northwest+Territories/" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- ridesharing.com -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">ridesharing.com</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.ridesharing.com/en-ca/Rideshare_Yellowknife_Onoway.htm" target="_blank" role="button">Go To Website</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- TRAVELING /CATCH A RIDE/ DELIVER NWT -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">TRAVELING /CATCH A RIDE/ DELIVER NWT</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/catchrideliver/" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+  </div>
+
+
+    <!-- Montreal -->
+<div class="tab-pane" id="montreal">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Montreal RideShare Groups </h1>
+      <hr>
+      <!-- Rideshare Ottawa/Montreal/Ottawa -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Ottawa/Montreal/Ottawa</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/2576948715868219" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- Montreal To Toronto Rideshare -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Montreal To Toronto Rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/266194330925566" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- RIDESHARE - Montreal -- Toronto -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">RIDESHARE - Montreal <--> Toronto</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/281479479204546" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Montreal-Toronto rideshare -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Montreal-Toronto rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/453970331348083" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Toronto Montreal Rideshare -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Toronto Montreal Rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/751612455040261" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- CDE College Rideshare (MONTREAL - SHERBROOKE) -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">CDE College Rideshare (MONTREAL - SHERBROOKE)</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/508439366686530" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare Ottawa Kingston Toronto Montreal -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Ottawa Kingston Toronto Montreal</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1833583736971779" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare@International Students in Canada -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare@International Students in Canada</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/250979092229813" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare Montreal/Ottawa/Gatineau -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Montreal/Ottawa/Gatineau</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1509325346063910" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare/Covoiturage last minute Ottawa<=>Gatineau<=>Montréal<=>Toronto -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare/Covoiturage last minute Ottawa<=>Gatineau<=>Montréal<=>Toronto</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1986274521690962" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Montréal Ski Covoiturage (Rideshare) -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Montréal Ski Covoiturage (Rideshare)</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/181175228752378" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Daily Ontario Carpool - Windsor London Toronto Kingston Ottawa Montreal -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Daily Ontario Carpool - Windsor London Toronto Kingston Ottawa Montreal</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/544026096067724" target="_blank" role="button">Join Facebook group</a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Halifax -->
+<div class="tab-pane" id="halifax">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Halifax RideShare Groups </h1>
+      <hr>
+      <!-- Rideshare Nova scotia, New brunswick, PEI -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Nova scotia, New brunswick, PEI</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/139966066570025" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- Ride Share Maritimes-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Ride Share Maritimes</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/RideShareMaritimes" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Nova Scotia/ New Brunswick/ P.E.I. Ride Board -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Nova Scotia/ New Brunswick/ P.E.I. Ride Board</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/AtlanticRideboard" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Halifax-Moncton-Fredericton Rideshare -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Halifax-Moncton-Fredericton Rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/HalifaxMonctonFredericton" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+  </div>
+
+
+  <!-- Calgary -->
+<div class="tab-pane" id="calgary">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Calgary RideShare Groups </h1>
+      <hr>
+      <!-- BC ALBERTA Ride Share -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">BC ALBERTA Ride Share</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/200960960568448" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- Rideshare Calgary-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Calgary</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/rideshare.calgary" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Edmonton-Calgary Carpool! -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Edmonton-Calgary Carpool!</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/30876768387" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Vancouver/Banff/Calgary/Toronto Canada RideShare -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Vancouver/Banff/Calgary/Toronto Canada RideShare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/westoftoronto" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- BC and Alberta Rideshare and Transport -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">BC and Alberta Rideshare and Transport</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/349770956396240" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Calgary Bike Rider's Club -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Calgary Bike Rider's Club</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1015047108641247" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+  </div>
+
+
+    <!-- Newfoundland -->
+<div class="tab-pane" id="foundland">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Newfoundland RideShare Groups </h1>
+      <hr>
+      <!-- Newfoundland Rideshare -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Newfoundland Rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/Newfoundland-Rideshare-107147009330661" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- gobyride.com-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">gobyride.com</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.gobyride.com/Public/Home.aspx" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Travelling Newfoundland and Labrador -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Travelling Newfoundland and Labrador</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/travelnewfoundlandlabrador" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- RIDESHARE -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">RIDESHARE</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/rideshares" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- CarpoolWorld.com -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">CarpoolWorld.com</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.carpoolworld.com/carpool_Newfoundland_CAN_favorites.html" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+  </div>
+
+      <!-- Ottawa -->
+<div class="tab-pane" id="ottawa">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Ottawa RideShare Groups </h1>
+      <hr>
+      <!-- Rideshare Ottawa/Montreal/Ottawa -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Ottawa/Montreal/Ottawa</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/2576948715868219" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- Rideshare Ottawa Kingston Toronto Montreal-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Ottawa Kingston Toronto Montreal</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1833583736971779" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare Toronto / Ottawa / Kingston -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Toronto / Ottawa / Kingston</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/548959098457184" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare/Covoiturage last minute Ottawa<=>Gatineau<=>Montréal<=>Toronto -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare/Covoiturage last minute Ottawa<=>Gatineau<=>Montréal<=>Toronto</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1986274521690962" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare Montreal/Ottawa/Gatineau -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Montreal/Ottawa/Gatineau</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1509325346063910" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- **RIDESHARE** [OTTAWA -TORONTO] CARPOOL / COVOITURAGE -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">**RIDESHARE** [OTTAWA -TORONTO] CARPOOL / COVOITURAGE</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/274358039594633" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+    <hr>
+
+      <!-- Cornwall-Ottawa Rideshare -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Cornwall-Ottawa Rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/cornwallottawarideshare" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Ottawa/Toronto/Mississauga/Waterloo Rideshare -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Ottawa/Toronto/Mississauga/Waterloo Rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/shareride15" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Ottawa-Centre NDP -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Ottawa-Centre NDP</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/2268809028" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare@International Students in Canada -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare@International Students in Canada</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/250979092229813" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare Ontario -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Ontario</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/Rideshare.Ontario" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Daily Ontario Carpool - Windsor London Toronto Kingston Ottawa Montreal -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Daily Ontario Carpool - Windsor London Toronto Kingston Ottawa Montreal</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/544026096067724" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+  </div>
+
+      <!-- Kingston-->
+<div class="tab-pane" id="kingston">
+                  <!-- Page Heading -->
+      <h1 class="my-4 text-center">Kingston RideShare Groups </h1>
+      <hr>
+      <!-- Rideshare Queens University -->
+     <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Queens University</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/Rideshare-Queens-University-213938851969349" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+     <hr>
+
+      <!-- Rideshare Toronto / Ottawa / Kingston-->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Toronto / Ottawa / Kingston</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/548959098457184" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Rideshare Ottawa Kingston Toronto Montreal -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare Ottawa Kingston Toronto Montreal</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1833583736971779" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Reliable Rideshare Toronto Kingston Ottawa -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Reliable Rideshare Toronto Kingston Ottawa</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/Reliable-Rideshare-Toronto-Kingston-Ottawa-108716370642834" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Kingston, Ontario Carpool and Rideshare -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Kingston, Ontario Carpool and Rideshare</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/1388119771448606" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+       <hr>
+
+      <!-- Daily Ontario Carpool - Windsor London Toronto Kingston Ottawa Montreal -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Daily Ontario Carpool - Windsor London Toronto Kingston Ottawa Montreal</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/544026096067724" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+       <hr>
+
+      <!-- Rideshare University of Windsor -->
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="text-center">Rideshare University of Windsor</h4>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary" href="https://www.facebook.com/groups/580198162191311" target="_blank" role="button">Join Facebook Group</a>
+        </div>
+      </div>
+
+  </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+
+      <!-- Footer -->
+      <footer>
+            <div class = "mt-5 pt-5 pb-5 footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 col-xs-12">
+                    <h2> Dream Destination</h2>
+                    <p class = "pr-5 text-white-50">
+                      Turn your dreams into reality.
+                    </p>
+                    <ul class ="social">
+                      <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                      <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                      <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+                    <ul class="m-0 p-0">
+                      <li><a href="../../places/places.html">Places</a></li>
+                      <li><a href="../../Hotel/stay.html">Hotel</a></li>
+                      <li><a href="../../activities/adventure.html">Activities</a></li>
+                      <li><a href="../../Transport/transport/main.html">Transport</a></li>
+                      <li><a href="../../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                      <li><a href="../../sitemap.html">Site Map</a></li>
+                      <li><a href="../../privacy.html">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-xs-12 ContactUs">
+                    <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+                    <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col copyright text-center">
+                      <p><small class="text-white-50">
+                        All Rights Reserved &copy; Dream Destination Company 2020
+                      </small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+
+  </body>
+  </html>
