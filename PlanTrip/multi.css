@@ -1,0 +1,12 @@
+h1 {
+    display: table;
+    margin: 5% auto 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Times Roman', sans-serif;
+    font-size: 3em;
+    font-weight: 550;
+    color: blue;
+    /* color: #fff; */
+    text-shadow: 0 1px white, 0 1px black
+}
