@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="CSS/navbar.css" type="text/css" />
+  <!-- Link to gallery Css Stylesheet -->
+  <link rel=" stylesheet" href="CSS/gallery.css" type="text/css" />
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="CSS/footer.css" type="text/css" />
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script for View More -->
+  <script>
+  $(document).ready(function () {
+      $('.nav-toggle').click(function () {
+          var collapse_content_selector = $(this).attr('href');
+          var toggle_switch = $(this);
+          $(collapse_content_selector).toggle(function () {
+              if ($(this).css('display') == 'none') {
+                  toggle_switch.html('Explore more cities');
+              } else {
+                  toggle_switch.html('View Less');
+              }
+          });
+      });
+
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+
+[...document.querySelectorAll('.first-column')].map(column => {
+column.style.setProperty('--animation', 'slide');
+column.style.setProperty('height', '200%');
+column.innerHTML = column.innerHTML + column.innerHTML;
+});
+
+});
+  </script>
+
+<script>
+$(document).ready(function() {
+var $easyzoom = $('.easyzoom').easyZoom();
+});
+</script>
+
+<!-- Script for image -->
+<script>
+  $(document).ready(function() {
+
+$('.owl-carousel').owlCarousel({
+mouseDrag:false,
+loop:true,
+margin:2,
+nav:true,
+responsive:{
+0:{
+items:1
+},
+600:{
+items:1
+},
+1000:{
+items:3
+}
+}
+});
+
+$('.owl-prev').click(function() {
+$active = $('.owl-item .item.show');
+$('.owl-item .item.show').removeClass('show');
+$('.owl-item .item').removeClass('next');
+$('.owl-item .item').removeClass('prev');
+$active.addClass('next');
+if($active.is('.first')) {
+$('.owl-item .last').addClass('show');
+$('.first').addClass('next');
+$('.owl-item .last').parent().prev().children('.item').addClass('prev');
+}
+else {
+$active.parent().prev().children('.item').addClass('show');
+if($active.parent().prev().children('.item').is('.first')) {
+$('.owl-item .last').addClass('prev');
+}
+else {
+$('.owl-item .show').parent().prev().children('.item').addClass('prev');
+}
+}
+});
+
+$('.owl-next').click(function() {
+$active = $('.owl-item .item.show');
+$('.owl-item .item.show').removeClass('show');
+$('.owl-item .item').removeClass('next');
+$('.owl-item .item').removeClass('prev');
+$active.addClass('prev');
+if($active.is('.last')) {
+$('.owl-item .first').addClass('show');
+$('.owl-item .first').parent().next().children('.item').addClass('prev');
+}
+else {
+$active.parent().next().children('.item').addClass('show');
+if($active.parent().next().children('.item').is('.last')) {
+$('.owl-item .first').addClass('next');
+}
+else {
+$('.owl-item .show').parent().next().children('.item').addClass('next');
+}
+}
+});
+
+});
+</script>
+
+  <!-- Style -->
+  <style>
+    /*Make the image fully responsive*/
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+</head>
+<body>
+
+
+<!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="logo.png" class="img-fluid" alt="Logo Of Dream Destination">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="about.html">About Us</a> | <a href="sitemap.html">Site Map</a> | <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+
+
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item active">
+        <a class="nav-link px-3" href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="Hotel/stay.html"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="activities/festival.html">Festivals</a>
+    <a class="dropdown-item" href="activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="Transport/transport/main.html"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="PlanTrip/Trip-packages/packages.html"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Navbar ends here -->
+
+
+<!-- Social media Icons -->
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-1b2f558a-505a-430b-96b1-63cb2174e382"></div>
+
+
+<!-- The slideshow -->
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!--  copyright="&copy; http://d3exkutavo4sli.cloudfront.net/wp-content/uploads/2014/07/Toronto-crime-rate.jpg" -->
+      <img src="slideshow/cntower.jpg" class="d-block w-100" alt="CN Tower">
+      <div class="carousel-caption d-md-block">
+        <h2>CN Tower</h2>
+        <h5>CN Tower is the world's 9th tallest free-standing structure</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!-- copyright="&copy; https://media.socastsrm.com/wordpress/wp-content/blogs.dir/202/files/2018/02/Museum_London.jpg" -->
+      <img src="slideshow/Museum_London.jpg" class="d-block w-100" alt="London Museum">
+      <div class="carousel-caption d-md-block">
+        <h2>London Museum</h2>
+        <h5>Museum London is an art and history museum located in London, Ontario, Canada.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!-- copyright="&copy; https://live.staticflickr.com/65535/49451733012_417c7ba9b8_m.jpg" -->
+      <img src="slideshow/spirit-catcher.jpg" class="d-block w-100" alt="Barrie Spirit Catcher">
+      <div class="carousel-caption d-md-block">
+        <h2>Barrie Spirit Catcher</h2>
+        <h5>Spirit Catcher – and it’s come to be known as an iconic image of Barrie.</h5>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- Slideshow ends here. -->
+
+
+
+<!-- Text -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Planning for a holiday? Why to waste time over the random websites.</h1>
+    <h2>Now, plan your holidays at comfort of your home with DREAM DESTINATION. We turn your dream holidays into reality.</h2>
+    <p>Canada is made up of friendly faces, iconic places and rich cultures worth celebrating every day from province to territory, neighbour  to neighbour. Across the nation, Ontario is home to the absolute most amazing scenes on the planet. High mountains, flaura & fauna, and mesmerizing view of beaches make Canada the famous tourist destination.</p>
+    <p>Customize your holiday package according to your budget and explore amazing attractions of Canada with dream destination. Whether you wanna do adventurous trip, cultural trip,  historical trip and any other, we provide you every option in single website. Now you can visit your favorite place,  can do trekking, cycling, paragliding, sightseeing, trampoline , Bungee Jump, river rafting, etc.</p>
+  </div>
+</div>
+
+<div class="container">
+<h6>Places To Visit In Canada</h6>
+</div>
+<!-- gallery.css -->
+<!-- Row 1 of images -->
+<div class="card-group">
+  <!-- Toronto -->
+  <div class="card">
+    <!-- copyright="&copy; https://images.rove.me/w_1920,q_85/bqep6ct1ocxkogvuvul3/toronto-cn-tower.jpg" -->
+    <img src="home-city-images/toronto-main.jpg" class="card-img-top" alt="Toronto" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Toronto</h5>
+      <p class="card-text">Toronto, the capital of the province of Ontario, is largest Canadian city. It is called as "Queen City Of Ontario".</p>
+      <a href="places/Toronto.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <!-- Brampton -->
+  <div class="card">
+    <!-- copyright="&copy; https://www.savoredjourneys.com/wp-content/uploads/2014/08/whistler-village.jpg" -->
+    <img src="home-city-images/whistler-main.jpg" class="card-img-top" alt="Whistler" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Whistler</h5>
+      <p class="card-text">Whistler is a resort municipality in the southern Pacific Ranges of the Coast Mountains in the province of British Columbia.</p>
+      <a href="places/Whistler.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <!-- Missisauga -->
+  <div class="card">
+    <!-- copyright="&copy; https://www.hdwallpapers.net/wallpapers/downtown-vancouver-canada-wallpaper-for-2560x1440-62-250.jpg" -->
+    <img src="home-city-images/vancouver-main.jpg" class="card-img-top" alt="Vancouver" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Vancouver</h5>
+      <p class="card-text">Vancouver is a major city in western Canada, located in the Lower Mainland region of British Columbia.</p>
+      <a href="places/Vancouver.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+ <!-- Barrie -->
+  <div class="card">
+    <!-- copyright="&copy; https://downtownbarrie.ca/test/wp-content/uploads/2018/05/Waterfront.jpg" -->
+    <img src="home-city-images/barrie-main.jpg" class="card-img-top" alt="Barrie" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Barrie</h5>
+      <p class="card-text"> Barrie is a city in Central Ontario.Barrie is known not just for its tourism, but also as the 'Gateway to Cottage Country'.</p>
+      <a href="places/Barrie.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+</div>
+<!-- Row 1 ends here -->
+<!-- View more -->
+<div id="collapse" style="display:none">
+<!-- Row 2 of images -->
+<div class="card-group">
+  <!-- London -->
+  <div class="card">
+    <!-- copyright="&copy; http://s3.vacationsbyrail.com.s3.amazonaws.com/images/tours/824/quebec-citynew2__508x400.jpg" -->
+    <img src="home-city-images/halifax-main.jpg" class="card-img-top" alt="Halifax" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Halifax</h5>
+      <p class="card-text"> Halifax, formally known as the Halifax Regional Municipality (HRM), is the capital of the Canadian province of Nova Scotia. </p>
+      <a href="places/Halifax.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <!-- Hamilton -->
+  <div class="card">
+    <!-- copyright="&copy; https://static.wixstatic.com/media/f9f16c_6d8749aac8d245e08a6c6e508cf06d96~mv2.jpg/v1/fill/w_1000,h_670,al_c,q_90,usm_0.66_1.00_0.01/f9f16c_6d8749aac8d245e08a6c6e508cf06d96~mv2.jpg" -->
+    <img src="home-city-images/newfoundland-main.jpg" class="card-img-top" alt="NewFoundland" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">New Foundland</h5>
+      <p class="card-text">Newfoundland and Labrador is the easternmost province of Canada. Situated in the country's Atlantic region.</p>
+      <a href="places/Newfoundland.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <!-- Kitchener -->
+  <div class="card">
+    <!-- copyright="&copy; https://c1.staticflickr.com/5/4080/4768088540_eb7976a1de_b.jpg" -->
+    <img src="home-city-images/victoria-main.jpg" class="card-img-top" alt="Victoria" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Victoria</h5>
+      <p class="card-text">Victoria is the capital city of the Canadian province of British Columbia, on the southern tip of Vancouver Island off Canada's Pacific Coast.</p>
+      <a href="places/Victoria.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <!-- Kingston -->
+  <div class="card">
+    <!-- copyright="&copy; http://shipmyride.com/uploads/Kingston_Canada.jpg" -->
+    <img src="home-city-images/kingston-main.jpg" class="card-img-top" alt="Kingston" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Kingston</h5>
+      <p class="card-text">Kingston is a city in Eastern Ontario, Canada. It's known as the "Limestone City".</p>
+      <a href="places/Kingston.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+</div>
+<!-- Row 2 ends here -->
+<!-- Div for view more -->
+
+<!-- Row 3 of images -->
+<div class="card-group">
+  <!-- Orillia -->
+  <div class="card">
+    <!-- copyright="&copy; https://www.novahotels.ca/chateau-nova-yellowknife/images/area-info/yellowknife-tourism.jpg" -->
+    <img src="home-city-images/yellowknife-main.jpg" class="card-img-top" alt="YellowKnife" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">YellowKnife</h5>
+      <p class="card-text"> Yellowknife is the capital, only city, and largest community in the Northwest Territories, Canada. </p>
+      <a href="places/Yellowknife.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <!-- Ottawa -->
+  <div class="card">
+    <!-- copyright="&copy; https://qph.fs.quoracdn.net/main-qimg-4ab09f6dcd2ee57a62a6ec6b8bd56266" -->
+    <img src="home-city-images/ottawa-main.jpg" class="card-img-top" alt="Ottawa" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Ottawa</h5>
+      <p class="card-text">Ottawa is Canada’s capital, in the east of southern Ontario, near the city of Montréal and the U.S. border.</p>
+      <a href="places/Ottawa.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <!-- Waterloo -->
+  <div class="card">
+    <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/e/e2/Old_port_of_Montreal_by_night.jpg" -->
+    <img src="home-city-images/montreal-main.jpg" class="card-img-top" alt="Montreal" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Montreal</h5>
+      <p class="card-text">Montreal is the second-most populous city in Canada and most populous city in the Canadian province of Quebec.</p>
+      <a href="places/Montreal.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <!-- Peterborough -->
+  <div class="card">
+    <!-- copyright="&copy; https://edu-africa.com/wp-content/uploads/2017/05/Highlights-for-business-study-programs.jpg" -->
+    <img src="home-city-images/calgary-main.jpg" class="card-img-top" alt="Calgary" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Calgary</h5>
+      <p class="card-text">Calgary is a city in the western Canadian province of Alberta. It is situated at the confluence of the Bow River and the Elbow River in the south of the province.</p>
+      <a href="places/Calgary.html" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+</div>
+<!-- Closing of View more link -->
+</div>
+<!-- <div class="col-md-4 col-lg-2"> -->
+<a href="#collapse" class="nav-toggle" role="button">Explore More Cities</a>
+<!-- </div> -->
+<!-- Top line is for view more link -->
+
+<!-- For Activites -->
+<div class="container">
+<h6>Activites To Do In Canada</h6>
+</div>
+
+
+<div class="myimages">
+    <div class="first-column"> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=1" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=2" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=3" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=4" alt="image"></a> </div>
+    <div class="first-column"> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=5" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=6" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=7" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=8" alt="image"></a> </div>
+    <div class="first-column"> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=9" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=10" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=11" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=12" alt="image"></a> </div>
+    <div class="first-column"> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=13" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=14" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=15" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=16" alt="image"></a> </div>
+    <div class="first-column"> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=17" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=18" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=19" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=20" alt="image"></a> </div>
+    <div class="first-column"> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=21" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=22" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=23" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=24" alt="image"></a> </div>
+    <div class="first-column"> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=25" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=26" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=27" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=28" alt="image"></a> </div>
+    <div class="first-column"> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=29" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=30" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=31" alt="image"></a> <a href="activities/adventure.html"><img src="https://picsum.photos/300/300?random=32" alt="image"></a> </div>
+</div>
+<br>
+
+<!-- Image hover -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<div class="container-fluid px-3 px-sm-5 my-5 text-center">
+<h4 class="mb-5 font-weight-bold">What Our Customers Say</h4>
+<div class="owl-carousel owl-theme">
+    <div class="item first prev">
+        <div class="card border-0 py-3 px-4">
+            <div class="row justify-content-center"> <img src="personal/simran.jpg" class="img-fluid profile-pic mb-4 mt-3" alt="image"> </div>
+            <h6 class="mb-3 mt-2">Simran Khosla</h6>
+            <p class="content mb-5 mx-2">I really appreciate Dream Destination and use it often when planning holidays or even weekend get a ways.</p>
+        </div>
+    </div>
+    <div class="item show">
+        <div class="card border-0 py-3 px-4">
+            <div class="row justify-content-center"> <img src="personal/umang.jpg" class="img-fluid profile-pic mb-4 mt-3" alt="image"> </div>
+            <h6 class="mb-3 mt-2">Umang Sharma</h6>
+            <p class="content mb-5 mx-2">Greatway of letting Travellers know about the places they wish to visit. !!!cheers !!! keep up the good work by helping others know beforehand</p>
+        </div>
+    </div>
+    <div class="item next">
+        <div class="card border-0 py-3 px-4">
+            <div class="row justify-content-center"> <img src="personal/rohi.jpg" class="img-fluid profile-pic mb-4 mt-3" alt="image"> </div>
+            <h6 class="mb-3 mt-2">Rohith Sunkara</h6>
+            <p class="content mb-5 mx-2">We use Dream Destination extensively when we travel and have found it to be an invaluable tool for making our choices of hotels, flights and tours.</p>
+        </div>
+    </div>
+    <div class="item last">
+        <div class="card border-0 py-3 px-4">
+            <div class="row justify-content-center"> <img src="personal/arsh.jpg" class="img-fluid profile-pic mb-4 mt-3" alt="image"> </div>
+            <h6 class="mb-3 mt-2">Arshveer Uppal</h6>
+            <p class="content mb-5 mx-2">It's my go to before booking any flight, or destination, including hotels. Information is always spot on. Love it.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Ends -->
+<div class="container">
+<h6>EXPLORE MORE BY PROVINCE AND TERRITORY</h6>
+</div>
+
+<link rel="stylesheet" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1557239464/easyzoom.css" />
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1557239478/easyzoom.js"></script>
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container ">
+            <div class="col-lg-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Canada Map</h4>
+                        <p class="card-description">Hover to check out your favorite City</p>
+                        <!-- copyright="&copy; https://1.bp.blogspot.com/-COqY7_KRWuc/UGCLf_HOoII/AAAAAAAACrE/NugBtjBmXjQ/s1600/CanadaBW.jpg" -->
+                        <div class="easyzoom easyzoom--adjacent"> <a href="canada-map/map.jpg"> <img class="main-image" src="canada-map/map.jpg" alt="" height="400"> </a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Whatsapp chat bot -->
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-29486fc0-ec0b-488c-ab6e-85ec63aa9ced"></div>
+
+<!-- Visitor Counted -->
+<div class="text-center">
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f0cd3c49-f329-44b8-8626-591960e620dc"></div>
+</div>
+<br>
+
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="places/places.html">Places</a></li>
+                <li><a href="Hotel/stay.html">Hotel</a></li>
+                <li><a href="activities/adventure.html">Activities</a></li>
+                <li><a href="Transport/transport/main.html">Transport</a></li>
+                <li><a href="PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+
+</body>
+</html>
