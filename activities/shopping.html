@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dream Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tourism Website For Canada which will provide a single platform for everything needed for trip">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arshveer Uppal, Rohith Preetham Sunkara">
+
+
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="../CSS/navbar.css" type="text/css" />
+  <!-- Link to nav bar Css Stylesheet -->
+  <link rel=" stylesheet" href="shop.css" type="text/css" />
+
+  <!-- Link to footer css stylesheet -->
+  <link rel="stylesheet" href="../CSS/footer.css" type="text/css" />
+
+
+  <!-- Link to activity list stylesheet -->
+  <link rel="stylesheet" href="../CSS/list.css" type="text/css" />
+
+  <!-- Link to activity list stylesheet -->
+  <link rel="stylesheet" href="../CSS/listact.css" type="text/css" />
+
+  <!-- Link to toggle navbar css stylesheet -->
+  <link rel="stylesheet" href="../CSS/toggle.css" type="text/css" />
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- Bootstrap slide gallery -->
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <!-- Link to adventure Css Stylesheet -->
+<link rel=" stylesheet" href="../CSS/adventure.css" type="text/css" />
+
+ <script>
+   $(document).ready(function(){
+
+$(".filter-button").click(function(){
+var value = $(this).attr('data-filter');
+
+if(value == "all")
+{
+
+$('.filter').show('1000');
+}
+else
+{
+
+$(".filter").not('.'+value).hide('3000');
+$('.filter').filter('.'+value).show('3000');
+
+}
+});
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+ </script>
+
+
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Logo -->
+<div class="navbar">
+  <div class="navbar-inner">
+      <img src="../logo.png" class="img-fluid">
+  </div>
+  <div class="my-2 my-sm-0">
+    <p>
+          <a href="../about.html">About Us</a> | <a href="../sitemap.html">Site Map</a> | <a href="../privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
+
+<!-- Nav bar -->
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="../home.html">Dream Destination</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link px-3" href="../home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <!-- Places -->
+    <li class="nav-item">
+    <a class="nav-link px-3" href="../places/places.html"><i class="fas fa-globe-americas"></i>
+      Places
+    </a>
+    </li>
+    <!-- Hotel -->
+  <li class="nav-item">
+   <a class="nav-link px-3" href="../Hotel/stay.html" id="navbardrop"><i class="fas fa-bed"></i>
+  Hotel
+  </a>
+ </li>
+  <!-- Activites -->
+  <li class="nav-item active dropdown">
+  <a class="nav-link px-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fas fa-skating"></i>
+    Activites
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../activities/adventure.html">Adventure</a>
+    <a class="dropdown-item" href="../activities/festival.html">Festivals</a>
+    <a class="dropdown-item active" href="../activities/shopping.html">Shopping</a>
+  </div>
+</li>
+<!-- Transport -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../Transport/transport/main.html" id="navbardrop"><i class="fas fa-road"></i>
+  Transport
+</a>
+</li>
+<!-- Trip Packages -->
+<li class="nav-item">
+<a class="nav-link px-3" href="../PlanTrip/Trip-packages/packages.html" id="navbardrop"><i class="fas fa-suitcase-rolling"></i>
+  Trip Packages
+</a>
+</li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/signup.php"><i class="fas fa-user"></i> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Transport/rideshare-backend/dlogin.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<!-- Nav Bar ends here -->
+
+<!-- Carousel Starts here -->
+<h1>Explore the Shopping Places</h1><br>
+  <!--  -->
+  <!-- Rotating slideshow at the top -->
+  <!--  -->
+<div class="box-container">
+<div id="carousel">
+    <!-- copyright="&copy; https://www.google.ca/url?sa=i&url=https%3A%2F%2Fwww.nfi.ca%2Finternational-news-opportunities&psig=AOvVaw1yKHWgvgBCta9qfUjM-X3d&ust=1609061365295000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCu3-qq6-0CFQAAAAAdAAAAABAD  -->
+    <figure><img src="shopping/1.jpg"></figure>
+    <!-- copyright="&copy; https://www.google.ca/url?sa=i&url=https%3A%2F%2Fwww.seetorontonow.com%2Flistings%2Fcf-toronto-eaton-centre%2F&psig=AOvVaw3xnHvtDz9KJCIJYZ7GMs4R&ust=1609118195826000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCj7Mf-7O0CFQAAAAAdAAAAABAD  -->
+    <figure><img src="shopping/2.jpg"></figure>
+    <!-- copyright="&copy;  -->
+    <figure><img src="shopping/3.jpg"></figure>
+    <!-- copyright="&copy; https://www.gtaweekly.ca/wp-content/uploads/2017/10/yorkdale-mall-326x245.jpg -->
+    <figure><img src="shopping/4.jpg"></figure>
+    <!-- copyright="&copy; https://www.nsbuzz.ca/wp-content/uploads/2020/05/halifaxshoppingcentre.jpg -->
+    <figure><img src="shopping/5.jpg"></figure>
+    <!-- copyright="&copy; https://image.shutterstock.com/image-photo/image-450w-19364422.jpg -->
+    <figure><img src="shopping/6.jpg"></figure>
+    <!-- copyright="&copy; http://mallsfashionshow.com/wp-content/uploads/2019/10/pacif-430x330.jpg -->
+    <figure><img src="shopping/7.jpg"></figure>
+    <!-- copyright="&copy; https://s3-media0.fl.yelpcdn.com/bphoto/AuVBW1lHQjATfhnRho1sqQ/o.jpg -->
+    <figure><img src="shopping/8.jpg"></figure>
+    <!-- copyright="&copy; https://www.narcity.com/uploads/224412_1b248e0131390ad8b08bd4781dee0de48e53731f.png_facebook.png -->
+    <figure><img src="shopping/9.jpg"></figure>
+    <!-- copyright="&copy; https://www.entuitive.com/wp-content/uploads/2019/11/Retail_Rideau-Centre-Renovation-and-Expansion_6-590x300.jpg -->
+    <figure><img src="shopping/10.jpg"></figure>
+    <!-- copyright="&copy; https://americantravelink.com/wp-content/uploads/2020/08/blog_montreal-center-eaton_2.jpg -->
+    <figure><img src="shopping/11.jpg"></figure>
+    <!-- copyright="&copy; https://americantravelink.com/wp-content/uploads/2020/08/blog_montreal-center-eaton_2.jpg -->
+    <figure><img src="shopping/12.jpg"></figure>
+    <!-- copyright="&copy; https://thestella.com/wp-content/uploads/2019/08/downtown-place-montreal-trust-montreal.jpg -->
+    <figure><img src="shopping/13.jpg"></figure>
+    <!-- copyright="&copy; https://images.squarespace-cdn.com/content/v1/529fc0c0e4b088b079c3fb6d/1596058909990-RDIIKIL4FM2MBMO5IG8N/ke17ZwdGBToddI8pDm48kAJsswp0EXV6qc0SOJ8DOsUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc_E7dXkCi7l7eF32s1E_vQW45WD95yMX6bcbEP6L1pnbQgytvpF9JKWwbDEjqe30p/Southcentre-mall-calgary-alberta-entrance.jpg?format=500w -->
+    <figure><img src="shopping/14.jpg"></figure>
+</div>
+</div>
+<!--  -->
+<!-- Rotating Slideshow ends here. -->
+
+
+<!--  -->
+<!--Content ends here.  -->
+<!-- Carousel ends here -->
+
+<div class="container">
+    <!-- <div class="row"> -->
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1>Shopping Places</h1><br>
+        </div>
+        <div align="center">
+          <button class="filter-button" data-filter="all">All</button>
+          <button class="filter-button" data-filter="barrie">Barrie</button>
+          <button class="filter-button" data-filter="toronto">Toronto</button>
+          <button class="filter-button" data-filter="halifax">Halifax</button>
+          <button class="filter-button" data-filter="vancouver">Vancouver</button>
+          <button class="filter-button" data-filter="whistler">Whistler</button>
+          <button class="filter-button" data-filter="new">New Foundland</button>
+          <button class="filter-button" data-filter="ottawa">Ottawa</button>
+          <button class="filter-button" data-filter="victoria">Victoria</button>
+          <button class="filter-button" data-filter="kingston">Kingston</button>
+          <button class="filter-button" data-filter="montreal">Montreal</button>
+          <button class="filter-button" data-filter="calgary">Calgary</button>
+          <button class="filter-button" data-filter="yellow">Yellowknife</button>
+        </div>
+
+
+        <!-- Barrie -->
+      <div class="row">
+        <!-- Georgian Mall -->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter barrie">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://www.retail-insider.com/wp-content/uploads/2019/12/riocangeorgianmall_exterior-2019.jpg.webp -->
+          <img src="shopping/barrie-1.jpg" alt="Georgian Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Georgian Mall</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/bayfield+mall+in+barrie/@44.4134644,-79.7091855,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882aa2eff2f31e35:0xae03aac3348c9ae0!2m2!1d-79.7084632!2d44.4133884?hl=en" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 509 Bayfield St, Barrie, ON</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bayfield Mall -->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter barrie">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://cdn.canada247.info/assets/uploads/44b38684c497ab2fa43e9725408010ee_-ontario-simcoe-county-barrie-bayfield-mallhtml.jpg -->
+          <img src="shopping/barrie-2.jpg" alt="Bayfield Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Bayfield Mall</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/bayfield+mall+in+barrie/@44.4073256,-79.7152287,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882aa2de848b5479:0x48f798bca4af8249!2m2!1d-79.7026711!2d44.4009811?hl=en" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 320 Bayfield St, Barrie, ON</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kozlov Centre -->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter barrie">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://img.geocaching.com/waymarking/display/0bc3632e-8742-4ac2-bacc-58e2979479f9.jpg-->
+          <img src="shopping/barrie-3.jpg" alt="Kozlov Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Kozlov Centre</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/shopping+malls+in+barrie/@44.4095468,-79.7108254,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882aa2e79a506e79:0xc61d2e2c6ae285c8!2m2!1d-79.705981!2d44.4052997" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 400 Bayfield St, Barrie, ON</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- North Barrie Crossing-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter barrie">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://cdn.canada247.info/assets/uploads/0a13db6c86048457d784f168a9b4b45c_-ontario-simcoe-county-barrie-north-barrie-crossing-shopping-centrehtml.jpg -->
+          <img src="shopping/barrie-4.jpg" alt="Kozlov Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">North Barrie Crossing</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/North+Barrie+Crossing+Shopping+Centre/@44.4127067,-79.7094509,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882aa314ed2ab5ef:0xbaaf015abf0f7d7d!2m2!1d-79.67592!2d44.4160495" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> Cundles Rd E, Barrie, ON</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+
+<!-- Toronto -->
+<div class="row">
+        <!-- CF Toronto Eaton Centre -->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter toronto">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://images.dailyhive.com/20200721110545/eaton-centre.jpg -->
+          <img src="shopping/toronto-1.jpg" alt="CF Toronto Eaton Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">CF Toronto Eaton Centre</h2>
+            <a href="https://www.google.ca/maps/dir//toronto+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882b34cb510746bd:0x8b89147b8cbbc837?sa=X&ved=2ahUKEwjsxsvztaLtAhUgGFkFHf91CRMQ9RcwAHoECAYQBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 220 Yonge St, Toronto, ON</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yorkdale Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter toronto">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://yorkdale.com/wp-content/themes/yorkdale_2015/img/raster/compressed/yorkdale-mall.jpg -->
+          <img src="shopping/toronto-2.jpg" alt="Yorkdale Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Yorkdale Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/toronto+shopping+malls/@44.0644515,-79.8067475,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882b32340d1980a1:0x9948d80f620f1eb9!2m2!1d-79.452107!2d43.7254321" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 3401 Dufferin St, Toronto</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yorkville Village-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter toronto">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://img1.10bestmedia.com/Images/Photos/367533/img-F7I0607LP_55_660x440.jpg-->
+          <img src="shopping/toronto-3.jpg" alt="Yorkville Village">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Yorkville Village</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/toronto+shopping+malls/@44.0398433,-80.0791614,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882b34a456a501a1:0x2dd02aebcf09714b!2m2!1d-79.394742!2d43.671685" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 55 Avenue Rd, Toronto</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloverdale Mall-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter toronto">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://dynamicmedia.zuza.com/zz/m/original_/b/6/b646a3dd-7fcb-43be-a403-4615db5484cb/3hET%20CloverdaleMall0507_Super_Portrait.jpg -->
+          <img src="shopping/toronto-4.jpg" alt="Cloverdale Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Cloverdale Mall</h2>
+            <a href="https://www.google.ca/maps/dir//toronto+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882b375ba373db19:0x9cd556705f54a978?sa=X&ved=2ahUKEwirrPSUvaLtAhXXGFkFHeCQCesQ9RcwAHoECAYQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 250 The East Mall, Toronto</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+
+<!-- Halifax -->
+<div class="row">
+        <!-- Halifax Shopping Centre -->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter halifax">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://i.pinimg.com/originals/2b/55/cf/2b55cfc04931ac0717c369f83b9c9e48.jpg -->
+          <img src="shopping/halifax-1.jpg" alt="Halifax Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Halifax Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir//halifax+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4b5a21999741f353:0x93e0f53cd371939c?sa=X&ved=2ahUKEwjzsvTEwKLtAhUCFlkFHR_3BfkQ9RcwAHoECAcQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 7001 Mumford Rd Unit #722, Halifax</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Granville Mall-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter halifax">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/c/cb/Granville_Mall_Halifax_2016.jpg -->
+          <img src="shopping/halifax-2.jpg" alt="Granville Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Granville Mall</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/halifax+shopping+malls/@44.6183855,-80.5421854,5z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4b5a23cd932db985:0xb5bcb5dc537be9ff!2m2!1d-63.5745148!2d44.6502851" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 1895 Granville St, Halifax</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Park Lane Mall-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter halifax">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://universalgroup.ca/sites/default/files/styles/home_header_images/public/commercial/hero_images/uni-universalgroup.ca-splash-pl-dollarama_-_website.jpg?itok=yr5bEXen -->
+          <img src="shopping/halifax-3.jpg" alt="Park Lane Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Park Lane Mall</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/halifax+shopping+malls/@44.6183855,-80.5421854,5z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4b5a2233d4726a77:0xe2df49b61206fb26!2m2!1d-63.5786811!2d44.6428374" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 5657 Spring Garden Rd, Halifax</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Halifax Shopping Centre Annex-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter halifax">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://lh3.googleusercontent.com/proxy/JLfhQd9xKElnGSNbcN36hGDv2UG_Ac_zG_2gwkKj92o85PdpcEIMBeWip4O3kW9t7qiN7yLUJU1MU2QpBGXcy_syV0EprAuDsUo3zWBCTXytrWf_kFAQuvvzrtG-XM1phGOejZO9S4LfhBTxAHF05A -->
+          <img src="shopping/halifax-4.jpg" alt="Halifax Shopping Centre Annex">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Halifax Shopping Centre Annex</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/halifax+shopping+malls/@44.6183855,-80.5421854,5z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4b5a2190af7779ed:0x3750e917d7e4d66f!2m2!1d-63.6201639!2d44.6457625" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> ANNEX-HALIFAX S, 6982 Mumford Rd C, Halifax</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+<!-- Vancouver -->
+<div class="row">
+        <!-- CF Pacific Centre -->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter vancouver">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://images.glaciermedia.ca/polopoly_fs/1.24112081.1585931582!/fileImage/httpImage/image.jpg_gen/derivatives/original_size/nordstrom-vancouver-rob-kruyt.jpg -->
+          <img src="shopping/vancouver-1.jpg" alt="CF Pacific Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">CF Pacific Centre</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/vancouver+shopping+malls/@44.0112008,-119.2511543,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5486717f45186a3f:0x26cdaebfb6f46250!2m2!1d-123.1183909!2d49.2833319" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 701 W Georgia St, Vancouver</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oakridge Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter vancouver">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://www.oakridgecentre.com/wp-content/uploads/2019/07/Image-1.jpg -->
+          <img src="shopping/vancouver-2.jpg" alt="Oakridge Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Oakridge Centre</h2>
+            <a href="https://www.google.ca/maps/dir//vancouver+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x5486747a0f2c6bf5:0xe228fd66eda8a5af?sa=X&ved=2ahUKEwjozYTIxqLtAhVIEVkFHS6DCYoQ9RcwAHoECAUQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 650 W 41st Ave, Vancouver</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- City Square Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter vancouver">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://images.dailyhive.com/20190508193344/city-square-mall-vancouver-1.jpg -->
+          <img src="shopping/vancouver-3.jpg" alt="City Square Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">City Square Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/vancouver+shopping+malls/@44.0000898,-119.2463842,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x548673e7e1d00207:0xd8f6a02fa9377137!2m2!1d-123.1171617!2d49.2609498" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 555 W 12th Ave, Vancouver</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hudson Mall-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter vancouver">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://lh5.googleusercontent.com/p/AF1QipPduwk7aqG6cmBwNw5lWYK6nZSwB9V3WU0sWzeA=w400-h300-k-no -->
+          <img src="shopping/vancouver-4.jpg" alt="Hudson Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Hudson Mall</h2>
+            <a href="https://www.google.ca/maps/dir//vancouver+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x54867178cabac1d1:0x1dd8bcd85a955988?sa=X&ved=2ahUKEwjql_nZyqLtAhVwGFkFHWGyD7IQ9RcwAHoECAUQBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 678 Dunsmuir St, Vancouver</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Whistler -->
+<div class="row">
+        <!-- Marketplace Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter whistler">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://s3-media0.fl.yelpcdn.com/bphoto/QLWE-XVvNwR5A_TbvtwKjQ/o.jpg  -->
+          <img src="shopping/whistler-1.jpg" alt="Marketplace Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Marketplace Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/whistler+shopping+malls/@44.4314828,-119.3106423,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x54873cb227e7e58f:0x9e61df57515ae3ae!2m2!1d-122.9577!2d50.1199" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 4370 Lorimer Rd, Whistler, BC</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Creekside Village-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter whistler">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://res.cloudinary.com/whistler/image/upload/w_500,c_scale,dpr_3.0,q_auto/v1/s3/images/header/whistler-village-creekside.jpg -->
+          <img src="shopping/whistler-2.jpg" alt="Creekside Village">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Creekside Village</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/whistler+shopping+malls/@44.4178982,-119.3108809,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x548722d0d17cf897:0x3258c196235f17c!2m2!1d-122.991501!2d50.0945226" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 2055 Lake Placid Rd, Whistler, BC</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rainbow Plaza-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter whistler">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://ronmor.findspace.com/images/preview_images/5036582164147543582Rainbow_Plaza_CRUv33.jpg -->
+          <img src="shopping/whistler-3.jpg" alt="Rainbow Plaza">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Rainbow Plaza</h2>
+            <a href="https://www.google.ca/maps/dir//whistler+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x54873b77271e5ed7:0x53b315e46ba15e23?sa=X&ved=2ahUKEwj-oZGrzqLtAhU2FVkFHcmoBgoQ9RcwAHoECAQQAw" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> Footpath, Whistler, BC V0N 1B8</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Whistler Clearance Centre - Village-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter whistler">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://s3-media0.fl.yelpcdn.com/bphoto/zM-ifjQLtHyoWWaPUF-acw/l.jpg-->
+          <img src="shopping/whistler-4.jpg" alt="Whistler Clearance Centre - Village">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Whistler Clearance Centre - Village</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/whistler+shopping+malls/@44.4287876,-119.3106896,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x54873d81d7e9ed25:0xd0da0cb9f4859443!2m2!1d-122.9561562!2d50.1152262" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 4204 Village Square #203, Whistler</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Newfoundland -->
+<div class="row">
+        <!-- Avalon Mall Regional Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter new">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://shopavalonmall.com/themes/aval/images/nostoreimage950-color.jpg -->
+          <img src="shopping/new-1.jpg" alt="Avalon Mall Regional Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Avalon Mall</h2>
+            <a href="https://www.google.ca/maps/dir//newfoundland+shopping+mall/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4b0ca3797540e0cf:0x14de3b2f5e7f06f9?sa=X&ved=2ahUKEwjd07jdm6TtAhUZGVkFHTmSCisQ9RcwAHoECAYQBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 48 Kenmount Rd, St. John's, NL</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Village Mall Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter new">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://theindependent.ca/wp-content/uploads/2018/02/VillageMall2.jpg -->
+          <img src="shopping/new-2.jpg" alt="The Village Mall Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">The Village Mall Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir//newfoundland+shopping+mall/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4b0ca39129ecaf35:0x9a87c0871a5d3d9?sa=X&ved=2ahUKEwj08KmOnKTtAhWQF1kFHT01CYIQ9RcwAHoECAYQBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 430 Topsail Rd, St. John's, NL</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gander Mall-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter new">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://lh3.googleusercontent.com/proxy/k0jianggNpluhQzWS6fAu1_Z-aIEJx211ozbjIJtgOMPvVjWOySVOZoIaIWjjsTdSa0g4zLdvgwnMwmD7krRtQKQE44Uw90b0xKlvK6JKQy1uOBCS4IMhtpPPpwIVQ -->
+          <img src="shopping/new-3.jpg" alt="Gander Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Gander Mall</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/newfoundland+shopping+mall/@44.3849967,-85.1234804,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4b76f2ecc700a4a7:0x9b3512d754549e13!2m2!1d-54.6032904!2d48.9513743" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 132 Bennett Dr, Gander, NL</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Corner Brook Plaza-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter new">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://lh3.googleusercontent.com/proxy/As7VuF2u6gmjc8iC1Is6eWzFLPYh6mG7uely1P0ouwm9dtGOvH40KHX5D9ZZ0GpSdpW-38NXRQA6nfc1Sz-0iuuIPrZ71K8R0xKj -->
+          <img src="shopping/new-4.jpg" alt="Corner Brook Plaza">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Corner Brook Plaza</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/newfoundland+shopping+mall/@45.1855025,-77.8386483,5z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4b7bb21059c06799:0xb033d6debd773ed1!2m2!1d-57.9171133!2d48.9476012" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 44 Maple Valley Rd, Corner Brook, NL</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+    <!-- Ottawa-->
+<div class="row">
+        <!-- CF Rideau Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter ottawa">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://ssmscdn.yp.ca/image/resize/f269f913-a2f9-4eb6-aa03-22ff33b15816/ypui-d-mp-pic-gal-lg/cf-rideau-centre-1.jpg -->
+          <img src="shopping/ottawa-1.jpg" alt="CF Rideau Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">CF Rideau Centre</h2>
+            <a href="https://www.google.ca/maps/dir//ottawa+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cce05010b10aa09:0xadb5eb264eeb2625?sa=X&ved=2ahUKEwiP1f2XoaTtAhUtFVkFHbYkBFIQ9RcwAHoECA8QBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 50 Rideau St, Ottawa, ON</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bayshore Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter ottawa">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-s/0e/14/56/7e/photo-4.jpg -->
+          <img src="shopping/ottawa-2.jpg" alt="Bayshore Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Bayshore Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir//ottawa+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cce00c34399f919:0x847d3816c355ec3f?sa=X&ved=2ahUKEwjHx6jKoaTtAhXqGVkFHZleAtQQ9RcwAHoECA8QBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 100 Bayshore Dr, Ottawa, ON</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- St. Laurent Shopping Center-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter ottawa">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://ssmscdn.yp.ca/image/resize/57542083-6fef-472d-89a7-28b7ac5f04fd/ypui-d-mp-pic-gal-lg/st-laurent-4.jpg -->
+          <img src="shopping/ottawa-3.jpg" alt="St. Laurent Shopping Center">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">St. Laurent Shopping Center</h2>
+            <a href="https://www.google.ca/maps/dir//ottawa+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cce0f868f4d47b3:0xf3b180c9d003a695?sa=X&ved=2ahUKEwjK87eFoqTtAhXfGVkFHR5CAiUQ9RcwAHoECAUQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 1200 St. Laurent Blvd, Ottawa</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carlingwood Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter ottawa">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://i.ytimg.com/vi/0GlsJdd1AWs/maxresdefault.jpg -->
+          <img src="shopping/ottawa-4.jpg" alt="Carlingwood Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Carlingwood Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir//ottawa+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cce06cbf5c1544b:0x955e0a7f94398a44?sa=X&ved=2ahUKEwieh5u5oqTtAhXPEVkFHUcoBkgQ9RcwAHoECAUQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 2121 Carling Ave, Ottawa, ON</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+        <!-- Victoria-->
+<div class="row">
+        <!-- The Bay Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter victoria">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-s/06/09/88/35/the-bay-centre.jpg -->
+          <img src="shopping/victoria-1.jpg" alt="The Bay Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">The Bay Centre</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/victoria+canada+shopping+malls/@43.6963895,-119.3931719,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x548f749ab70dd595:0x775000abe4570019!2m2!1d-123.3665039!2d48.4252022" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 1150 Douglas St, Victoria, BC</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mayfair Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter victoria">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://ivanhoecambridge-production.imgix.net/2020/04/mayfair-img2.jpg?auto=format&q=60&fit=auto&ixlib=vue-2.6.1 -->
+          <img src="shopping/victoria-2.jpg" alt="Mayfair Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Mayfair Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir//victoria+canada+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x548f739d205abe3d:0x418b21bb4d278d8a?sa=X&ved=2ahUKEwiry7yQpaTtAhX8GFkFHUN4AhcQ9RcwAHoECBIQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 3147 Douglas St, Victoria, BC</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Market Square-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter victoria">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://afar-production.imgix.net/uploads/images/post_images/images/1lxRRaHe4a/original_4826b24a35b99c10812920537cf31e36.jpg?1454710098?ixlib=rails-0.3.0&auto=format%2Ccompress&crop=entropy&fit=crop&h=719&q=80&w=954 -->
+          <img src="shopping/victoria-3.jpg" alt="Market Square">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Market Square</h2>
+            <a href="https://www.google.ca/maps/dir//victoria+canada+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x548f749b4e7fdc35:0xad76ecf819c21ad5?sa=X&ved=2ahUKEwjd_PXQpaTtAhU8GVkFHWbdCAAQ9RcwAHoECAYQBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i>560 Johnson St, Victoria, BC</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hillside Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter victoria">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://cba.vreb.org/wp-content/uploads/2014/11/hillside.jpg -->
+          <img src="shopping/victoria-4.jpg" alt="Hillside Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Hillside Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/victoria+canada+shopping+malls/@43.6963895,-119.3931719,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x548f747557caac69:0x96e9085a5fd57b25!2m2!1d-123.3355305!2d48.445763" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 1644 Hillside Ave #21, Victoria</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+<!-- Kingston-->
+<div class="row">
+        <!-- King's Crossing Fashion Outlet-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter kingston">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://s3-media0.fl.yelpcdn.com/bphoto/AQ448hV6Vs0dMAeSPkKbrQ/l.jpg -->
+          <img src="shopping/kingston-1.jpg" alt="King's Crossing Fashion Outlet">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">King's Crossing Fashion Outlet</h2>
+            <a href="https://www.google.ca/maps/dir//kingston+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cd2abe43a5fd0db:0xac5e4868cd7e4f4d?sa=X&ved=2ahUKEwjlseGYqKTtAhWOEVkFHRmyAWUQ9RcwAHoECAQQBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 95 Dalton Ave, Kingston, ON</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontenac Mall-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter kingston">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://fastly.4sqi.net/img/general/600x600/A1BVDL5GHSIRTPYHXD3TIZ0OT4IZK1JVU4IVG2ROR1YQ0KY3.jpg -->
+          <img src="shopping/kingston-2.jpg" alt="Frontenac Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Frontenac Mall</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/kingston+shopping+malls/@44.1392991,-80.370046,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4cd2ac882552c5d9:0x648b01195375a35f!2m2!1d-76.5465539!2d44.239342" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 1300 Bath Rd, Kingston, ON</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cataraqui Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter kingston">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://www.kingstonist.com/wp-content/uploads/2019/05/CatCentre-2_edited.jpg -->
+          <img src="shopping/kingston-3.jpg" alt="Cataraqui Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Cataraqui Centre</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/kingston+shopping+malls/@44.1392991,-80.3842769,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4cd2ad3b07457101:0x91f0be8cfd2c5c17!2m2!1d-76.5722058!2d44.2562476" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i>945 Gardiners Rd, Kingston</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Bayridge Centre Plaza-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter kingston">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://lh3.googleusercontent.com/p/AF1QipMru8O_8ooy0X_MvmHGNC7YT1ThSazlCXvF8hGj=w600-k -->
+          <img src="shopping/kingston-4.jpg" alt="Bayridge Centre Plaza">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Bayridge Centre Plaza</h2>
+            <a href="https://www.google.ca/maps/dir//kingston+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cd2adb832b580f5:0x41210dedcb5e8fe1?sa=X&ved=2ahUKEwjt9N7pqqTtAhVcGVkFHb_2A6oQ9RcwAHoECAQQBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 741 Bayridge Dr, Kingston, ON</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Montreal-->
+<div class="row">
+        <!-- Le Centre Eaton de Montreal-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter montreal">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://img.ic-static.net/VqT8ZSFpffXu0p4y0hol5C9um9k=/0x0:770x500/CEM/centre-eaton-de-montreal-ext-1-entry.jpg -->
+          <img src="shopping/montreal-1.jpg" alt="Le Centre Eaton de Montreal">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Le Centre Eaton de Montreal</h2>
+            <a href="https://www.google.ca/maps/dir//montreal+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cc91a44467f13db:0x8e4be46792074642?sa=X&ved=2ahUKEwihzKLGrKTtAhVzGlkFHWZLDqoQ9RcwAHoECAcQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 705 Saint-Catherine St W, Montreal</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Place Montreal Trust-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter montreal">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://ivanhoecambridge-production.imgix.net/2020/05/place-montreal-trust-montreal.jpg?auto=format&q=60&fit=auto&ixlib=vue-2.6.1 -->
+          <img src="shopping/montreal-2.jpg" alt="Place Montreal Trust">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Place Montreal Trust</h2>
+            <a href="https://www.google.ca/maps/dir//montreal+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cc91a440cda689f:0xc309d5281edc910b?sa=X&ved=2ahUKEwjrmov0rKTtAhVBGVkFHU1DBH8Q9RcwAHoECAgQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 1500 McGill College Ave, Montreal</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Les Cours Mont-Royal-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter montreal">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://lcmr.ca/wp-content/uploads/2019/12/pano2.jpg -->
+          <img src="shopping/montreal-3.jpg" alt="Les Cours Mont-Royal">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Les Cours Mont-Royal</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/montreal+shopping+malls/@44.5212163,-81.1258738,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4cc91a43dec9eef5:0x9edbbb5965c72b96!2m2!1d-73.5736123!2d45.5009533" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i>1455 Peel St, Montreal</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Complexe Desjardins-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter montreal">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://medias.quartierdesspectacles.com/import/vitrine/location/57/57.jpg -->
+          <img src="shopping/montreal-4.jpg" alt="Complexe Desjardins">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Complexe Desjardins</h2>
+            <a href="https://www.google.ca/maps/dir//montreal+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cc91a4fca1ae933:0x9e1c26554e8a2355?sa=X&ved=2ahUKEwinzs76raTtAhWSGFkFHQP-DrgQ9RcwAHoECA0QBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 150 Saint-Catherine St W, Montreal</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Calgary-->
+<div class="row">
+        <!-- Willow Park Village-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter calgary">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://s3-media0.fl.yelpcdn.com/bphoto/k91Aa4FZ7XbSk_R1DuMwSg/l.jpg -->
+          <img src="shopping/calgary-1.jpg" alt="Willow Park Village">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Willow Park Village</h2>
+            <a href="https://www.google.ca/maps/dir//calgary+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x5371713484c35255:0xa5aa919cae76ede8?sa=X&ved=2ahUKEwj98MDZrqTtAhUYEVkFHWawATsQ9RcwAHoECAQQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 10816 Macleod Trail, Calgary, AB</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CF Chinook Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter calgary">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-s/11/20/6d/3f/cf-chinook-centre-main.jpg -->
+          <img src="shopping/calgary-2.jpg" alt="CF Chinook Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">CF Chinook Centre</h2>
+            <a href="https://www.google.ca/maps/dir//calgary+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x537170558c817a7b:0xa80ab79074859579?sa=X&ved=2ahUKEwjezJaOr6TtAhWFGVkFHfKIDeEQ9RcwAHoECAYQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 6455 Macleod Trail, Calgary, AB</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CORE Shopping Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter calgary">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://media-cdn.tripadvisor.com/media/photo-m/1280/16/60/10/7b/beautiful-light-when.jpg -->
+          <img src="shopping/calgary-3.jpg" alt="CORE Shopping Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">CORE Shopping Centre</h2>
+            <a href="https://www.google.ca/maps/dir//calgary+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x53716ffccf086237:0xb7ce1d6a7569e65c?sa=X&ved=2ahUKEwjpyoDLr6TtAhXNFVkFHR23CygQ9RcwAHoECAYQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i>324 8 Ave SW, Calgary, AB</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Southcentre Mall-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter calgary">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://upload.wikimedia.org/wikipedia/commons/d/da/Southcentre_Mall.jpg -->
+          <img src="shopping/calgary-4.jpg" alt="Southcentre Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Southcentre Mall</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/calgary+shopping+malls/@44.8499694,-114.6994336,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x537176cc82d44277:0x48b3bbdc69c05da9!2m2!1d-114.0662382!2d50.9525868" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 100 Anderson Rd SE, Calgary, AB </p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Yellowknife-->
+<div class="row">
+        <!-- Centre Square Mall-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter yellow">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://fastly.4sqi.net/img/general/600x600/91291189_RaRkg5Ajc9zTn9CfrAL3Tr9X6TZ8EN-hGVM1J5JFQ1o.jpg -->
+          <img src="shopping/yellow-1.jpg" alt="Centre Square Mall">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Centre Square Mall</h2>
+            <a href="https://www.google.ca/maps/dir/44.4137941,-79.7063207/yellowknife+shopping+malls/@50.8172274,-116.2554643,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x53d1f6c352468da1:0xedeeb0122f970207!2m2!1d-114.3692538!2d62.4533932" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 49 St, Yellowknife, NT</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- YK Centre-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter yellow">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://www.globalphotos.org/yellowknife/20180212/IMG_3385.jpg -->
+          <img src="shopping/yellow-2.jpg" alt="YK Centre">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">YK Centre</h2>
+            <a href="https://www.google.ca/maps/dir//yellowknife+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x53d1f6c38529d8d1:0x261c08269696092b?sa=X&ved=2ahUKEwjexKnxsaTtAhUHElkFHRB3DCkQ9RcwAHoECAsQBA" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 4905 48 St, Yellowknife, NT</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Northern Heights Mall 10-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter yellow">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://dyhx7is8pu014.cloudfront.net/www.century21yk.ca/buildings/1/web/img_1205.jpg?timestamp=1516809156 -->
+          <img src="shopping/yellow-3.jpg" alt="Northern Heights Mall 10">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">Northern Heights Mall 10</h2>
+            <a href="https://www.google.ca/maps/dir//yellowknife+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x53d1f6c359485503:0x84bd80cf483f1121?sa=X&ved=2ahUKEwiGp-GqsqTtAhWhGFkFHfYaDCAQ9RcwAHoECAQQAw" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 5014 49 St, Yellowknife, NT</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!--iceblink-->
+      <div class="col-lg-3 mb-3 mb-lg-0 filter yellow">
+        <div class="hover hover-2 text-white rounded">
+          <!-- copyright="&copy; https://images.squarespace-cdn.com/content/v1/5658fe85e4b01110e1cdaf3d/1493744844218-VTFLJOZG3YMM282SAP23/ke17ZwdGBToddI8pDm48kPJXHKy2-mnvrsdpGQjlhod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmihaE5rlzFBImxTetd_yW5btdZx37rH5fuWDtePBPDaHF5LxdCVHkNEqSYPsUQCdT/IMG_3141.jpg?format=1000w -->
+          <img src="shopping/yellow-4.jpg" alt="iceblink">
+          <div class="hover-overlay"></div>
+          <div class="hover-2-content px-5 py-4">
+            <h2 class="hover-2-title font-weight-bold mb-0">iceblink</h2>
+            <a href="https://www.google.ca/maps/dir//yellowknife+shopping+malls/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x53d1f6c49647a68b:0xa736da7ad1b7993e?sa=X&ved=2ahUKEwiRoOSOtKTtAhURElkFHSf5DwwQ9RcwAHoECAQQBQ" target="_blank"><p class="hover-2-description mb-0"><i class="fas fa-map-marker-alt"></i> 5004 Franklin Ave, Yellowknife </p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+      
+</div>
+<!--  -->
+<!--  -->
+
+
+<!--  -->
+
+<!-- Footer -->
+<footer>
+      <div class = "mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12">
+              <h2> Dream Destination</h2>
+              <p class = "pr-5 text-white-50">
+                Turn your dreams into reality.
+              </p>
+              <ul class ="social">
+                <li><a href ="https://www.facebook.com/dre.desti" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href ="https://www.instagram.com/dreamdestination2021/" target="_blank"><i class ="fab fa-instagram"></i></a></li>
+                <li><a href ="https://twitter.com/DreamDe92444755" target="_blank"><i class ="fab fa-twitter"></i></a></li>
+                <li><a href ="https://www.youtube.com/channel/UCvIBg7VmY6ZCZM4o9mfpKUg?view_as=subscriber" target="_blank"><i class ="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="../places/places.html">Places</a></li>
+                <li><a href="../Hotel/stay.html">Hotel</a></li>
+                <li><a href="../activities/adventure.html">Activities</a></li>
+                <li><a href="../Transport/transport/main.html">Transport</a></li>
+                <li><a href="../PlanTrip/Trip-packages/packages.html">Trip Packages</a></li>
+                <li><a href="../sitemap.html">Site Map</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 ContactUs">
+              <h4 class="mt-lg-0 mt-sm-4">Contact Us</h4>
+              <p><a href ="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa fa-envelope"> dreamdestination2021@gmail.com</i></a></p>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright text-center">
+                <p><small class="text-white-50">
+                  All Rights Reserved &copy; Dream Destination Company 2020
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186188866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186188866-1');
+  </script>
+</body>
+</html>
